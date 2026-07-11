@@ -3,8 +3,9 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
 const navItems = [
-  { href: '/montas', label: 'Montas', seccion: 'Detección' },
+  { href: '/', label: 'Hoy', seccion: 'Panel' },
   { href: '/celos', label: 'Eventos de celo', seccion: 'Detección' },
+  { href: '/montas', label: 'Montas', seccion: 'Detección' },
   { href: '/vacas', label: 'Vacas', seccion: 'Gestión' },
   { href: '/camaras', label: 'Cámaras', seccion: 'Sistema' },
 ]
@@ -12,13 +13,13 @@ const navItems = [
 export default function Sidebar() {
   const pathname = usePathname()
   return (
-    <div className="w-52 flex-shrink-0 bg-white border-r border-gray-200 flex flex-col">
+    <div className="w-52 flex-shrink-0 bg-white border-r border-gray-200 flex flex-col sticky top-0 h-screen">
       <div className="px-4 py-4 border-b border-gray-200">
         <div className="font-medium text-gray-900">AgroIA</div>
         <div className="text-xs text-gray-400 mt-1">Mi Tambo</div>
       </div>
-      <nav className="flex-1 py-2">
-        {['Detección', 'Gestión', 'Sistema'].map(sec => (
+      <nav className="flex-1 py-2 overflow-y-auto">
+        {['Panel', 'Detección', 'Gestión', 'Sistema'].map(sec => (
           <div key={sec}>
             <div className="px-4 py-2 text-xs font-medium text-gray-400 uppercase tracking-wider">
               {sec}
