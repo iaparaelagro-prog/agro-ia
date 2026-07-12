@@ -33,8 +33,17 @@ const ESTADO_INFO: Record<EstadoCelo, { label: string; pill: string; dot: string
   perdida:    { label: 'Ventana perdida', pill: 'bg-gray-100 text-gray-600',     dot: 'bg-gray-400' },
 }
 
+type Vaca = {
+  id: number
+  id_negocio: string | number
+  ruta_fotos: string | null
+}
+
 export default function CelosPage() {
   const [montas, setMontas] = useState<Monta[]>([])
+  const [vacas, setVacas] = useState<Vaca[]>([])
+  const [busquedaCaravana, setBusquedaCaravana] = useState('')
+  const [asignando, setAsignando] = useState(false)
   const [inseminadas, setInseminadas] = useState<Set<string>>(new Set())
   const [loading, setLoading] = useState(true)
   const [selectedKey, setSelectedKey] = useState<string | null>(null)
@@ -53,7 +62,12 @@ export default function CelosPage() {
     const { data: di } = await supabase
       .from('inseminaciones')
       .select('id_negocio, celo_inicio')
+    const { data: dv } = await supabase
+      .from('vacas')
+      .select('id, id_negocio, ruta_fotos')
+      .order('id_negocio', { ascending: true })
     if (dm) setMontas(dm)
+    if (dv) setVacas(dv)
     const set = new Set<string>()
     ;(di ?? []).forEach((r: { id_negocio: string | null; celo_inicio: string }) => {
       set.add(celoKey(r.id_negocio != null ? String(r.id_negocio) : null, r.celo_inicio))
@@ -91,6 +105,25 @@ export default function CelosPage() {
       return
     }
     setInseminadas(prev => new Set(prev).add(celo.key))
+  }
+
+  async function asignarVaca(celo: Celo, vaca: Vaca) {
+    if (asignando) return
+    setAsignando(true)
+    const ids = celo.montas.map(m => m.id)
+    const { error } = await supabase
+      .from('montas')
+      .update({ vaca_id: vaca.id, estado_id: 'identificada' })
+      .in('id', ids)
+    setAsignando(false)
+    if (error) {
+      alert('No se pudo asignar la vaca. Revisá la conexión e intentá de nuevo.')
+      return
+    }
+    setBusquedaCaravana('')
+    // El celo identificado cambia de key; lo reseleccionamos por su nueva identidad
+    setSelectedKey(celoKey(String(vaca.id_negocio), celo.inicio))
+    await cargar()
   }
 
   const celos = agruparEnCelos(montas).sort(
@@ -274,8 +307,42 @@ export default function CelosPage() {
                     </div>
 
                     {!selected.identificada && (
-                      <div className="mt-3 pt-3 border-t border-gray-100 text-xs text-blue-700 bg-blue-50 rounded-lg px-3 py-2">
-                        Este celo no tiene vaca identificada, por eso no se puede calcular la ventana de inseminación.
+                      <div className="mt-3 pt-3 border-t border-gray-100">
+                        <div className="text-xs text-blue-700 bg-blue-50 rounded-lg px-3 py-2 mb-2">
+                          Este celo no tiene vaca identificada. Mirá la evidencia de abajo, reconocé el animal y asignale la caravana:
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <input
+                            type="text"
+                            placeholder="Buscar caravana (ej: 5248)..."
+                            value={busquedaCaravana}
+                            onChange={e => setBusquedaCaravana(e.target.value)}
+                            className="h-9 text-sm px-3 border border-gray-200 rounded-lg w-56 focus:outline-none focus:border-blue-300"
+                          />
+                          {asignando && <span className="text-xs text-gray-400">Asignando...</span>}
+                        </div>
+                        {busquedaCaravana.trim() !== '' && (
+                          <div className="mt-2 flex gap-1.5 flex-wrap">
+                            {vacas
+                              .filter(v => String(v.id_negocio).includes(busquedaCaravana.trim()))
+                              .slice(0, 12)
+                              .map(v => (
+                                <button
+                                  key={v.id}
+                                  disabled={asignando}
+                                  onClick={() => asignarVaca(selected, v)}
+                                  className="text-sm px-3 py-1.5 rounded-lg border border-green-200 text-green-800 bg-green-50 hover:bg-green-100 font-medium disabled:opacity-50"
+                                >
+                                  ✓ Vaca {v.id_negocio}
+                                </button>
+                              ))}
+                            {vacas.filter(v => String(v.id_negocio).includes(busquedaCaravana.trim())).length === 0 && (
+                              <span className="text-xs text-gray-400 py-1">
+                                No hay vacas con esa caravana en el registro.
+                              </span>
+                            )}
+                          </div>
+                        )}
                       </div>
                     )}
                   </div>

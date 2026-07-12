@@ -4,6 +4,7 @@ import { usePathname } from 'next/navigation'
 
 const navItems = [
   { href: '/', label: 'Hoy', seccion: 'Panel' },
+  { href: '/calendario', label: 'Calendario', seccion: 'Panel' },
   { href: '/celos', label: 'Eventos de celo', seccion: 'Detección' },
   { href: '/montas', label: 'Montas', seccion: 'Detección' },
   { href: '/vacas', label: 'Vacas', seccion: 'Gestión' },
