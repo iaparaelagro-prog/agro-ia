@@ -2,6 +2,7 @@
 import { useEffect, useState, useCallback } from 'react'
 import { supabase, type Monta } from '@/lib/supabase'
 import Sidebar from '@/components/Sidebar'
+import { CaravanaTag } from '@/components/ui'
 import FrameViewer from '@/components/FrameViewer'
 import {
   agruparEnCelos,
@@ -183,7 +184,7 @@ export default function CelosPage() {
               { label: 'Con vaca identificada', value: totalIdent, color: 'text-green-700' },
               { label: 'Sin identificar', value: totalSinIdent, color: 'text-blue-700' },
             ].map(m => (
-              <div key={m.label} className="bg-gray-100 rounded-lg p-3">
+              <div key={m.label} className="bg-white border border-[#E7E5E4] rounded-xl p-3">
                 <div className="text-xs text-gray-500 mb-1">{m.label}</div>
                 <div className={`text-2xl font-medium ${m.color}`}>{m.value}</div>
               </div>
@@ -210,10 +211,7 @@ export default function CelosPage() {
                   >
                     <div className="flex items-center gap-2 mb-2">
                       {c.identificada ? (
-                        <div className="w-12 flex-shrink-0 text-center">
-                          <div className="text-lg font-bold text-gray-900 leading-none">{c.idNegocio}</div>
-                          <div className="text-[10px] text-gray-400">caravana</div>
-                        </div>
+                        <CaravanaTag numero={c.idNegocio} size="sm" />
                       ) : (
                         <div className="w-12 h-9 rounded bg-blue-50 flex items-center justify-center text-base flex-shrink-0">?</div>
                       )}
@@ -257,11 +255,13 @@ export default function CelosPage() {
                   {/* Cabecera del celo */}
                   <div className="bg-white border border-gray-200 rounded-xl p-4">
                     <div className="flex items-start gap-5">
-                      <div className="flex flex-col items-center justify-center w-24 flex-shrink-0">
-                        <div className="text-xs text-gray-400 mb-0.5">Caravana</div>
-                        <div className="text-4xl font-bold text-gray-900 leading-none">
-                          {selected.identificada ? selected.idNegocio : '?'}
-                        </div>
+                      <div className="flex flex-col items-center flex-shrink-0">
+                        {selected.identificada ? (
+                          <CaravanaTag numero={selected.idNegocio} size="lg" />
+                        ) : (
+                          <div className="w-24 h-[72px] rounded-xl bg-[#E6F1FB] flex items-center justify-center text-4xl font-bold text-[#0C447C]">?</div>
+                        )}
+                        <div className="text-[10px] text-gray-400 mt-1">caravana</div>
                       </div>
                       <div className="flex-1 min-w-0 grid grid-cols-3 gap-x-4 gap-y-2">
                         <Dato label="Inicio del celo" valor={`${diaMes(selected.inicio)} ${hhmm(selected.inicio)}`} />

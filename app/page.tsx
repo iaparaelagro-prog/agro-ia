@@ -3,6 +3,7 @@ import { useEffect, useState, useCallback } from 'react'
 import Link from 'next/link'
 import { supabase, type Monta } from '@/lib/supabase'
 import Sidebar from '@/components/Sidebar'
+import { CaravanaTag } from '@/components/ui'
 import {
   agruparEnCelos,
   calcularVentana,
@@ -147,7 +148,7 @@ export default function HoyPage() {
               { label: 'Ventanas perdidas (48h)', value: perdidas.length, color: 'text-gray-500' },
               { label: 'Inseminadas hoy', value: inseminadasHoy, color: 'text-green-600' },
             ].map(m => (
-              <div key={m.label} className="bg-gray-100 rounded-lg p-3">
+              <div key={m.label} className="bg-white border border-[#E7E5E4] rounded-xl p-3">
                 <div className="text-xs text-gray-500 mb-1">{m.label}</div>
                 <div className={`text-2xl font-medium ${m.color}`}>{m.value}</div>
               </div>
@@ -168,10 +169,10 @@ export default function HoyPage() {
             ) : (
               <div className="flex flex-col gap-3">
                 {abiertas.map(({ celo, ventana }) => (
-                  <div key={celo.key} className="bg-white border border-red-200 rounded-xl p-4 flex items-center gap-5">
-                    <div className="flex flex-col items-center justify-center w-24 flex-shrink-0">
-                      <div className="text-xs text-gray-400 mb-0.5">Caravana</div>
-                      <div className="text-4xl font-bold text-gray-900 leading-none">{celo.idNegocio}</div>
+                  <div key={celo.key} className="bg-white border border-[#F0B4B4] border-l-4 border-l-[#E24B4A] rounded-r-xl p-4 flex items-center gap-5">
+                    <div className="flex flex-col items-center flex-shrink-0">
+                      <CaravanaTag numero={celo.idNegocio} size="lg" />
+                      <div className="text-[10px] text-gray-400 mt-1">caravana</div>
                     </div>
                     <div className="flex-1 min-w-0 grid grid-cols-3 gap-x-4 gap-y-2">
                       <Dato label="Celo detectado" valor={`${diaMes(celo.inicio)} ${hhmm(celo.inicio)}`} />
@@ -207,10 +208,7 @@ export default function HoyPage() {
                 <div className="flex flex-col gap-2">
                   {proximas.map(({ celo, ventana }) => (
                     <div key={celo.key} className="bg-white border border-gray-200 rounded-xl p-3 flex items-center gap-3">
-                      <div className="w-14 text-center flex-shrink-0">
-                        <div className="text-xl font-bold text-gray-900 leading-none">{celo.idNegocio}</div>
-                        <div className="text-[10px] text-gray-400">caravana</div>
-                      </div>
+                      <CaravanaTag numero={celo.idNegocio} size="sm" />
                       <div className="flex-1 min-w-0">
                         <div className="text-sm font-medium text-gray-900">Abre en {relativo(ventana.inicio, ahora)}</div>
                         <div className="text-xs text-gray-500">
@@ -268,10 +266,7 @@ export default function HoyPage() {
               <div className="flex flex-col gap-2">
                 {perdidas.map(({ celo, ventana }) => (
                   <div key={celo.key} className="bg-gray-50 border border-gray-200 rounded-xl p-3 flex items-center gap-3 opacity-80">
-                    <div className="w-14 text-center flex-shrink-0">
-                      <div className="text-lg font-bold text-gray-500 leading-none">{celo.idNegocio}</div>
-                      <div className="text-[10px] text-gray-400">caravana</div>
-                    </div>
+                    <CaravanaTag numero={celo.idNegocio} size="sm" apagada />
                     <div className="flex-1 min-w-0 text-xs text-gray-500">
                       Celo {diaMes(celo.inicio)} {hhmm(celo.inicio)} · ventana cerró {hhmm(ventana.fin)} sin inseminar
                     </div>

@@ -387,7 +387,7 @@ export default function MontasPage() {
               { label: 'Pendientes', value: pendientes, color: 'text-yellow-700' },
               { label: 'Fallidas', value: fallidas, color: 'text-red-700' },
             ].map(m => (
-              <div key={m.label} className="bg-gray-100 rounded-lg p-3">
+              <div key={m.label} className="bg-white border border-[#E7E5E4] rounded-xl p-3">
                 <div className="text-xs text-gray-500 mb-1">{m.label}</div>
                 <div className={`text-2xl font-medium ${m.color}`}>{m.value}</div>
               </div>

@@ -3,6 +3,7 @@ import { useEffect, useState, useCallback } from 'react'
 import Link from 'next/link'
 import { supabase, type Monta } from '@/lib/supabase'
 import Sidebar from '@/components/Sidebar'
+import { CaravanaTag } from '@/components/ui'
 import { agruparEnCelos, type Celo } from '@/lib/celos'
 
 type Vaca = {
@@ -163,7 +164,7 @@ export default function VacasPage() {
               { label: 'Con actividad detectada', value: conActividad, color: 'text-green-700' },
               { label: 'Sin actividad registrada', value: vacas.length - conActividad, color: 'text-gray-500' },
             ].map(m => (
-              <div key={m.label} className="bg-gray-100 rounded-lg p-3">
+              <div key={m.label} className="bg-white border border-[#E7E5E4] rounded-xl p-3">
                 <div className="text-xs text-gray-500 mb-1">{m.label}</div>
                 <div className={`text-2xl font-medium ${m.color}`}>{m.value}</div>
               </div>
@@ -189,9 +190,7 @@ export default function VacasPage() {
                     }`}
                   >
                     <div className="flex items-center gap-3">
-                      <div className="text-2xl font-bold text-gray-900 w-16 flex-shrink-0 text-center leading-none">
-                        {v.id_negocio}
-                      </div>
+                      <CaravanaTag numero={v.id_negocio} size="sm" />
                       <div className="flex-1 min-w-0">
                         <div className="text-xs text-gray-500">
                           {r.ultimoCelo
@@ -233,9 +232,8 @@ export default function VacasPage() {
                   {/* Cabecera */}
                   <div className="bg-white border border-gray-200 rounded-xl p-4">
                     <div className="flex items-start gap-5">
-                      <div className="flex flex-col items-center justify-center w-28 flex-shrink-0">
-                        <div className="text-xs text-gray-400 mb-0.5">Caravana</div>
-                        <div className="text-5xl font-bold text-gray-900 leading-none">{selected.id_negocio}</div>
+                      <div className="flex flex-col items-center flex-shrink-0">
+                        <CaravanaTag numero={selected.id_negocio} size="lg" />
                         {selected.fecha_alta && (
                           <div className="text-[10px] text-gray-400 mt-1.5">alta {fecha(selected.fecha_alta)}</div>
                         )}

@@ -1,1 +1,39 @@
 @import "tailwindcss";
+
+/* ============================================================
+   Sistema de diseño AgroIA — agregar AL FINAL de app/globals.css
+   (no borres lo que ya tiene el archivo arriba de esto)
+   ============================================================ */
+
+:root {
+  --agro-fondo: #FAF9F4;   /* crema suave: menos resplandor que blanco puro */
+  --agro-tinta: #1C1917;   /* negro cálido para texto */
+  --agro-borde: #E7E5E4;
+  --agro-marca: #14532D;   /* verde campo oscuro */
+}
+
+body {
+  background: var(--agro-fondo);
+  color: var(--agro-tinta);
+  /* números tabulares: horas y caravanas alineadas en columnas */
+  font-variant-numeric: tabular-nums;
+}
+
+/* Etiqueta de caravana: imita la caravana amarilla real del corral */
+.caravana-tag {
+  background: #FACC15;
+  border: 1.5px solid #CA8A04;
+  border-radius: 10px 10px 12px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 7px 5px 9px;
+}
+.caravana-tag .agujero {
+  width: 9px;
+  height: 9px;
+  border-radius: 9999px;
+  background: var(--agro-fondo);
+  border: 1.5px solid #CA8A04;
+  margin-bottom: 4px;
+}
