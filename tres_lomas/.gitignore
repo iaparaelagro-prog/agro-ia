@@ -1,0 +1,27 @@
+# Datos de Tres Lomas: NO van a git (están en la compu, el servidor y Google Drive)
+*.mp4
+*.zip
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.npy
+*.log
+*.pt
+*.pth
+*.onnx
+
+frames_desfile_camaras/
+LADO A/
+LADO B/
+Asignaciones*/
+biblioteca/
+lados/
+identificacion/cache_*
+campo/
+campo_servidor/
+recorridas_campo/
+equipo/
+dataset_dinov2/
+MONTAS/
+detecciones_monta_*/

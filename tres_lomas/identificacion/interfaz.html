@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Identificador de vacas</title>
+<style>
+  :root{
+    --bg:#f3f0e8; --panel:#ffffff; --tinta:#1f2a1f; --suave:#6b7466; --borde:#ddd6c8;
+    --verde:#2f7d4a; --amarillo:#e0a100; --gris:#8f8f8f; --azul:#2563eb; --rojo:#b8452f; --fondo-vaca:#7c7468;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(--tinta);
+       height:100vh;display:flex;flex-direction:column;overflow:hidden}
+  header{display:flex;align-items:center;gap:10px;padding:8px 14px;background:var(--tinta);color:#fff;flex-wrap:wrap}
+  header h1{font-size:16px;margin:0 6px 0 0}
+  .chip{background:rgba(255,255,255,.13);padding:3px 10px;border-radius:999px;font-size:13px}
+  .espacio{flex:1}
+  .ayuda{font-size:12px;opacity:.75}
+  button{font:inherit;cursor:pointer;border:1px solid var(--borde);background:#fff;color:var(--tinta);
+         border-radius:8px;padding:6px 12px}
+  button:hover{border-color:var(--tinta)}
+  button.prim{background:var(--verde);color:#fff;border-color:var(--verde)}
+  button.peligro{color:var(--rojo)}
+  main{flex:1;display:grid;grid-template-columns:230px minmax(0,1fr) 410px;min-height:0}
+
+  /* ---- izquierda: recorridos */
+  #lista{overflow-y:auto;border-right:1px solid var(--borde);background:#ebe6da;padding:8px;display:flex;flex-direction:column;gap:6px}
+  .rec{display:flex;gap:8px;align-items:center;padding:5px;border-radius:8px;cursor:pointer;background:#fff;border:2px solid transparent}
+  .rec img{width:78px;height:56px;object-fit:contain;background:#222;border-radius:5px;flex:none}
+  .rec .txt{font-size:12px;line-height:1.3;min-width:0}
+  .rec .txt b{font-size:13px}
+  .rec.sel{border-color:var(--tinta)}
+  .rec.ok{background:#e1f1e6} .rec.descartar{background:#eee;opacity:.75} .rec.nose{background:#e2eafc}
+  .rec.auto{background:#eef6ff}
+  .tag{display:inline-block;padding:0 6px;border-radius:4px;font-size:11px;background:var(--amarillo);color:#000}
+  .tag.ok{background:var(--verde);color:#fff} .tag.descartar{background:var(--gris);color:#fff}
+  .tag.nose{background:var(--azul);color:#fff} .tag.auto{background:#9cc3ff;color:#000}
+
+  /* ---- centro: frame + recorrido */
+  #centro{display:flex;flex-direction:column;min-height:0;padding:10px;gap:8px}
+  #visor{flex:1;min-height:0;display:flex;align-items:center;justify-content:center}
+  #marco{position:relative;line-height:0;border-radius:6px;overflow:hidden;background:#000}
+  #img-frame{display:block;max-width:100%;max-height:calc(100vh - 330px)}
+  #caja{position:absolute;border:3px solid var(--amarillo);box-shadow:0 0 0 9999px rgba(0,0,0,.35)}
+  #pie{font-size:13px;color:var(--suave);text-align:center;min-height:18px}
+  #tira-tit{font-size:13px;color:var(--suave)}
+  #tira{display:flex;gap:6px;overflow-x:auto;padding-bottom:4px;flex:none}
+  .mini{flex:none;width:112px;position:relative;cursor:pointer;border:3px solid transparent;border-radius:6px;background:#222}
+  .mini img{width:100%;height:84px;object-fit:contain;display:block}
+  .mini.actual{border-color:var(--amarillo)}
+  .mini.excl img{opacity:.25}
+  .mini.excl::before{content:"✕ excluida";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#ff8a73;font-weight:700;font-size:13px}
+  .mini .x{position:absolute;right:2px;top:2px;padding:0 6px;font-size:12px;line-height:18px;border-radius:5px}
+  .mini small{position:absolute;left:3px;bottom:2px;font-size:10px;background:rgba(0,0,0,.65);color:#fff;padding:0 4px;border-radius:3px}
+
+  /* ---- derecha */
+  #der{background:var(--panel);border-left:1px solid var(--borde);overflow-y:auto;padding:12px 14px}
+  #der h2{font-size:15px;margin:0 0 4px}
+  .sub{font-size:12px;color:var(--suave);margin-bottom:8px}
+  .estado{margin:8px 0;font-size:14px;padding:6px 10px;border-radius:6px;background:#fbf3d9}
+  .estado.ok{background:#e1f1e6} .estado.descartar{background:#eee} .estado.nose{background:#e2eafc} .estado.auto{background:#eef6ff}
+  #cands{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:8px 0}
+  .cand{padding:4px;text-align:left;display:flex;flex-direction:column;gap:3px}
+  .cand img{width:100%;height:110px;object-fit:contain;border-radius:5px;background:var(--fondo-vaca)}
+  .cand .nom{font-size:14px} .cand small{color:var(--suave);font-size:11px}
+  .cand.elegida{border:2px solid var(--verde);background:#eef8f1}
+  .cand:first-child{grid-column:1 / -1} .cand:first-child img{height:150px}
+  .fila{display:flex;gap:6px;margin:6px 0;flex-wrap:wrap}
+  .fila input{flex:1;min-width:0;font:inherit;padding:6px 10px;border:1px solid var(--borde);border-radius:8px}
+  .vacio-msg{color:var(--suave);padding:30px 10px;text-align:center}
+  .nota{font-size:12px;color:var(--suave);margin-top:10px;line-height:1.4}
+  table{width:100%;border-collapse:collapse;font-size:12px;margin-top:6px}
+  th,td{padding:3px 4px;text-align:right;border-bottom:1px solid var(--borde)}
+  th:first-child,td:first-child{text-align:left}
+  #stats h3{font-size:13px;margin:16px 0 0}
+
+  /* ---- ver todas */
+  #todas{position:fixed;inset:0;background:rgba(31,42,31,.55);z-index:8;display:flex;align-items:center;justify-content:center;padding:20px}
+  #todas[hidden]{display:none}
+  .caja-t{background:var(--panel);border-radius:12px;width:min(1200px,100%);height:100%;display:flex;flex-direction:column;overflow:hidden}
+  .cab{display:flex;gap:10px;align-items:center;padding:10px 14px;border-bottom:1px solid var(--borde);flex-wrap:wrap}
+  .cab h3{margin:0;font-size:15px}
+  .cab input{font:inherit;padding:5px 10px;border:1px solid var(--borde);border-radius:8px;width:170px}
+  .cab img{height:70px;border-radius:6px;background:#222}
+  #grilla{flex:1;overflow-y:auto;padding:12px;display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:8px;align-content:start}
+  .tv{padding:4px;text-align:left;display:flex;flex-direction:column;gap:2px}
+  .tv img{width:100%;height:105px;object-fit:contain;background:var(--fondo-vaca);border-radius:5px}
+  .tv b{font-size:14px} .tv small{font-size:11px;color:var(--suave)}
+  .tv.top{box-shadow:0 0 0 3px var(--azul) inset}
+  .tv.ocupada{opacity:.45}
+  .tv .otro{font-size:10px;color:var(--rojo)}
+  .lados{display:flex;gap:4px;align-items:center;font-size:13px}
+  .lados button{padding:4px 10px}
+  .lados button.on{background:var(--tinta);color:#fff;border-color:var(--tinta)}
+
+  #carga{position:fixed;inset:0;background:rgba(243,240,232,.85);display:flex;align-items:center;justify-content:center;z-index:10;text-align:center}
+  #carga[hidden]{display:none}
+  .ruedita{width:42px;height:42px;border:4px solid var(--borde);border-top-color:var(--verde);border-radius:50%;margin:0 auto 10px;animation:g 1s linear infinite}
+  @keyframes g{to{transform:rotate(360deg)}}
+</style>
+</head>
+<body>
+<header>
+  <h1>Identificador de vacas</h1>
+  <span class="chip" id="chip-lote">Lote –</span>
+  <span class="chip" id="chip-prog">–</span>
+  <span class="chip" id="chip-total">–</span>
+  <span class="chip" id="chip-afin" title="La huella se re-entrena al pasar de lote con todo lo confirmado">–</span>
+  <span class="espacio"></span>
+  <span class="ayuda">1–5 asignar · T ver todas · D descartar · N no sé · ↑ ↓ recorridos · ← → frames · X excluir recorte · Espacio siguiente pendiente · / buscar</span>
+  <button id="btn-sig" class="prim">Siguiente lote ▶</button>
+</header>
+
+<main>
+  <aside id="lista"></aside>
+  <section id="centro">
+    <div id="visor"></div>
+    <div id="pie"></div>
+    <div id="tira-tit"></div>
+    <div id="tira"></div>
+  </section>
+  <aside id="der">
+    <div id="panel"></div>
+    <div id="stats"></div>
+  </aside>
+</main>
+
+<div id="todas" hidden>
+  <div class="caja-t">
+    <div class="cab">
+      <img id="todas-rec" alt="">
+      <h3>Todas las vacas, de la más parecida a la menos</h3>
+      <input id="todas-filtro" placeholder="Filtrar por número…">
+      <span class="lados">Ver:
+        <button data-lado="A">Lado A</button>
+        <button data-lado="B">Lado B</button>
+      </span>
+      <span class="sub">Azul = las 5 más parecidas · gris = ya está en otro recorrido de estos frames</span>
+      <span class="espacio"></span>
+      <button id="todas-cerrar">Cerrar (Esc)</button>
+    </div>
+    <div id="grilla"></div>
+  </div>
+</div>
+
+<div id="carga"><div><div class="ruedita"></div><p id="carga-txt">Cargando…</p></div></div>
+<datalist id="lista-vacas"></datalist>
+
+<script>
+const $ = s => document.querySelector(s);
+let lote = null, recs = [], sel = -1, vista = 0, ocupado = false, todas = null;
+
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const pendiente = r => !r.etiqueta || r.etiqueta.auto;   // las automáticas se pueden revisar, pero no frenan
+const sinRevisar = r => !r.etiqueta;
+
+function tiempoDe(nombre){
+  const m = /_t(\d+)s(\d+)/.exec(nombre);
+  return m ? `${(+m[1] + +m[2]/1000).toFixed(1)} s` : "";
+}
+
+async function api(url, body){
+  const op = body === undefined ? {} : {method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify(body)};
+  const r = await fetch(url, op);
+  const j = await r.json().catch(() => ({}));
+  if(!r.ok) throw new Error(j.error || `Error ${r.status}`);
+  return j;
+}
+function cargando(si, txt){ $("#carga").hidden = !si; if(txt) $("#carga-txt").textContent = txt; }
+
+function vistaInicial(r){ return Math.max(0, r.dets.findIndex(d => d.clave === r.mejor)); }
+function siguienteSinRevisar(desde){
+  for(let s = 1; s <= recs.length; s++){
+    const k = (desde + s + recs.length) % recs.length;
+    if(sinRevisar(recs[k])) return k;
+  }
+  return desde;
+}
+function seleccionar(k){
+  if(!recs[k]) return;
+  sel = k; vista = vistaInicial(recs[k]); render();
+}
+
+async function cargarLote(url){
+  cargando(true, url ? "Procesando lote nuevo (detectar, quitar fondo, armar recorridos)…" : "Cargando lote…");
+  try{
+    lote = await api(url || "/api/lote", url ? {} : undefined);
+    recs = lote.fin ? [] : lote.recorridos;
+    const k = recs.findIndex(sinRevisar);
+    sel = recs.length ? (k >= 0 ? k : 0) : -1;
+    vista = sel >= 0 ? vistaInicial(recs[sel]) : 0;
+    render();
+  }catch(e){ alert(e.message); }
+  finally{ cargando(false); }
+}
+
+async function etiquetar(accion, vaca){
+  const r = recs[sel];
+  if(!r || ocupado) return;
+  ocupado = true;
+  try{
+    lote = await api("/api/etiquetar", {recorrido:r.id, accion, vaca});
+    recs = lote.recorridos;
+    const k = recs.findIndex(x => x.id === r.id);
+    if(accion === "borrar") seleccionar(k); else seleccionar(siguienteSinRevisar(k));
+  }catch(e){ alert(e.message); }
+  finally{ ocupado = false; }
+}
+
+async function alternarExcluir(d){
+  if(ocupado || !d) return;
+  ocupado = true;
+  try{
+    const id = recs[sel].id, v = vista;
+    lote = await api("/api/excluir", {clave:d.clave, excluir:!d.excluida});
+    recs = lote.recorridos;
+    sel = Math.max(0, recs.findIndex(x => x.id === id)); vista = v; render();
+  }catch(e){ alert(e.message); }
+  finally{ ocupado = false; }
+}
+
+function asignarBuscador(){
+  const inp = $("#buscar");
+  const v = inp.value.trim();
+  if(!v) return;
+  if(!lote.vacas.includes(v) && !confirm(`"${v}" no está en las referencias.\n¿Agregarla como vaca nueva?`)) return;
+  inp.value = ""; inp.blur();
+  etiquetar("vaca", v);
+}
+
+/* ------------------------------------------------------------------ render */
+
+function tagDe(r){
+  const e = r.etiqueta;
+  if(!e) return `<span class="tag">sin revisar</span>`;
+  const txt = e.accion === "vaca" ? `#${esc(e.vaca)}` : e.accion === "descartar" ? "descartada" : "no sé";
+  if(e.auto) return `<span class="tag auto">${txt} · del lote anterior</span>`;
+  return `<span class="tag ${e.accion === "vaca" ? "ok" : e.accion}">${txt}</span>`;
+}
+function claseRec(r){ const e = r.etiqueta; return !e ? "" : e.auto ? "auto" : e.accion === "vaca" ? "ok" : e.accion; }
+
+function render(){
+  if(!lote) return;
+  if(lote.fin){
+    $("#chip-lote").textContent = "Terminado"; $("#chip-prog").textContent = "";
+    $("#chip-total").textContent = `${lote.procesados} / ${lote.total_frames} frames`;
+    $("#lista").innerHTML = ""; $("#tira").innerHTML = ""; $("#tira-tit").textContent = ""; $("#pie").textContent = "";
+    $("#visor").innerHTML = `<div class="vacio-msg">No quedan frames por procesar. ¡Listo!</div>`;
+    $("#panel").innerHTML = ""; $("#btn-sig").disabled = true; renderStats(); return;
+  }
+  const hechos = recs.filter(r => !sinRevisar(r)).length;
+  const fr = lote.frames;
+  $("#chip-lote").textContent = `Lote ${lote.numero}` + (fr.length ? ` · ${tiempoDe(fr[0])} → ${tiempoDe(fr.at(-1))}` : "");
+  $("#chip-prog").textContent = `${hechos} / ${recs.length} recorridos revisados`;
+  $("#chip-total").textContent = `${lote.procesados + fr.length} / ${lote.total_frames} frames`;
+  const af = lote.afinado;
+  $("#chip-afin").textContent = af ? `Huella afinada · ${af.vacas} vacas · ${af.del_campo} del campo` : "Huella sin afinar";
+  $("#lista-vacas").innerHTML = lote.vacas.map(v => `<option value="${esc(v)}">`).join("");
+  renderLista(); renderCentro(); renderPanel(); renderStats();
+}
+
+function renderLista(){
+  $("#lista").innerHTML = recs.length ? recs.map((r, k) => `
+    <div class="rec ${claseRec(r)} ${k === sel ? "sel" : ""}" data-k="${k}">
+      <img src="/img/recorte?clave=${encodeURIComponent(r.mejor)}&lado=160" loading="lazy">
+      <div class="txt"><b>Recorrido ${k+1}</b><br>${r.dets.length} frame(s) · ${tiempoDe(r.dets[0].frame)}<br>${tagDe(r)}</div>
+    </div>`).join("") : `<div class="vacio-msg">No se detectaron vacas en este lote.<br>Pasá al siguiente.</div>`;
+  $("#lista .sel")?.scrollIntoView({block:"nearest"});
+}
+
+function renderCentro(){
+  const r = recs[sel];
+  if(!r){ $("#visor").innerHTML = ""; $("#tira").innerHTML = ""; $("#pie").textContent = ""; $("#tira-tit").textContent = ""; return; }
+  vista = Math.min(vista, r.dets.length - 1);
+  const d = r.dets[vista];
+  if(!$("#img-frame")) $("#visor").innerHTML = `<div id="marco"><img id="img-frame" alt=""><div id="caja"></div></div>`;
+  const src = `/img/frame/${encodeURIComponent(d.frame)}`;
+  if($("#img-frame").getAttribute("src") !== src) $("#img-frame").setAttribute("src", src);
+  const [x1,y1,x2,y2] = d.box, c = $("#caja");
+  c.style.left = `${x1/d.ancho*100}%`; c.style.top = `${y1/d.alto*100}%`;
+  c.style.width = `${(x2-x1)/d.ancho*100}%`; c.style.height = `${(y2-y1)/d.alto*100}%`;
+  $("#pie").textContent = `${d.frame} · t = ${tiempoDe(d.frame)} · frame ${vista+1} de ${r.dets.length} del recorrido${d.excluida ? " · EXCLUIDO" : ""}`;
+  $("#tira-tit").textContent = `Recorrido completo de esta vaca (${r.dets.length} frames) — lo que elijas se aplica a todos. Si se mezcla otra vaca, sacala con ✕.`;
+  $("#tira").innerHTML = r.dets.map((x, i) => `
+    <div class="mini ${i === vista ? "actual" : ""} ${x.excluida ? "excl" : ""}" data-i="${i}">
+      <img src="/img/recorte?clave=${encodeURIComponent(x.clave)}&lado=200" loading="lazy">
+      <small>${tiempoDe(x.frame)}</small>
+      <button class="x" data-x="${i}" title="${x.excluida ? "Volver a incluir" : "Sacar este recorte del recorrido"}">${x.excluida ? "↺" : "✕"}</button>
+    </div>`).join("");
+  $("#tira .actual")?.scrollIntoView({block:"nearest", inline:"center"});
+}
+
+function renderPanel(){
+  const r = recs[sel];
+  if(!r){ $("#panel").innerHTML = `<div class="vacio-msg">Elegí un recorrido de la izquierda.</div>`; return; }
+  const e = r.etiqueta;
+  const estado = !e ? `<div class="estado">Sin revisar</div>`
+    : e.auto ? `<div class="estado auto">Viene del lote anterior: <b>${e.accion === "vaca" ? "#" + esc(e.vaca) : e.accion === "descartar" ? "descartada" : "no sé"}</b>. Si está mal, elegí la correcta.</div>`
+    : e.accion === "vaca" ? `<div class="estado ok">Asignado a <b>#${esc(e.vaca)}</b> en los ${r.dets.length} frames${
+        e.posicion ? ` (estaba ${e.posicion}° en el ranking)` : e.posicion === 0 ? " (fuera del ranking)" : ""}</div>`
+    : e.accion === "descartar" ? `<div class="estado descartar">Descartado</div>`
+    : `<div class="estado nose">Marcado como “no sé”</div>`;
+  const cands = r.candidatos.map((c, k) => `
+    <button class="cand ${e && e.vaca === c.vaca ? "elegida" : ""}" data-vaca="${esc(c.vaca)}">
+      <img src="/img/galeria?t=${c.t}&id=${encodeURIComponent(c.id)}" loading="lazy">
+      <span class="nom"><b>${k+1}</b> · Vaca #${esc(c.vaca)}</span>
+      <small>similitud ${(c.score*100).toFixed(1)}% · ${c.t === "c" ? "visto en el campo" : "referencia"}</small>
+    </button>`).join("");
+  $("#panel").innerHTML = `
+    <h2>Recorrido ${sel+1} de ${recs.length}</h2>
+    <div class="sub">${r.dets.length} frame(s) · de ${tiempoDe(r.dets[0].frame)} a ${tiempoDe(r.dets.at(-1).frame)}</div>
+    ${estado}
+    <div id="cands">${cands || '<div class="vacio-msg">Sin candidatos</div>'}</div>
+    <div class="fila"><button id="btn-todas">🔎 Ninguna de estas: ver todas (T)</button></div>
+    <div class="fila">
+      <input id="buscar" list="lista-vacas" placeholder="Otra vaca: escribí el número…">
+      <button id="btn-asignar">Asignar</button>
+    </div>
+    <div class="fila">
+      <button data-acc="descartar">Descartar (D)</button>
+      <button data-acc="nose">No sé (N)</button>
+      ${e ? '<button data-acc="borrar" class="peligro">Quitar etiqueta</button>' : ""}
+    </div>
+    <div class="fila">
+      <button id="btn-ant">↑ Anterior</button>
+      <button id="btn-pend">Siguiente sin revisar</button>
+      <button id="btn-pos">Siguiente ↓</button>
+    </div>
+    <div class="nota">Lo que elijas se pone en <b>todos los frames del recorrido</b>. Una vaca ya asignada a otro
+      recorrido de estos mismos frames no se propone (no puede estar dos veces a la vez).</div>`;
+}
+
+function pct(a, b){ return b ? `${Math.round(a / b * 100)}%` : "–"; }
+function renderStats(){
+  const filas = lote.estadisticas.slice().reverse().map(s => `
+    <tr><td>${s.lote}</td><td>${s.n}</td><td>${pct(s.top1, s.n)}</td><td>${pct(s.top5, s.n)}</td>
+        <td>${s.nuevas}</td><td>${s.descartadas}</td></tr>`).join("");
+  const tot = lote.estadisticas.reduce((a, s) => ({n:a.n+s.n, top1:a.top1+s.top1, top5:a.top5+s.top5}), {n:0, top1:0, top5:0});
+  $("#stats").innerHTML = `
+    <h3>Cómo viene acertando (por recorrido)</h3>
+    <table>
+      <tr><th>Lote</th><th>Vacas</th><th>Acierto 1°</th><th>En top 5</th><th>Nuevas</th><th>Desc.</th></tr>
+      ${filas || '<tr><td colspan="6">Todavía no hay vacas confirmadas</td></tr>'}
+      ${tot.n ? `<tr><th>Total</th><th>${tot.n}</th><th>${pct(tot.top1, tot.n)}</th><th>${pct(tot.top5, tot.n)}</th><th></th><th></th></tr>` : ""}
+    </table>`;
+}
+
+/* ------------------------------------------------------------------ ver todas */
+
+async function abrirTodas(){
+  const r = recs[sel];
+  if(!r) return;
+  cargando(true, "Cargando todas las vacas…");
+  try{ todas = await api(`/api/todas?recorrido=${encodeURIComponent(r.id)}`); }
+  catch(e){ alert(e.message); return; }
+  finally{ cargando(false); }
+  $("#todas-rec").src = `/img/recorte?clave=${encodeURIComponent(todas.mejor)}&lado=200`;
+  $("#todas-filtro").value = "";
+  $("#todas").hidden = false;
+  renderTodas();
+  $("#grilla").scrollTop = 0;
+  $("#todas-filtro").focus();
+}
+function cerrarTodas(){ $("#todas").hidden = true; }
+let ladoVer = "A";
+try{ ladoVer = localStorage.getItem("ident_lado_ver") || "A"; }catch(e){}
+function elegirLado(l){
+  ladoVer = l;
+  try{ localStorage.setItem("ident_lado_ver", l); }catch(e){}
+  renderTodas();
+}
+function fotoDe(v){
+  // la del lado elegido; si esa vaca no tiene foto de ese lado, la otra (y se avisa)
+  for(const l of [ladoVer, "A", "B", "otra"]) if(v.fotos[l]) return {t:v.fotos[l][0], id:v.fotos[l][1], lado:l};
+  return null;
+}
+function renderTodas(){
+  document.querySelectorAll(".lados button").forEach(b => b.classList.toggle("on", b.dataset.lado === ladoVer));
+  const f = $("#todas-filtro").value.trim().toLowerCase();
+  const nombres = {A:"lado A", B:"lado B", otra:"otra foto"};
+  $("#grilla").innerHTML = todas.vacas.filter(v => !f || v.vaca.toLowerCase().includes(f)).map((v, k) => {
+    const foto = fotoDe(v);
+    return `
+    <button class="tv ${k < 5 && !f ? "top" : ""} ${v.ocupada ? "ocupada" : ""}" data-vaca="${esc(v.vaca)}">
+      ${foto ? `<img src="/img/galeria?t=${foto.t}&id=${encodeURIComponent(foto.id)}" loading="lazy">` : ""}
+      <b>#${esc(v.vaca)}</b>
+      <small>${v.score != null ? `${(v.score*100).toFixed(1)}%` : "sin dato"}${v.ocupada ? " · ya está en estos frames" : ""}</small>
+      ${foto && foto.lado !== ladoVer ? `<span class="otro">no tiene ${nombres[ladoVer]}: se muestra ${nombres[foto.lado]}</span>` : ""}
+    </button>`;
+  }).join("") || `<div class="vacio-msg">Ninguna vaca coincide con el filtro.</div>`;
+}
+document.querySelectorAll(".lados button").forEach(b => b.addEventListener("click", ev => { ev.stopPropagation(); elegirLado(b.dataset.lado); }));
+$("#todas-filtro").addEventListener("input", renderTodas);
+$("#todas-filtro").addEventListener("keydown", ev => {
+  if(ev.key === "Escape"){ ev.stopPropagation(); cerrarTodas(); }
+  else if(ev.key === "Enter"){ const b = $("#grilla .tv"); if(b){ cerrarTodas(); etiquetar("vaca", b.dataset.vaca); } }
+});
+$("#todas-cerrar").addEventListener("click", cerrarTodas);
+$("#grilla").addEventListener("click", ev => {
+  const b = ev.target.closest(".tv");
+  if(b){ ev.stopPropagation(); cerrarTodas(); etiquetar("vaca", b.dataset.vaca); }
+});
+
+/* ------------------------------------------------------------------ eventos */
+
+document.addEventListener("click", ev => {
+  const x = ev.target.closest("[data-x]");
+  if(x){ ev.stopPropagation(); alternarExcluir(recs[sel].dets[+x.dataset.x]); return; }
+  const mini = ev.target.closest(".mini");
+  if(mini){ vista = +mini.dataset.i; renderCentro(); return; }
+  const rec = ev.target.closest(".rec");
+  if(rec){ seleccionar(+rec.dataset.k); return; }
+  const cand = ev.target.closest(".cand");
+  if(cand){ etiquetar("vaca", cand.dataset.vaca); return; }
+  const acc = ev.target.closest("[data-acc]");
+  if(acc){ etiquetar(acc.dataset.acc); return; }
+  const id = ev.target.id, n = recs.length;
+  if(id === "btn-asignar") asignarBuscador();
+  else if(id === "btn-todas") abrirTodas();
+  else if(id === "btn-ant" && n) seleccionar((sel - 1 + n) % n);
+  else if(id === "btn-pos" && n) seleccionar((sel + 1) % n);
+  else if(id === "btn-pend" && n) seleccionar(siguienteSinRevisar(sel));
+});
+
+$("#btn-sig").addEventListener("click", () => {
+  const pend = recs.filter(sinRevisar).length;
+  if(pend && !confirm(`Quedan ${pend} recorridos sin revisar en este lote.\n¿Pasar igual al siguiente?`)) return;
+  cargarLote("/api/siguiente");
+});
+
+document.addEventListener("keydown", ev => {
+  if(!$("#todas").hidden){ if(ev.key === "Escape") cerrarTodas(); return; }
+  if(ev.target.tagName === "INPUT"){
+    if(ev.key === "Enter") asignarBuscador();
+    else if(ev.key === "Escape") ev.target.blur();
+    return;
+  }
+  if(!lote || lote.fin || !recs.length) return;
+  const r = recs[sel], n = recs.length;
+  const k = ev.key.toLowerCase();
+  if(/^[1-5]$/.test(k) && r && r.candidatos[+k - 1]) etiquetar("vaca", r.candidatos[+k - 1].vaca);
+  else if(k === "t" && r){ ev.preventDefault(); abrirTodas(); }
+  else if(k === "d") etiquetar("descartar");
+  else if(k === "n") etiquetar("nose");
+  else if(k === "x" && r) alternarExcluir(r.dets[vista]);
+  else if(k === "arrowdown"){ ev.preventDefault(); seleccionar((sel + 1) % n); }
+  else if(k === "arrowup"){ ev.preventDefault(); seleccionar((sel - 1 + n) % n); }
+  else if(k === "arrowright" && r){ ev.preventDefault(); vista = Math.min(vista + 1, r.dets.length - 1); renderCentro(); }
+  else if(k === "arrowleft" && r){ ev.preventDefault(); vista = Math.max(vista - 1, 0); renderCentro(); }
+  else if(k === " "){ ev.preventDefault(); seleccionar(siguienteSinRevisar(sel)); }
+  else if(k === "/"){ ev.preventDefault(); $("#buscar")?.focus(); }
+});
+
+cargarLote();
+</script>
+</body>
+</html>

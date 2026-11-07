@@ -1,0 +1,635 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vacas en el campo</title>
+<style>
+  :root{
+    --bg:#f3f0e8; --panel:#ffffff; --tinta:#1f2a1f; --suave:#6b7466; --borde:#ddd6c8;
+    --verde:#2f7d4a; --amarillo:#e0a100; --gris:#8f8f8f; --azul:#2563eb; --rojo:#b8452f; --fondo-vaca:#7c7468;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:"Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(--tinta);
+       height:100vh;display:flex;flex-direction:column;overflow:hidden}
+  header{display:flex;align-items:center;gap:10px;padding:8px 14px;background:var(--tinta);color:#fff;flex-wrap:wrap}
+  header h1{font-size:16px;margin:0 6px 0 0}
+  .chip{background:rgba(255,255,255,.13);padding:3px 10px;border-radius:999px;font-size:13px}
+  .espacio{flex:1}
+  .ayuda{font-size:12px;opacity:.75}
+  button{font:inherit;cursor:pointer;border:1px solid var(--borde);background:#fff;color:var(--tinta);
+         border-radius:8px;padding:6px 12px}
+  button:hover{border-color:var(--tinta)}
+  button.peligro{color:var(--rojo)}
+  button.activo{background:var(--amarillo);border-color:var(--amarillo)}
+  main{flex:1;display:grid;grid-template-columns:250px minmax(0,1fr) 410px;min-height:0}
+
+  /* ---- izquierda */
+  #lista{overflow-y:auto;border-right:1px solid var(--borde);background:#ebe6da;padding:8px}
+  .seccion{font-size:12px;font-weight:700;color:var(--suave);margin:10px 2px 6px;cursor:pointer;user-select:none}
+  .seccion:first-child{margin-top:0}
+  .grupo{display:flex;flex-direction:column;gap:6px}
+  .grupo.cerrado{display:none}
+  .rec{display:flex;gap:8px;align-items:center;padding:5px;border-radius:8px;cursor:pointer;background:#fff;border:2px solid transparent}
+  .rec img{width:80px;height:56px;object-fit:contain;background:#222;border-radius:5px;flex:none}
+  .rec .txt{font-size:12px;line-height:1.3;min-width:0}
+  .rec .txt b{font-size:13px}
+  .rec.sel{border-color:var(--tinta)}
+  .rec.unible{outline:2px dashed var(--amarillo)}
+  .rec.ok{background:#e1f1e6} .rec.descartar{background:#eee;opacity:.75} .rec.nose{background:#e2eafc}
+  .tag{display:inline-block;padding:0 6px;border-radius:4px;font-size:11px;background:var(--amarillo);color:#000}
+  .tag.ok{background:var(--verde);color:#fff} .tag.descartar{background:var(--gris);color:#fff}
+  .tag.nose{background:var(--azul);color:#fff} .tag.mont{background:#c98a6b;color:#fff}
+  .tag.otro{background:#6b5fb5;color:#fff} .estado.otro{background:#ece8fb}
+
+  /* ---- centro */
+  #centro{display:flex;flex-direction:column;min-height:0;padding:10px;gap:8px}
+  #modo{display:none;background:#fff3c4;border:1px solid var(--amarillo);padding:6px 10px;border-radius:8px;font-size:14px}
+  #visor{flex:1;min-height:0;display:flex;align-items:center;justify-content:center}
+  #marco{position:relative;line-height:0;border-radius:6px;overflow:hidden;background:#000}
+  #img-frame{display:block;max-width:100%;max-height:calc(100vh - 340px)}
+  #caja{position:absolute;border:3px solid var(--amarillo);box-shadow:0 0 0 9999px rgba(0,0,0,.35)}
+  #pie{font-size:13px;color:var(--suave);text-align:center;min-height:18px}
+  #tira-tit{font-size:13px;color:var(--suave)}
+  #tira{display:flex;gap:6px;overflow-x:auto;padding-bottom:4px;flex:none}
+  .mini{flex:none;width:108px;position:relative;cursor:pointer;border:3px solid transparent;border-radius:6px;background:#222}
+  .mini img{width:100%;height:80px;object-fit:contain;display:block}
+  .mini.actual{border-color:var(--amarillo)}
+  .mini small{position:absolute;left:3px;bottom:2px;font-size:10px;background:rgba(0,0,0,.65);color:#fff;padding:0 4px;border-radius:3px}
+  .mini .h{position:absolute;right:3px;top:2px;font-size:10px;background:var(--verde);color:#fff;padding:0 4px;border-radius:3px}
+  .mini.prob img{opacity:.45}
+  .mini .p{position:absolute;left:3px;top:2px;right:3px;font-size:10px;background:var(--rojo);color:#fff;padding:0 4px;border-radius:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  #acc-frame{display:flex;gap:6px;flex-wrap:wrap;align-items:center;justify-content:center;font-size:13px}
+  #acc-frame button{padding:4px 10px;font-size:13px}
+  #acc-frame .marca{background:#fde8e3;border:1px solid var(--rojo);color:var(--rojo);padding:3px 10px;border-radius:8px}
+  #motivos{display:none;flex-direction:column;gap:4px;margin:4px 0 8px;padding:8px;border:1px solid var(--borde);border-radius:8px;background:#faf8f3}
+  #motivos.on{display:flex}
+  #motivos button{text-align:left}
+
+  /* ---- derecha */
+  #der{background:var(--panel);border-left:1px solid var(--borde);overflow-y:auto;padding:12px 14px}
+  #der h2{font-size:15px;margin:0 0 4px}
+  .sub{font-size:12px;color:var(--suave);margin-bottom:8px}
+  .estado{margin:8px 0;font-size:14px;padding:6px 10px;border-radius:6px;background:#fbf3d9}
+  .estado.ok{background:#e1f1e6} .estado.descartar{background:#eee} .estado.nose{background:#e2eafc}
+  #cands{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:8px 0}
+  .cand{padding:4px;text-align:left;display:flex;flex-direction:column;gap:3px}
+  .cand img{width:100%;height:110px;object-fit:contain;border-radius:5px;background:var(--fondo-vaca)}
+  .cand .nom{font-size:14px} .cand small{color:var(--suave);font-size:11px}
+  .cand.elegida{border:2px solid var(--verde);background:#eef8f1}
+  .cand:first-child{grid-column:1 / -1} .cand:first-child img{height:150px}
+  .fila{display:flex;gap:6px;margin:6px 0;flex-wrap:wrap}
+  .fila input{flex:1;min-width:0;font:inherit;padding:6px 10px;border:1px solid var(--borde);border-radius:8px}
+  .vacio-msg{color:var(--suave);padding:30px 10px;text-align:center}
+  .nota{font-size:12px;color:var(--suave);margin-top:10px;line-height:1.4}
+  table{width:100%;border-collapse:collapse;font-size:12px;margin-top:6px}
+  th,td{padding:3px 4px;text-align:right;border-bottom:1px solid var(--borde)}
+  th:first-child,td:first-child{text-align:left}
+  #stats h3{font-size:13px;margin:16px 0 0}
+
+  /* ---- ver todas */
+  #todas{position:fixed;inset:0;background:rgba(31,42,31,.55);z-index:8;display:flex;align-items:center;justify-content:center;padding:20px}
+  #todas[hidden]{display:none}
+  .caja-t{background:var(--panel);border-radius:12px;width:min(1200px,100%);height:100%;display:flex;flex-direction:column;overflow:hidden}
+  .cab{display:flex;gap:10px;align-items:center;padding:10px 14px;border-bottom:1px solid var(--borde);flex-wrap:wrap}
+  .cab h3{margin:0;font-size:15px}
+  .cab input{font:inherit;padding:5px 10px;border:1px solid var(--borde);border-radius:8px;width:170px}
+  .cuerpo-t{flex:1;display:flex;min-height:0}
+  #todas-izq{flex:none;width:46vw;max-width:50%;padding:12px;border-right:1px solid var(--borde);display:flex;flex-direction:column;gap:8px;align-items:center;overflow-y:auto}
+  #todas-rec{width:100%;height:48vh;object-fit:contain;background:#222;border-radius:8px}
+  .nav-t{display:flex;gap:10px;align-items:center;font-size:14px}
+  .comparar{display:flex;gap:6px;align-items:center;font-size:13px}
+  .comparar button.on{background:var(--tinta);color:#fff;border-color:var(--tinta)}
+  #grilla{flex:1;overflow-y:auto;padding:12px;display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px;align-content:start}
+  .tv{padding:4px;text-align:left;display:flex;flex-direction:column;gap:2px}
+  .tv img{width:100%;height:105px;object-fit:contain;background:var(--fondo-vaca);border-radius:5px}
+  .tv b{font-size:14px} .tv small{font-size:11px;color:var(--suave)}
+  .tv.top{box-shadow:0 0 0 3px var(--azul) inset}
+  .tv.ocupada{opacity:.45}
+  .lados{display:flex;gap:4px;align-items:center;font-size:13px}
+  .lados button{padding:4px 10px}
+  .lados button.on{background:var(--tinta);color:#fff;border-color:var(--tinta)}
+  .tv .otro{font-size:10px;color:var(--rojo)}
+
+  #carga{position:fixed;inset:0;background:rgba(243,240,232,.85);display:flex;align-items:center;justify-content:center;z-index:10;text-align:center}
+  #carga[hidden]{display:none}
+  .ruedita{width:42px;height:42px;border:4px solid var(--borde);border-top-color:var(--verde);border-radius:50%;margin:0 auto 10px;animation:g 1s linear infinite}
+  @keyframes g{to{transform:rotate(360deg)}}
+</style>
+</head>
+<body>
+<header>
+  <h1>Vacas en el campo</h1>
+  <span class="chip" id="chip-proc">–</span>
+  <span class="chip" id="chip-rec">–</span>
+  <span class="chip" id="chip-afin">–</span>
+  <span class="espacio"></span>
+  <button class="chip" id="chip-yo" title="Cambiar tu nombre" style="border:0;color:inherit">👤</button>
+  <span class="ayuda">1–5 asignar · A analizar este frame · T ver todas · U unir · S dividir acá · P para después · D descartar · N no sé · ↑ ↓ recorridos · ← → frames · Espacio siguiente</span>
+  <button id="btn-exportar" title="Guarda campo/resultado_por_frame.csv">Exportar</button>
+</header>
+
+<main>
+  <aside id="lista"></aside>
+  <section id="centro">
+    <div id="modo"></div>
+    <div id="visor"><div class="vacio-msg">Esperando los primeros recorridos… (se procesan en segundo plano)</div></div>
+    <div id="pie"></div>
+    <div id="acc-frame"></div>
+    <div id="tira-tit"></div>
+    <div id="tira"></div>
+  </section>
+  <aside id="der">
+    <div id="panel"></div>
+    <div id="stats"></div>
+  </aside>
+</main>
+
+<div id="todas" hidden>
+  <div class="caja-t">
+    <div class="cab">
+      <h3>Todas las vacas, de la más parecida a la menos</h3>
+      <input id="todas-filtro" placeholder="Filtrar por número…">
+      <span class="lados">Ver:
+        <button data-lado="A">Lado A</button>
+        <button data-lado="B">Lado B</button>
+        <button data-lado="campo" title="Cómo se vio desde arriba (solo vacas ya confirmadas en el campo)">Campo</button>
+      </span>
+      <span class="sub">Azul = las 5 más parecidas · gris = ya asignada a otro recorrido al mismo tiempo</span>
+      <span class="espacio"></span>
+      <button id="todas-cerrar">Cerrar (Esc)</button>
+    </div>
+    <div class="cuerpo-t">
+      <div id="todas-izq">
+        <img id="todas-rec" alt="">
+        <div class="nav-t">
+          <button id="t-ant" title="Frame anterior (←)">←</button>
+          <span id="t-frame"></span>
+          <button id="t-sig" title="Frame siguiente (→)">→</button>
+        </div>
+        <div class="comparar">Comparar con:
+          <button data-comp="frame">este frame</button>
+          <button data-comp="recorrido">todo el recorrido</button>
+        </div>
+        <div class="sub" id="t-ayuda"></div>
+      </div>
+      <div id="grilla"></div>
+    </div>
+  </div>
+</div>
+
+<div id="carga" hidden><div><div class="ruedita"></div><p id="carga-txt">Cargando…</p></div></div>
+<datalist id="lista-vacas"></datalist>
+
+<script>
+const $ = s => document.querySelector(s);
+let res = null, orden = [], selId = null, rec = null, vista = 0, ocupado = false, todas = null, modoUnir = false;
+const abiertas = {pendientes:true, despues:false, hechos:false};
+
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const seg = t => `${(+t).toFixed(1)} s`;
+const mmss = t => { t = Math.round(+t); return `${Math.floor(t/60)}:${String(t%60).padStart(2,"0")}`; };
+
+/* quién está usando esta compu (para que el equipo vea quién marcó cada cosa) */
+let nombre = "";
+try{ nombre = localStorage.getItem("campo_nombre") || ""; }catch(e){}
+function pedirNombre(){
+  let n = "";
+  while(!n){ n = (prompt("¿Cómo te llamás? (así el equipo ve quién marcó cada recorrido)", nombre) || "").trim(); if(!n && nombre) n = nombre; }
+  nombre = n.slice(0, 40);
+  try{ localStorage.setItem("campo_nombre", nombre); }catch(e){}
+  $("#chip-yo").textContent = `👤 ${nombre}`;
+}
+const deOtro = x => x && x.tomado && x.tomado !== nombre;
+
+async function api(url, body){
+  if(body !== undefined) body = {...body, por: nombre};
+  const op = body === undefined ? {} : {method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify(body)};
+  const r = await fetch(url, op);
+  const j = await r.json().catch(() => ({}));
+  if(!r.ok) throw new Error(j.error || `Error ${r.status}`);
+  return j;
+}
+function cargando(si, txt){ $("#carga").hidden = !si; if(txt) $("#carga-txt").textContent = txt; }
+
+/* ------------------------------------------------------------------ datos */
+
+function aplicarResumen(r){
+  res = r;
+  orden = [...r.pendientes.map(x => ({...x, grupo:"pendientes"})),
+           ...r.despues.map(x => ({...x, grupo:"despues"})),
+           ...r.hechos.map(x => ({...x, grupo:"hechos"}))];
+  renderChips(); renderLista(); renderStats();
+  $("#lista-vacas").innerHTML = r.vacas.map(v => `<option value="${esc(v)}">`).join("");
+}
+
+async function refrescar(){   // cada pocos segundos: suma los recorridos nuevos sin mover lo que estás mirando
+  if(ocupado || !$("#todas").hidden) return;
+  try{
+    aplicarResumen(await api("/api/resumen"));
+    if(!selId && res.pendientes.length){ const libre = res.pendientes.find(x => !deOtro(x)); if(libre) seleccionar(libre.id); }
+  }catch(e){}
+}
+
+async function seleccionar(id, mantenerVista){
+  if(!id){ selId = null; rec = null; renderCentro(); renderPanel(); renderLista(); return; }
+  selId = id;
+  try{
+    rec = await api(`/api/recorrido?id=${encodeURIComponent(id)}`);
+    if(!rec.etiqueta && !deOtro(rec)) api("/api/tomar", {id}).catch(() => {});
+    if(!mantenerVista) vista = Math.max(0, rec.dets.findIndex(d => d.clave === rec.mejor));
+  }catch(e){ rec = null; }
+  renderLista(); renderCentro(); renderPanel();
+}
+
+function siguienteDe(id){
+  const pend = res.pendientes.filter(x => x.id !== id && !deOtro(x));   // salta los que está mirando otro
+  if(!pend.length) return null;
+  const actual = orden.find(x => x.id === id);
+  return (pend.find(x => actual && x.t0 >= actual.t0) || pend[0]).id;
+}
+
+async function hacer(url, body, siguiente){
+  if(ocupado) return;
+  ocupado = true;
+  try{
+    const r = await api(url, body);
+    aplicarResumen(r.resumen || r);
+    const destino = typeof siguiente === "function" ? siguiente(r) : siguiente;
+    await seleccionar(destino);
+  }catch(e){ alert(e.message); }
+  finally{ ocupado = false; }
+}
+
+const CORTO = {cortada:"Vaca cortada", dos_vacas:"Dos vacas", otra_vaca:"Es otra vaca", no_se_ve:"No se ve bien"};
+const ICONO = {cortada:"✂", dos_vacas:"👥", otra_vaca:"🔀", no_se_ve:"👁"};
+const MOTIVOS_D = [["chica","Muy chica / lejos"], ["no_se_ve","Tapada o no se ve"], ["no_es_vaca","No es una vaca"],
+                   ["amontonadas","Amontonadas"], ["otro","Otro motivo"]];
+let motivosAbiertos = false;
+
+async function marcarFrame(motivo){
+  if(!rec || ocupado) return;
+  const d = rec.dets[vista];
+  ocupado = true;
+  try{
+    rec = await api("/api/marcar", {id:rec.id, clave:d.clave, motivo: motivo || null});
+    candFrame = null;
+    renderCentro(); renderPanel();
+    aplicarResumen(await api("/api/resumen"));
+  }catch(e){ alert(e.message); }
+  finally{ ocupado = false; }
+}
+function abrirMotivos(){ motivosAbiertos = !motivosAbiertos; $("#motivos")?.classList.toggle("on", motivosAbiertos); }
+function descartarCon(motivo){ motivosAbiertos = false; rec && hacer("/api/etiquetar", {id:rec.id, accion:"descartar", motivo}, siguienteDe(rec.id) || rec.id); }
+
+let candFrame = null;   // {id, clave, candidatos}: las 5 según un frame elegido
+async function analizarFrame(){
+  if(!rec || ocupado) return;
+  const d = rec.dets[vista];
+  ocupado = true;
+  cargando(true, d.huella ? "Analizando este frame…" : "Calculando la huella de este frame y comparando (unos segundos)…");
+  try{
+    const r = await api("/api/analizar", {id:rec.id, clave:d.clave});
+    rec = r.recorrido;
+    candFrame = {id:rec.id, clave:r.clave, candidatos:r.candidatos};
+    renderCentro(); renderPanel();
+  }catch(e){ alert(e.message); }
+  finally{ ocupado = false; cargando(false); }
+}
+
+const etiquetar = (accion, vaca) => rec && hacer("/api/etiquetar", {id:rec.id, accion, vaca},
+  accion === "borrar" ? rec.id : siguienteDe(rec.id) || rec.id);
+
+function asignarBuscador(){
+  const inp = $("#buscar");
+  const v = inp.value.trim();
+  if(!v) return;
+  if(!res.vacas.includes(v) && !confirm(`"${v}" no está en las referencias.\n¿Agregarla como vaca nueva?`)) return;
+  inp.value = ""; inp.blur();
+  etiquetar("vaca", v);
+}
+
+function iniciarUnir(){
+  if(!rec) return;
+  modoUnir = !modoUnir;
+  $("#modo").style.display = modoUnir ? "block" : "none";
+  $("#modo").innerHTML = `<b>Unir:</b> hacé clic en la lista en el otro recorrido que es la misma vaca que el que estás viendo (Esc para cancelar).`;
+  renderLista(); renderPanel();
+}
+function unirCon(otro){
+  modoUnir = false; $("#modo").style.display = "none";
+  if(otro === rec.id) return renderLista();
+  if(!confirm("¿Unir estos dos recorridos? Quedan como una sola vaca.")) return renderLista();
+  hacer("/api/unir", {a:rec.id, b:otro}, r => r.id);
+}
+function dividir(){
+  if(!rec) return;
+  const d = rec.dets[vista];
+  if(vista === 0) return alert("Para dividir, pará en el frame donde empieza la otra vaca (con ← →) y tocá Dividir.");
+  if(!confirm(`¿Dividir desde ${seg(d.t)}? Ese frame y los siguientes pasan a ser un recorrido nuevo.`)) return;
+  hacer("/api/dividir", {id:rec.id, clave:d.clave}, r => r.id);
+}
+const postergar = () => rec && hacer("/api/postergar", {id:rec.id, si:!rec.despues}, siguienteDe(rec.id) || rec.id);
+
+/* ------------------------------------------------------------------ render */
+
+function renderChips(){
+  const p = res.progreso;
+  const falta = p.seg_por_frame ? (p.total - p.hechos) * p.seg_por_frame / 60 : null;
+  $("#chip-proc").textContent = `Procesado ${p.hechos} / ${p.total} frames` +
+    (p.hechos < p.total ? (falta != null ? ` · faltan ~${falta < 90 ? Math.round(falta) + " min" : (falta/60).toFixed(1) + " h"}` : " · procesando…") : " ✔");
+  $("#chip-rec").textContent = `${res.pendientes.length} por revisar · ${res.hechos.length} hechos · ${res.despues.length} para después`;
+  const af = res.afinado;
+  $("#chip-afin").textContent = af ? `Huella afinada · ${af.del_campo} recortes del campo` : "Huella sin afinar";
+}
+
+function tagDe(x){
+  const e = x.etiqueta;
+  const mont = x.amontonado ? ` <span class="tag mont">amontonada</span>` : "";
+  const por = e && e.por ? ` <span class="sub" style="margin:0">· ${esc(e.por)}</span>` : "";
+  if(!e) return deOtro(x) ? `<span class="tag otro">👤 lo mira ${esc(x.tomado)}</span>${mont}` : `<span class="tag">sin revisar</span>${mont}`;
+  if(e.accion === "vaca") return `<span class="tag ok">#${esc(e.vaca)}</span>${mont}${por}`;
+  return `<span class="tag ${e.accion}">${e.accion === "descartar" ? "descartado" : "no sé"}</span>${mont}${por}`;
+}
+function claseDe(x){ const e = x.etiqueta; return !e ? "" : e.accion === "vaca" ? "ok" : e.accion; }
+
+function renderLista(){
+  const sec = (clave, titulo, items) => `
+    <div class="seccion" data-sec="${clave}">${abiertas[clave] ? "▾" : "▸"} ${titulo} (${items.length})</div>
+    <div class="grupo ${abiertas[clave] ? "" : "cerrado"}">${items.map(x => `
+      <div class="rec ${claseDe(x)} ${x.id === selId ? "sel" : ""} ${modoUnir && x.id !== selId ? "unible" : ""}" data-id="${x.id}">
+        <img src="/img/recorte?clave=${encodeURIComponent(x.mejor)}&lado=160" loading="lazy">
+        <div class="txt"><b>${mmss(x.t0)} → ${mmss(x.t1)}</b><br>${x.n} frames<br>${tagDe(x)}</div>
+      </div>`).join("") || '<div class="sub">—</div>'}</div>`;
+  $("#lista").innerHTML = sec("pendientes", "POR REVISAR", res.pendientes) +
+    sec("despues", "PARA DESPUÉS (amontonadas / dudosas)", res.despues) + sec("hechos", "HECHOS", res.hechos);
+}
+
+function renderCentro(){
+  if(!rec){
+    $("#visor").innerHTML = `<div class="vacio-msg">${res && res.progreso.hechos < res.progreso.total
+      ? "Procesando… los recorridos aparecen a medida que cada vaca termina de pasar." : "Elegí un recorrido de la izquierda."}</div>`;
+    $("#tira").innerHTML = ""; $("#pie").textContent = ""; $("#tira-tit").textContent = ""; $("#acc-frame").innerHTML = ""; return;
+  }
+  vista = Math.min(vista, rec.dets.length - 1);
+  const d = rec.dets[vista];
+  if(!$("#img-frame")) $("#visor").innerHTML = `<div id="marco"><img id="img-frame" alt=""><div id="caja"></div></div>`;
+  const src = `/img/frame/${encodeURIComponent(d.frame)}`;
+  if($("#img-frame").getAttribute("src") !== src) $("#img-frame").setAttribute("src", src);
+  const [x1,y1,x2,y2] = d.box, c = $("#caja");
+  c.style.left = `${x1/rec.ancho*100}%`; c.style.top = `${y1/rec.alto*100}%`;
+  c.style.width = `${(x2-x1)/rec.ancho*100}%`; c.style.height = `${(y2-y1)/rec.alto*100}%`;
+  $("#pie").textContent = `${d.frame} · ${mmss(d.t)} (${seg(d.t)}) · frame ${vista+1} de ${rec.dets.length} del recorrido`;
+  $("#tira-tit").textContent = `Recorrido completo (${rec.dets.length} frames). Lo que elijas vale para todos. Si a partir de un frame es otra vaca: pará ahí y tocá Dividir (S).`;
+  $("#tira").innerHTML = rec.dets.map((x, i) => `
+    <div class="mini ${i === vista ? "actual" : ""} ${x.problema ? "prob" : ""}" data-i="${i}">
+      <img src="/img/recorte?clave=${encodeURIComponent(x.clave)}&lado=200" loading="lazy">
+      <small>${mmss(x.t)}</small>${x.problema ? `<span class="p" title="${esc(rec.motivos_frame[x.problema])}">⚠ ${esc(CORTO[x.problema])}</span>`
+        : x.huella ? '<span class="h" title="Se usa para comparar">huella</span>' : ""}
+    </div>`).join("");
+  // qué está mal en ESTE frame
+  $("#acc-frame").innerHTML = d.problema
+    ? `<span class="marca">⚠ ${esc(rec.motivos_frame[d.problema])}</span>
+       <button data-marca="">✓ Quitar marca</button>`
+    : `<span class="sub" style="margin:0">¿Este frame está mal?</span>` +
+      Object.entries(rec.motivos_frame).map(([k, txt]) =>
+        `<button data-marca="${k}" title="${esc(txt)}">${ICONO[k]} ${esc(CORTO[k])}</button>`).join("");
+  $("#tira .actual")?.scrollIntoView({block:"nearest", inline:"center"});
+}
+
+function renderPanel(){
+  if(!rec){ $("#panel").innerHTML = ""; return; }
+  const e = rec.etiqueta;
+  const por = e && e.por ? ` · marcado por <b>${esc(e.por)}</b>` : "";
+  const estado = !e && deOtro(rec) ? `<div class="estado otro">👤 <b>${esc(rec.tomado)}</b> está mirando este recorrido. Mejor pasá al siguiente (Espacio).</div>`
+    : !e ? `<div class="estado">Sin revisar${rec.amontonado ? " · <b>vacas amontonadas</b>: revisá bien el recorrido" : ""}</div>`
+    : e.accion === "vaca" ? `<div class="estado ok">Asignado a <b>#${esc(e.vaca)}</b> en los ${rec.n} frames${
+        e.posicion ? ` (estaba ${e.posicion}° en el ranking)` : e.posicion === 0 ? " (fuera del ranking)" : ""}${por}</div>`
+    : e.accion === "descartar" ? `<div class="estado descartar">Descartado${e.motivo ? ": " + esc((MOTIVOS_D.find(m => m[0] === e.motivo) || [, e.motivo])[1]) : ""}${por}</div>`
+    : `<div class="estado nose">Marcado como “no sé”${por}</div>`;
+  const porFrame = candFrame && candFrame.id === rec.id ? candFrame : null;
+  const lista = porFrame ? porFrame.candidatos : rec.candidatos;
+  const dFrame = porFrame ? rec.dets.find(x => x.clave === porFrame.clave) : null;
+  const origenCands = porFrame
+    ? `<div class="sub">Las 5 más parecidas según <b>el frame ${dFrame ? mmss(dFrame.t) : ""}</b> · <a href="#" id="ver-rec">volver a todo el recorrido</a></div>`
+    : `<div class="sub">Las 5 más parecidas según <b>todo el recorrido</b></div>`;
+  const cands = lista.map((c, k) => `
+    <button class="cand ${e && e.vaca === c.vaca ? "elegida" : ""}" data-vaca="${esc(c.vaca)}">
+      <img src="/img/galeria?t=${c.t}&id=${encodeURIComponent(c.id)}" loading="lazy">
+      <span class="nom"><b>${k+1}</b> · Vaca #${esc(c.vaca)}</span>
+      <small>similitud ${(c.score*100).toFixed(1)}% · ${c.t === "c" ? "vista en el campo" : "referencia"}</small>
+    </button>`).join("");
+  $("#panel").innerHTML = `
+    <h2>Recorrido ${mmss(rec.t0)} → ${mmss(rec.t1)}</h2>
+    <div class="sub">${rec.n} frames · ${rec.dets.filter(d => d.huella).length} recortes con huella</div>
+    ${estado}
+    <div class="fila"><button id="btn-analizar" title="Parate con ← → en el frame donde mejor se ve la vaca">🔍 Analizar este frame (A)</button></div>
+    ${origenCands}
+    <div id="cands">${cands || '<div class="vacio-msg">Sin candidatos</div>'}</div>
+    <div class="fila"><button id="btn-todas">🔎 Ninguna de estas: ver todas (T)</button></div>
+    <div class="fila">
+      <input id="buscar" list="lista-vacas" placeholder="Otra vaca: escribí el número…">
+      <button id="btn-asignar">Asignar</button>
+    </div>
+    <div class="fila">
+      <button id="btn-descartar">Descartar recorrido (D) ▾</button>
+      <button data-acc="nose">No sé (N)</button>
+      ${e ? '<button data-acc="borrar" class="peligro">Quitar etiqueta</button>' : ""}
+    </div>
+    <div id="motivos" class="${motivosAbiertos ? "on" : ""}">
+      <span class="sub" style="margin:0">¿Por qué lo descartás? (tecla 1–5)</span>
+      ${MOTIVOS_D.map(([k, txt], i) => `<button data-desc="${k}"><b>${i+1}</b> · ${txt}</button>`).join("")}
+    </div>
+    <div class="fila">
+      <button id="btn-unir" class="${modoUnir ? "activo" : ""}">🔗 Unir con otro (U)</button>
+      <button id="btn-dividir">✂ Dividir acá (S)</button>
+      <button id="btn-despues">${rec.despues ? "↩ Sacar de “para después”" : "⏸ Para después (P)"}</button>
+    </div>
+    <div class="nota">El número que elijas se pone en <b>todos los frames del recorrido</b>. Una vaca asignada a otro
+      recorrido que se ve al mismo tiempo no se propone (no puede estar en dos lugares a la vez).</div>`;
+}
+
+function pct(a, b){ return b ? `${Math.round(a / b * 100)}%` : "–"; }
+function renderStats(){
+  const s = res.estadisticas;
+  $("#stats").innerHTML = `
+    <h3>Cómo viene acertando (por recorrido)</h3>
+    <table>
+      <tr><th>Vacas</th><th>Acierto 1°</th><th>En top 5</th><th>Nuevas</th><th>Descartados</th></tr>
+      <tr><td>${s.n}</td><td>${pct(s.top1, s.n)}</td><td>${pct(s.top5, s.n)}</td><td>${s.nuevas}</td><td>${s.descartados}</td></tr>
+    </table>
+    <h3>Descartados por motivo</h3>
+    <table>${MOTIVOS_D.map(([k, txt]) => `<tr><td>${txt}</td><td>${(s.por_motivo || {})[k] || 0}</td></tr>`).join("")}</table>
+    <h3>Frames marcados con problemas</h3>
+    <table>${Object.entries(CORTO).map(([k, txt]) => `<tr><td>${ICONO[k]} ${txt}</td><td>${(s.frames_marcados || {})[k] || 0}</td></tr>`).join("")}</table>`;
+}
+
+/* ------------------------------------------------------------------ ver todas */
+
+let compararCon = "frame";   // "frame" = el frame donde estás parado · "recorrido" = todo el recorrido
+let pedidoTodas = 0;
+
+async function cargarTodas(){
+  const d = rec.dets[vista];
+  const n = ++pedidoTodas;
+  $("#t-ayuda").textContent = compararCon === "frame" && !d.huella
+    ? "Calculando la huella de este frame (unos segundos)…" : "Buscando…";
+  try{
+    const url = `/api/todas?id=${encodeURIComponent(rec.id)}` + (compararCon === "frame" ? `&clave=${encodeURIComponent(d.clave)}` : "");
+    const r = await api(url);
+    if(n !== pedidoTodas) return;   // ya se pidió otro frame
+    todas = r;
+    if(compararCon === "frame") d.huella = true;
+    $("#t-ayuda").textContent = compararCon === "frame"
+      ? "Ordenadas según el frame que estás viendo." : "Ordenadas según todo el recorrido.";
+    renderTodas(); $("#grilla").scrollTop = 0;
+  }catch(e){ if(n === pedidoTodas) $("#t-ayuda").textContent = e.message; }
+}
+function renderVistaTodas(){
+  const d = rec.dets[vista];
+  $("#todas-rec").src = `/img/recorte?clave=${encodeURIComponent(d.clave)}&lado=800`;
+  $("#t-frame").textContent = `Frame ${vista+1} de ${rec.dets.length} · ${mmss(d.t)}`;
+  document.querySelectorAll(".comparar button").forEach(b => b.classList.toggle("on", b.dataset.comp === compararCon));
+}
+let timerTodas = null;
+function moverTodas(paso){
+  vista = Math.max(0, Math.min(rec.dets.length - 1, vista + paso));
+  renderVistaTodas(); renderCentro();
+  if(compararCon === "frame"){ clearTimeout(timerTodas); timerTodas = setTimeout(cargarTodas, 400); }
+}
+async function abrirTodas(){
+  if(!rec) return;
+  $("#todas-filtro").value = "";
+  $("#grilla").innerHTML = "";
+  $("#todas").hidden = false;
+  renderVistaTodas();
+  await cargarTodas();
+  $("#todas-filtro").focus();
+}
+$("#t-ant").addEventListener("click", ev => { ev.stopPropagation(); moverTodas(-1); });
+$("#t-sig").addEventListener("click", ev => { ev.stopPropagation(); moverTodas(1); });
+document.querySelectorAll(".comparar button").forEach(b => b.addEventListener("click", ev => {
+  ev.stopPropagation(); compararCon = b.dataset.comp; renderVistaTodas(); cargarTodas();
+}));
+function cerrarTodas(){ $("#todas").hidden = true; }
+let ladoVer = "A";
+try{ ladoVer = localStorage.getItem("campo_lado_ver") || "A"; }catch(e){}
+function elegirLado(l){
+  ladoVer = l;
+  try{ localStorage.setItem("campo_lado_ver", l); }catch(e){}
+  renderTodas();
+}
+function fotoDe(v){
+  // la del lado elegido; si esa vaca no tiene foto de ese lado, la otra (y se avisa)
+  const orden = [ladoVer, "A", "B", "campo"];
+  for(const l of orden) if(v.fotos[l]) return {t:v.fotos[l][0], id:v.fotos[l][1], lado:l};
+  return null;
+}
+function renderTodas(){
+  document.querySelectorAll(".lados button").forEach(b => b.classList.toggle("on", b.dataset.lado === ladoVer));
+  const f = $("#todas-filtro").value.trim().toLowerCase();
+  const nombres = {A:"lado A", B:"lado B", campo:"campo"};
+  $("#grilla").innerHTML = todas.vacas.filter(v => !f || v.vaca.toLowerCase().includes(f)).map((v, k) => {
+    const foto = fotoDe(v);
+    return `
+    <button class="tv ${k < 5 && !f ? "top" : ""} ${v.ocupada ? "ocupada" : ""}" data-vaca="${esc(v.vaca)}">
+      ${foto ? `<img src="/img/galeria?t=${foto.t}&id=${encodeURIComponent(foto.id)}" loading="lazy">` : '<div class="vacio-msg">sin foto</div>'}
+      <b>#${esc(v.vaca)}</b>
+      <small>${v.score != null ? `${(v.score*100).toFixed(1)}%` : "sin dato"}${v.ocupada ? " · ya asignada a la vez" : ""}</small>
+      ${foto && foto.lado !== ladoVer ? `<span class="otro">no tiene ${nombres[ladoVer]}: se muestra ${nombres[foto.lado]}</span>` : ""}
+    </button>`;
+  }).join("") || `<div class="vacio-msg">Ninguna vaca coincide con el filtro.</div>`;
+}
+document.querySelectorAll(".lados button").forEach(b => b.addEventListener("click", ev => { ev.stopPropagation(); elegirLado(b.dataset.lado); }));
+$("#todas-filtro").addEventListener("input", renderTodas);
+$("#todas-filtro").addEventListener("keydown", ev => {
+  if(ev.key === "ArrowLeft" && !ev.target.value){ ev.preventDefault(); moverTodas(-1); }
+  else if(ev.key === "ArrowRight" && !ev.target.value){ ev.preventDefault(); moverTodas(1); }
+  else if(ev.key === "Escape"){ ev.stopPropagation(); cerrarTodas(); }
+  else if(ev.key === "Enter"){ const b = $("#grilla .tv"); if(b){ cerrarTodas(); etiquetar("vaca", b.dataset.vaca); } }
+});
+$("#todas-cerrar").addEventListener("click", cerrarTodas);
+$("#grilla").addEventListener("click", ev => {
+  const b = ev.target.closest(".tv");
+  if(b){ ev.stopPropagation(); cerrarTodas(); etiquetar("vaca", b.dataset.vaca); }
+});
+
+/* ------------------------------------------------------------------ eventos */
+
+document.addEventListener("click", ev => {
+  const s = ev.target.closest(".seccion");
+  if(s){ abiertas[s.dataset.sec] = !abiertas[s.dataset.sec]; renderLista(); return; }
+  const r = ev.target.closest(".rec");
+  if(r){ if(modoUnir) unirCon(r.dataset.id); else seleccionar(r.dataset.id); return; }
+  const mini = ev.target.closest(".mini");
+  if(mini){ vista = +mini.dataset.i; renderCentro(); return; }
+  const cand = ev.target.closest(".cand");
+  if(cand){ etiquetar("vaca", cand.dataset.vaca); return; }
+  const acc = ev.target.closest("[data-acc]");
+  if(acc){ etiquetar(acc.dataset.acc); return; }
+  const id = ev.target.id;
+  if(id === "ver-rec"){ ev.preventDefault(); candFrame = null; renderPanel(); return; }
+  const mb = ev.target.closest("[data-marca]");
+  if(mb){ marcarFrame(mb.dataset.marca); return; }
+  const db = ev.target.closest("[data-desc]");
+  if(db){ descartarCon(db.dataset.desc); return; }
+  if(id === "btn-descartar"){ abrirMotivos(); return; }
+  if(id === "btn-asignar") asignarBuscador();
+  else if(id === "btn-analizar") analizarFrame();
+  else if(id === "btn-todas") abrirTodas();
+  else if(id === "btn-unir") iniciarUnir();
+  else if(id === "btn-dividir") dividir();
+  else if(id === "btn-despues") postergar();
+});
+
+$("#btn-exportar").addEventListener("click", async () => {
+  try{ const r = await api("/api/exportar", {}); alert(`Guardado ${r.filas} filas en:\n${r.archivo}`); }
+  catch(e){ alert(e.message); }
+});
+
+function moverEnLista(paso){
+  const vis = orden.filter(x => abiertas[x.grupo]);
+  if(!vis.length) return;
+  const i = vis.findIndex(x => x.id === selId);
+  seleccionar(vis[(i + paso + vis.length) % vis.length].id);
+}
+
+document.addEventListener("keydown", ev => {
+  if(!$("#todas").hidden){
+    if(ev.key === "Escape") cerrarTodas();
+    else if(ev.target.tagName !== "INPUT" && ev.key === "ArrowLeft"){ ev.preventDefault(); moverTodas(-1); }
+    else if(ev.target.tagName !== "INPUT" && ev.key === "ArrowRight"){ ev.preventDefault(); moverTodas(1); }
+    return;
+  }
+  if(ev.target.tagName === "INPUT"){
+    if(ev.key === "Enter") asignarBuscador();
+    else if(ev.key === "Escape") ev.target.blur();
+    return;
+  }
+  if(ev.key === "Escape" && modoUnir){ modoUnir = false; $("#modo").style.display = "none"; renderLista(); renderPanel(); return; }
+  if(!res) return;
+  const k = ev.key.toLowerCase();
+  const visibles = rec ? (candFrame && candFrame.id === rec.id ? candFrame.candidatos : rec.candidatos) : [];
+  if(motivosAbiertos && /^[1-5]$/.test(k)){ descartarCon(MOTIVOS_D[+k - 1][0]); return; }
+  if(motivosAbiertos && k === "escape"){ abrirMotivos(); return; }
+  if(/^[1-5]$/.test(k) && visibles[+k - 1]) etiquetar("vaca", visibles[+k - 1].vaca);
+  else if(k === "a" && rec) analizarFrame();
+  else if(k === "t" && rec){ ev.preventDefault(); abrirTodas(); }
+  else if(k === "d" && rec) abrirMotivos();
+  else if(k === "n" && rec) etiquetar("nose");
+  else if(k === "u" && rec) iniciarUnir();
+  else if(k === "s" && rec) dividir();
+  else if(k === "p" && rec) postergar();
+  else if(k === "arrowdown"){ ev.preventDefault(); moverEnLista(1); }
+  else if(k === "arrowup"){ ev.preventDefault(); moverEnLista(-1); }
+  else if(k === "arrowright" && rec){ ev.preventDefault(); vista = Math.min(vista + 1, rec.dets.length - 1); renderCentro(); }
+  else if(k === "arrowleft" && rec){ ev.preventDefault(); vista = Math.max(vista - 1, 0); renderCentro(); }
+  else if(k === " "){ ev.preventDefault(); const s = siguienteDe(selId); if(s) seleccionar(s); }
+  else if(k === "/"){ ev.preventDefault(); $("#buscar")?.focus(); }
+});
+
+$("#chip-yo").addEventListener("click", ev => { ev.stopPropagation(); pedirNombre(); });
+(async () => { pedirNombre(); await refrescar(); setInterval(refrescar, 8000); })();
+</script>
+</body>
+</html>
