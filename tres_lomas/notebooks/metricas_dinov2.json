@@ -1,0 +1,38 @@
+{
+ "antes": {
+  "A_referencias_y_campo": {
+   "top1": 0.6136363636363636,
+   "top5": 0.8068181818181818,
+   "recorridos": 88,
+   "vacas_candidatas": 124
+  },
+  "B_solo_referencias": {
+   "top1": 0.03409090909090909,
+   "top5": 0.11363636363636363,
+   "recorridos": 88,
+   "vacas_candidatas": 124
+  }
+ },
+ "despues": {
+  "A_referencias_y_campo": {
+   "top1": 0.7272727272727273,
+   "top5": 0.8863636363636364,
+   "recorridos": 88,
+   "vacas_candidatas": 124
+  },
+  "B_solo_referencias": {
+   "top1": 0.7386363636363636,
+   "top5": 0.9090909090909091,
+   "recorridos": 88,
+   "vacas_candidatas": 124
+  }
+ },
+ "config": {
+  "modelo_base": "vit_small_patch14_dinov2.lvd142m",
+  "epocas": 12,
+  "bloques_entrenables": 4,
+  "imagenes_entrenamiento": 13541,
+  "vacas": 124,
+  "descartados_recorridos_largos": 765
+ }
+}

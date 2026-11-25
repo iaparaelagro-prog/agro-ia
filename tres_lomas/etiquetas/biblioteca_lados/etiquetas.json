@@ -1,0 +1,2184 @@
+{
+ "desfile_camaras_000716_t00143s297.jpg|0": {
+  "accion": "descartar",
+  "lote": 1,
+  "frame": "desfile_camaras_000716_t00143s297.jpg",
+  "box": [
+   1604.4898681640625,
+   0.24902629852294922,
+   1695.4119873046875,
+   89.56626892089844
+  ],
+  "ts": 1792445212,
+  "recorrido": "b1",
+  "rep": true
+ },
+ "desfile_camaras_000723_t00144s634.jpg|0": {
+  "accion": "descartar",
+  "lote": 1,
+  "frame": "desfile_camaras_000723_t00144s634.jpg",
+  "box": [
+   1531.4732666015625,
+   57.59098434448242,
+   1616.1331787109375,
+   171.9143829345703
+  ],
+  "ts": 1792445212,
+  "recorrido": "b2",
+  "rep": false
+ },
+ "desfile_camaras_000724_t00144s840.jpg|0": {
+  "accion": "descartar",
+  "lote": 1,
+  "frame": "desfile_camaras_000724_t00144s840.jpg",
+  "box": [
+   1532.078857421875,
+   62.06819152832031,
+   1609.8314208984375,
+   198.84230041503906
+  ],
+  "ts": 1792445212,
+  "recorrido": "b2",
+  "rep": false
+ },
+ "desfile_camaras_000725_t00145s046.jpg|0": {
+  "accion": "descartar",
+  "lote": 1,
+  "frame": "desfile_camaras_000725_t00145s046.jpg",
+  "box": [
+   1528.53271484375,
+   59.11692810058594,
+   1605.6278076171875,
+   229.3989715576172
+  ],
+  "ts": 1792445212,
+  "recorrido": "b2",
+  "rep": false
+ },
+ "desfile_camaras_000726_t00145s252.jpg|0": {
+  "accion": "descartar",
+  "lote": 1,
+  "frame": "desfile_camaras_000726_t00145s252.jpg",
+  "box": [
+   1524.103271484375,
+   59.896339416503906,
+   1599.692138671875,
+   257.9573974609375
+  ],
+  "ts": 1792445212,
+  "recorrido": "b2",
+  "rep": true
+ },
+ "desfile_camaras_000727_t00145s457.jpg|0": {
+  "accion": "descartar",
+  "lote": 1,
+  "frame": "desfile_camaras_000727_t00145s457.jpg",
+  "box": [
+   1517.10791015625,
+   71.78292846679688,
+   1594.16162109375,
+   263.864990234375
+  ],
+  "ts": 1792445212,
+  "recorrido": "b2",
+  "rep": false
+ },
+ "desfile_camaras_000723_t00144s634.jpg|1": {
+  "accion": "vaca",
+  "lote": 1,
+  "frame": "desfile_camaras_000723_t00144s634.jpg",
+  "box": [
+   1690.4473876953125,
+   368.5943298339844,
+   1919.692138671875,
+   544.0878295898438
+  ],
+  "ts": 1792445212,
+  "recorrido": "b3",
+  "rep": false,
+  "vaca": "4930"
+ },
+ "desfile_camaras_000724_t00144s840.jpg|1": {
+  "accion": "vaca",
+  "lote": 1,
+  "frame": "desfile_camaras_000724_t00144s840.jpg",
+  "box": [
+   1640.7576904296875,
+   375.1991271972656,
+   1919.661376953125,
+   544.9241333007812
+  ],
+  "ts": 1792445212,
+  "recorrido": "b3",
+  "rep": false,
+  "vaca": "4930"
+ },
+ "desfile_camaras_000725_t00145s046.jpg|1": {
+  "accion": "vaca",
+  "lote": 1,
+  "frame": "desfile_camaras_000725_t00145s046.jpg",
+  "box": [
+   1598.501220703125,
+   375.25067138671875,
+   1880.562744140625,
+   548.2241821289062
+  ],
+  "ts": 1792445212,
+  "recorrido": "b3",
+  "rep": false,
+  "vaca": "4930"
+ },
+ "desfile_camaras_000726_t00145s252.jpg|1": {
+  "accion": "vaca",
+  "lote": 1,
+  "frame": "desfile_camaras_000726_t00145s252.jpg",
+  "box": [
+   1564.0350341796875,
+   376.9840393066406,
+   1851.1195068359375,
+   549.4129638671875
+  ],
+  "ts": 1792445212,
+  "recorrido": "b3",
+  "rep": false,
+  "vaca": "4930"
+ },
+ "desfile_camaras_000727_t00145s457.jpg|1": {
+  "accion": "vaca",
+  "lote": 1,
+  "frame": "desfile_camaras_000727_t00145s457.jpg",
+  "box": [
+   1530.2537841796875,
+   378.394775390625,
+   1812.8818359375,
+   555.8926391601562
+  ],
+  "ts": 1792445212,
+  "recorrido": "b3",
+  "rep": false,
+  "vaca": "4930"
+ },
+ "desfile_camaras_000728_t00145s663.jpg|0": {
+  "accion": "vaca",
+  "lote": 1,
+  "frame": "desfile_camaras_000728_t00145s663.jpg",
+  "box": [
+   1487.294677734375,
+   380.47412109375,
+   1780.0810546875,
+   571.1685791015625
+  ],
+  "ts": 1792445212,
+  "recorrido": "b3",
+  "rep": false,
+  "vaca": "4930"
+ },
+ "desfile_camaras_000729_t00145s869.jpg|0": {
+  "accion": "vaca",
+  "lote": 1,
+  "frame": "desfile_camaras_000729_t00145s869.jpg",
+  "box": [
+   1436.2877197265625,
+   389.3089599609375,
+   1746.6112060546875,
+   576.0324096679688
+  ],
+  "ts": 1792445212,
+  "recorrido": "b3",
+  "rep": false,
+  "vaca": "4930"
+ },
+ "desfile_camaras_000730_t00146s075.jpg|0": {
+  "accion": "vaca",
+  "lote": 1,
+  "frame": "desfile_camaras_000730_t00146s075.jpg",
+  "box": [
+   1384.099365234375,
+   402.97998046875,
+   1715.510009765625,
+   579.251220703125
+  ],
+  "ts": 1792445212,
+  "recorrido": "b3",
+  "rep": false,
+  "vaca": "4930"
+ },
+ "desfile_camaras_000731_t00146s280.jpg|0": {
+  "accion": "vaca",
+  "lote": 1,
+  "frame": "desfile_camaras_000731_t00146s280.jpg",
+  "box": [
+   1329.938720703125,
+   415.7895202636719,
+   1708.0865478515625,
+   579.9345703125
+  ],
+  "ts": 1792445212,
+  "recorrido": "b3",
+  "rep": false,
+  "vaca": "4930"
+ },
+ "desfile_camaras_000732_t00146s486.jpg|0": {
+  "accion": "vaca",
+  "lote": 1,
+  "frame": "desfile_camaras_000732_t00146s486.jpg",
+  "box": [
+   1278.8756103515625,
+   414.87664794921875,
+   1681.118408203125,
+   578.739990234375
+  ],
+  "ts": 1792445212,
+  "recorrido": "b3",
+  "rep": false,
+  "vaca": "4930"
+ },
+ "desfile_camaras_000733_t00146s692.jpg|0": {
+  "accion": "vaca",
+  "lote": 1,
+  "frame": "desfile_camaras_000733_t00146s692.jpg",
+  "box": [
+   1238.3616943359375,
+   408.9992980957031,
+   1635.3643798828125,
+   586.0662841796875
+  ],
+  "ts": 1792445212,
+  "recorrido": "b3",
+  "rep": false,
+  "vaca": "4930",
+  "recorte": "identificacion\\recortes\\4930\\desfile_camaras_000733_t00146s692_d0.jpg"
+ },
+ "desfile_camaras_000734_t00146s898.jpg|0": {
+  "accion": "vaca",
+  "lote": 1,
+  "frame": "desfile_camaras_000734_t00146s898.jpg",
+  "box": [
+   1196.85498046875,
+   403.47747802734375,
+   1576.369384765625,
+   596.5982666015625
+  ],
+  "ts": 1792445212,
+  "recorrido": "b3",
+  "rep": false,
+  "vaca": "4930"
+ },
+ "desfile_camaras_000735_t00147s000.jpg|0": {
+  "accion": "vaca",
+  "lote": 1,
+  "frame": "desfile_camaras_000735_t00147s000.jpg",
+  "box": [
+   1170.9752197265625,
+   401.2949523925781,
+   1544.9345703125,
+   598.5205688476562
+  ],
+  "ts": 1792445212,
+  "recorrido": "b3",
+  "rep": true,
+  "vaca": "4930",
+  "posicion": 1,
+  "recorte": "identificacion\\recortes\\4930\\desfile_camaras_000735_t00147s000_d0.jpg"
+ },
+ "desfile_camaras_000736_t00147s206.jpg|0": {
+  "accion": "vaca",
+  "lote": 1,
+  "frame": "desfile_camaras_000736_t00147s206.jpg",
+  "box": [
+   1123.726318359375,
+   405.6708068847656,
+   1492.6387939453125,
+   604.7739868164062
+  ],
+  "ts": 1792445212,
+  "recorrido": "b3",
+  "rep": false,
+  "vaca": "4930"
+ },
+ "desfile_camaras_000737_t00147s412.jpg|0": {
+  "accion": "vaca",
+  "lote": 1,
+  "frame": "desfile_camaras_000737_t00147s412.jpg",
+  "box": [
+   1072.0103759765625,
+   418.8131103515625,
+   1444.677734375,
+   606.0785522460938
+  ],
+  "ts": 1792445212,
+  "recorrido": "b3",
+  "rep": false,
+  "vaca": "4930",
+  "recorte": "identificacion\\recortes\\4930\\desfile_camaras_000737_t00147s412_d0.jpg"
+ },
+ "desfile_camaras_000738_t00147s618.jpg|0": {
+  "accion": "vaca",
+  "lote": 1,
+  "frame": "desfile_camaras_000738_t00147s618.jpg",
+  "box": [
+   1017.7174072265625,
+   436.3669738769531,
+   1378.710693359375,
+   606.9274291992188
+  ],
+  "ts": 1792445212,
+  "recorrido": "b3",
+  "rep": false,
+  "vaca": "4930"
+ },
+ "desfile_camaras_000739_t00147s823.jpg|0": {
+  "accion": "vaca",
+  "lote": 1,
+  "frame": "desfile_camaras_000739_t00147s823.jpg",
+  "box": [
+   958.6417236328125,
+   436.6824951171875,
+   1302.00048828125,
+   603.0474243164062
+  ],
+  "ts": 1792445212,
+  "recorrido": "b3",
+  "rep": false,
+  "vaca": "4930"
+ },
+ "desfile_camaras_000740_t00148s029.jpg|0": {
+  "accion": "vaca",
+  "lote": 1,
+  "frame": "desfile_camaras_000740_t00148s029.jpg",
+  "box": [
+   910.9169311523438,
+   429.4565734863281,
+   1243.55419921875,
+   611.2542724609375
+  ],
+  "ts": 1792445212,
+  "recorrido": "b3",
+  "rep": false,
+  "vaca": "4930"
+ },
+ "desfile_camaras_000741_t00148s235.jpg|0": {
+  "accion": "vaca",
+  "lote": 1,
+  "frame": "desfile_camaras_000741_t00148s235.jpg",
+  "box": [
+   869.00341796875,
+   422.2814025878906,
+   1203.5233154296875,
+   611.12939453125
+  ],
+  "ts": 1792445212,
+  "recorrido": "b3",
+  "rep": false,
+  "vaca": "4930",
+  "recorte": "identificacion\\recortes\\4930\\desfile_camaras_000741_t00148s235_d0.jpg"
+ },
+ "desfile_camaras_000730_t00146s075.jpg|1": {
+  "accion": "nose",
+  "lote": 1,
+  "frame": "desfile_camaras_000730_t00146s075.jpg",
+  "box": [
+   1473.8291015625,
+   136.8528594970703,
+   1562.5833740234375,
+   285.14776611328125
+  ],
+  "ts": 1792445212,
+  "recorrido": "b4",
+  "rep": false
+ },
+ "desfile_camaras_000731_t00146s280.jpg|1": {
+  "accion": "nose",
+  "lote": 1,
+  "frame": "desfile_camaras_000731_t00146s280.jpg",
+  "box": [
+   1437.5875244140625,
+   143.30528259277344,
+   1552.84033203125,
+   314.038330078125
+  ],
+  "ts": 1792445212,
+  "recorrido": "b4",
+  "rep": false
+ },
+ "desfile_camaras_000732_t00146s486.jpg|1": {
+  "accion": "nose",
+  "lote": 1,
+  "frame": "desfile_camaras_000732_t00146s486.jpg",
+  "box": [
+   1410.6280517578125,
+   143.6710662841797,
+   1545.4134521484375,
+   323.4828796386719
+  ],
+  "ts": 1792445212,
+  "recorrido": "b4",
+  "rep": false
+ },
+ "desfile_camaras_000733_t00146s692.jpg|1": {
+  "accion": "nose",
+  "lote": 1,
+  "frame": "desfile_camaras_000733_t00146s692.jpg",
+  "box": [
+   1407.2197265625,
+   139.34742736816406,
+   1543.7940673828125,
+   334.8094787597656
+  ],
+  "ts": 1792445212,
+  "recorrido": "b4",
+  "rep": true
+ },
+ "desfile_camaras_000734_t00146s898.jpg|1": {
+  "accion": "nose",
+  "lote": 1,
+  "frame": "desfile_camaras_000734_t00146s898.jpg",
+  "box": [
+   1405.2376708984375,
+   168.83908081054688,
+   1531.8924560546875,
+   343.81414794921875
+  ],
+  "ts": 1792445212,
+  "recorrido": "b5",
+  "rep": false
+ },
+ "desfile_camaras_000735_t00147s000.jpg|1": {
+  "accion": "nose",
+  "lote": 1,
+  "frame": "desfile_camaras_000735_t00147s000.jpg",
+  "box": [
+   1394.4119873046875,
+   178.12762451171875,
+   1507.5147705078125,
+   343.19244384765625
+  ],
+  "ts": 1792445212,
+  "recorrido": "b5",
+  "rep": false
+ },
+ "desfile_camaras_000736_t00147s206.jpg|1": {
+  "accion": "nose",
+  "lote": 1,
+  "frame": "desfile_camaras_000736_t00147s206.jpg",
+  "box": [
+   1381.43701171875,
+   194.44692993164062,
+   1497.6141357421875,
+   352.6939392089844
+  ],
+  "ts": 1792445212,
+  "recorrido": "b5",
+  "rep": false
+ },
+ "desfile_camaras_000737_t00147s412.jpg|1": {
+  "accion": "nose",
+  "lote": 1,
+  "frame": "desfile_camaras_000737_t00147s412.jpg",
+  "box": [
+   1378.6033935546875,
+   205.52325439453125,
+   1488.91015625,
+   381.5738525390625
+  ],
+  "ts": 1792445212,
+  "recorrido": "b5",
+  "rep": false
+ },
+ "desfile_camaras_000738_t00147s618.jpg|1": {
+  "accion": "nose",
+  "lote": 1,
+  "frame": "desfile_camaras_000738_t00147s618.jpg",
+  "box": [
+   1357.2880859375,
+   206.94625854492188,
+   1481.6514892578125,
+   408.5380859375
+  ],
+  "ts": 1792445212,
+  "recorrido": "b5",
+  "rep": false
+ },
+ "desfile_camaras_000739_t00147s823.jpg|1": {
+  "accion": "nose",
+  "lote": 1,
+  "frame": "desfile_camaras_000739_t00147s823.jpg",
+  "box": [
+   1353.9105224609375,
+   207.30812072753906,
+   1476.1861572265625,
+   435.22283935546875
+  ],
+  "ts": 1792445212,
+  "recorrido": "b5",
+  "rep": false
+ },
+ "desfile_camaras_000740_t00148s029.jpg|1": {
+  "accion": "nose",
+  "lote": 1,
+  "frame": "desfile_camaras_000740_t00148s029.jpg",
+  "box": [
+   1353.60205078125,
+   185.86322021484375,
+   1472.14404296875,
+   446.18426513671875
+  ],
+  "ts": 1792445212,
+  "recorrido": "b5",
+  "rep": false
+ },
+ "desfile_camaras_000741_t00148s235.jpg|1": {
+  "accion": "nose",
+  "lote": 1,
+  "frame": "desfile_camaras_000741_t00148s235.jpg",
+  "box": [
+   1352.498291015625,
+   171.77096557617188,
+   1471.1435546875,
+   446.9722900390625
+  ],
+  "ts": 1792445212,
+  "recorrido": "b5",
+  "rep": true
+ },
+ "desfile_camaras_000742_t00148s441.jpg|0": {
+  "accion": "vaca",
+  "lote": 2,
+  "frame": "desfile_camaras_000742_t00148s441.jpg",
+  "box": [
+   825.5440673828125,
+   419.90899658203125,
+   1147.0853271484375,
+   617.7892456054688
+  ],
+  "ts": 1792446428,
+  "recorrido": "ant0",
+  "rep": false,
+  "auto": true,
+  "origen": "lote anterior",
+  "vaca": "4930",
+  "recorte": "identificacion\\recortes\\4930\\desfile_camaras_000742_t00148s441_d0.jpg"
+ },
+ "desfile_camaras_000744_t00148s852.jpg|0": {
+  "accion": "vaca",
+  "lote": 2,
+  "frame": "desfile_camaras_000744_t00148s852.jpg",
+  "box": [
+   721.7404174804688,
+   428.0049133300781,
+   1072.9593505859375,
+   620.3406372070312
+  ],
+  "ts": 1792446428,
+  "recorrido": "ant0",
+  "rep": false,
+  "auto": true,
+  "origen": "lote anterior",
+  "vaca": "4930",
+  "recorte": "identificacion\\recortes\\4930\\desfile_camaras_000744_t00148s852_d0.jpg"
+ },
+ "desfile_camaras_000745_t00149s058.jpg|0": {
+  "accion": "vaca",
+  "lote": 2,
+  "frame": "desfile_camaras_000745_t00149s058.jpg",
+  "box": [
+   674.2413330078125,
+   435.9953918457031,
+   1039.022216796875,
+   620.8314819335938
+  ],
+  "ts": 1792446428,
+  "recorrido": "ant0",
+  "rep": false,
+  "auto": true,
+  "origen": "lote anterior",
+  "vaca": "4930"
+ },
+ "desfile_camaras_000746_t00149s264.jpg|0": {
+  "accion": "vaca",
+  "lote": 2,
+  "frame": "desfile_camaras_000746_t00149s264.jpg",
+  "box": [
+   615.19482421875,
+   429.6248474121094,
+   998.69384765625,
+   613.6331176757812
+  ],
+  "ts": 1792446428,
+  "recorrido": "ant0",
+  "rep": true,
+  "auto": true,
+  "origen": "lote anterior",
+  "vaca": "4930",
+  "recorte": "identificacion\\recortes\\4930\\desfile_camaras_000746_t00149s264_d0.jpg"
+ },
+ "desfile_camaras_000748_t00149s675.jpg|0": {
+  "accion": "vaca",
+  "lote": 2,
+  "frame": "desfile_camaras_000748_t00149s675.jpg",
+  "box": [
+   526.4061279296875,
+   425.3976745605469,
+   890.955322265625,
+   569.4111938476562
+  ],
+  "ts": 1792446428,
+  "recorrido": "ant0",
+  "rep": false,
+  "auto": true,
+  "origen": "lote anterior",
+  "vaca": "4930"
+ },
+ "desfile_camaras_000749_t00149s881.jpg|0": {
+  "accion": "vaca",
+  "lote": 2,
+  "frame": "desfile_camaras_000749_t00149s881.jpg",
+  "box": [
+   481.9413757324219,
+   415.40643310546875,
+   874.9234008789062,
+   574.1748046875
+  ],
+  "ts": 1792446428,
+  "recorrido": "ant0",
+  "rep": false,
+  "auto": true,
+  "origen": "lote anterior",
+  "vaca": "4930"
+ },
+ "desfile_camaras_000750_t00150s086.jpg|0": {
+  "accion": "vaca",
+  "lote": 2,
+  "frame": "desfile_camaras_000750_t00150s086.jpg",
+  "box": [
+   439.8150329589844,
+   410.34368896484375,
+   820.9876708984375,
+   569.0990600585938
+  ],
+  "ts": 1792446428,
+  "recorrido": "ant0",
+  "rep": false,
+  "auto": true,
+  "origen": "lote anterior",
+  "vaca": "4930"
+ },
+ "desfile_camaras_000751_t00150s292.jpg|0": {
+  "accion": "vaca",
+  "lote": 2,
+  "frame": "desfile_camaras_000751_t00150s292.jpg",
+  "box": [
+   395.18682861328125,
+   421.3997497558594,
+   744.3392944335938,
+   570.4047241210938
+  ],
+  "ts": 1792446428,
+  "recorrido": "ant0",
+  "rep": false,
+  "auto": true,
+  "origen": "lote anterior",
+  "vaca": "4930"
+ },
+ "desfile_camaras_000752_t00150s498.jpg|0": {
+  "accion": "vaca",
+  "lote": 2,
+  "frame": "desfile_camaras_000752_t00150s498.jpg",
+  "box": [
+   353.2625427246094,
+   432.4466857910156,
+   718.2814331054688,
+   572.2244262695312
+  ],
+  "ts": 1792446428,
+  "recorrido": "ant0",
+  "rep": false,
+  "auto": true,
+  "origen": "lote anterior",
+  "vaca": "4930"
+ },
+ "desfile_camaras_000753_t00150s601.jpg|0": {
+  "accion": "vaca",
+  "lote": 2,
+  "frame": "desfile_camaras_000753_t00150s601.jpg",
+  "box": [
+   331.9041442871094,
+   438.9685363769531,
+   706.807373046875,
+   573.4525146484375
+  ],
+  "ts": 1792446428,
+  "recorrido": "ant0",
+  "rep": false,
+  "auto": true,
+  "origen": "lote anterior",
+  "vaca": "4930"
+ },
+ "desfile_camaras_000754_t00150s807.jpg|0": {
+  "accion": "vaca",
+  "lote": 2,
+  "frame": "desfile_camaras_000754_t00150s807.jpg",
+  "box": [
+   287.18572998046875,
+   429.1065673828125,
+   630.9779663085938,
+   573.7183227539062
+  ],
+  "ts": 1792446428,
+  "recorrido": "ant0",
+  "rep": false,
+  "auto": true,
+  "origen": "lote anterior",
+  "vaca": "4930"
+ },
+ "desfile_camaras_000755_t00151s012.jpg|0": {
+  "accion": "vaca",
+  "lote": 2,
+  "frame": "desfile_camaras_000755_t00151s012.jpg",
+  "box": [
+   231.31951904296875,
+   424.0503845214844,
+   575.8184204101562,
+   576.0774536132812
+  ],
+  "ts": 1792446428,
+  "recorrido": "ant0",
+  "rep": false,
+  "auto": true,
+  "origen": "lote anterior",
+  "vaca": "4930"
+ },
+ "desfile_camaras_000756_t00151s218.jpg|0": {
+  "accion": "vaca",
+  "lote": 2,
+  "frame": "desfile_camaras_000756_t00151s218.jpg",
+  "box": [
+   173.8600616455078,
+   421.5733337402344,
+   530.2603149414062,
+   576.1213989257812
+  ],
+  "ts": 1792446428,
+  "recorrido": "ant0",
+  "rep": false,
+  "auto": true,
+  "origen": "lote anterior",
+  "vaca": "4930"
+ },
+ "desfile_camaras_000757_t00151s424.jpg|0": {
+  "accion": "vaca",
+  "lote": 2,
+  "frame": "desfile_camaras_000757_t00151s424.jpg",
+  "box": [
+   125.40943908691406,
+   427.95721435546875,
+   514.6502685546875,
+   573.76318359375
+  ],
+  "ts": 1792446428,
+  "recorrido": "ant0",
+  "rep": false,
+  "auto": true,
+  "origen": "lote anterior",
+  "vaca": "4930"
+ },
+ "desfile_camaras_000758_t00151s630.jpg|0": {
+  "accion": "vaca",
+  "lote": 2,
+  "frame": "desfile_camaras_000758_t00151s630.jpg",
+  "box": [
+   84.75448608398438,
+   438.3102722167969,
+   494.7403564453125,
+   588.8778686523438
+  ],
+  "ts": 1792446428,
+  "recorrido": "ant0",
+  "rep": false,
+  "auto": true,
+  "origen": "lote anterior",
+  "vaca": "4930"
+ },
+ "desfile_camaras_000759_t00151s835.jpg|0": {
+  "accion": "vaca",
+  "lote": 2,
+  "frame": "desfile_camaras_000759_t00151s835.jpg",
+  "box": [
+   47.821929931640625,
+   444.976318359375,
+   459.5742492675781,
+   594.2316284179688
+  ],
+  "ts": 1792446428,
+  "recorrido": "ant0",
+  "rep": false,
+  "auto": true,
+  "origen": "lote anterior",
+  "vaca": "4930"
+ },
+ "desfile_camaras_000760_t00152s041.jpg|0": {
+  "accion": "vaca",
+  "lote": 2,
+  "frame": "desfile_camaras_000760_t00152s041.jpg",
+  "box": [
+   0.296539306640625,
+   448.869873046875,
+   416.165771484375,
+   600.3914794921875
+  ],
+  "ts": 1792446428,
+  "recorrido": "ant0",
+  "rep": false,
+  "auto": true,
+  "origen": "lote anterior",
+  "vaca": "4930",
+  "recorte": "identificacion\\recortes\\4930\\desfile_camaras_000760_t00152s041_d0.jpg"
+ },
+ "desfile_camaras_000761_t00152s247.jpg|0": {
+  "accion": "vaca",
+  "lote": 2,
+  "frame": "desfile_camaras_000761_t00152s247.jpg",
+  "box": [
+   0.32975006103515625,
+   450.8257141113281,
+   378.74554443359375,
+   601.8939208984375
+  ],
+  "ts": 1792446429,
+  "recorrido": "ant0",
+  "rep": false,
+  "auto": true,
+  "origen": "lote anterior",
+  "vaca": "4930"
+ },
+ "desfile_camaras_000762_t00152s452.jpg|0": {
+  "accion": "vaca",
+  "lote": 2,
+  "frame": "desfile_camaras_000762_t00152s452.jpg",
+  "box": [
+   0.42624664306640625,
+   453.605712890625,
+   290.05963134765625,
+   600.5809936523438
+  ],
+  "ts": 1792446429,
+  "recorrido": "ant0",
+  "rep": false,
+  "auto": true,
+  "origen": "lote anterior",
+  "vaca": "4930"
+ },
+ "desfile_camaras_000763_t00152s658.jpg|0": {
+  "accion": "vaca",
+  "lote": 2,
+  "frame": "desfile_camaras_000763_t00152s658.jpg",
+  "box": [
+   0.33437347412109375,
+   459.454833984375,
+   242.80770874023438,
+   601.5584106445312
+  ],
+  "ts": 1792446429,
+  "recorrido": "ant0",
+  "rep": false,
+  "auto": true,
+  "origen": "lote anterior",
+  "vaca": "4930"
+ },
+ "desfile_camaras_000742_t00148s441.jpg|1": {
+  "accion": "nose",
+  "lote": 2,
+  "frame": "desfile_camaras_000742_t00148s441.jpg",
+  "box": [
+   1343.8330078125,
+   199.05967712402344,
+   1462.4501953125,
+   454.94232177734375
+  ],
+  "ts": 1792446429,
+  "recorrido": "ant1",
+  "rep": false,
+  "auto": true,
+  "origen": "lote anterior"
+ },
+ "desfile_camaras_000744_t00148s852.jpg|1": {
+  "accion": "nose",
+  "lote": 2,
+  "frame": "desfile_camaras_000744_t00148s852.jpg",
+  "box": [
+   1333.4791259765625,
+   263.8595886230469,
+   1446.031494140625,
+   538.9844360351562
+  ],
+  "ts": 1792446429,
+  "recorrido": "ant1",
+  "rep": false,
+  "auto": true,
+  "origen": "lote anterior"
+ },
+ "desfile_camaras_000745_t00149s058.jpg|1": {
+  "accion": "nose",
+  "lote": 2,
+  "frame": "desfile_camaras_000745_t00149s058.jpg",
+  "box": [
+   1333.1141357421875,
+   303.48699951171875,
+   1437.376953125,
+   584.5965576171875
+  ],
+  "ts": 1792446429,
+  "recorrido": "ant1",
+  "rep": false,
+  "auto": true,
+  "origen": "lote anterior"
+ },
+ "desfile_camaras_000746_t00149s264.jpg|1": {
+  "accion": "nose",
+  "lote": 2,
+  "frame": "desfile_camaras_000746_t00149s264.jpg",
+  "box": [
+   1332.4810791015625,
+   321.15582275390625,
+   1434.434326171875,
+   596.83154296875
+  ],
+  "ts": 1792446429,
+  "recorrido": "ant1",
+  "rep": false,
+  "auto": true,
+  "origen": "lote anterior"
+ },
+ "desfile_camaras_000748_t00149s675.jpg|1": {
+  "accion": "nose",
+  "lote": 2,
+  "frame": "desfile_camaras_000748_t00149s675.jpg",
+  "box": [
+   1314.6329345703125,
+   354.256591796875,
+   1430.8553466796875,
+   597.6661987304688
+  ],
+  "ts": 1792446429,
+  "recorrido": "ant1",
+  "rep": false,
+  "auto": true,
+  "origen": "lote anterior"
+ },
+ "desfile_camaras_000749_t00149s881.jpg|1": {
+  "accion": "nose",
+  "lote": 2,
+  "frame": "desfile_camaras_000749_t00149s881.jpg",
+  "box": [
+   1299.27099609375,
+   376.8481750488281,
+   1429.4891357421875,
+   651.9313354492188
+  ],
+  "ts": 1792446429,
+  "recorrido": "ant1",
+  "rep": false,
+  "auto": true,
+  "origen": "lote anterior"
+ },
+ "desfile_camaras_000750_t00150s086.jpg|1": {
+  "accion": "nose",
+  "lote": 2,
+  "frame": "desfile_camaras_000750_t00150s086.jpg",
+  "box": [
+   1285.79736328125,
+   402.680419921875,
+   1412.9637451171875,
+   684.0883178710938
+  ],
+  "ts": 1792446429,
+  "recorrido": "ant1",
+  "rep": false,
+  "auto": true,
+  "origen": "lote anterior"
+ },
+ "desfile_camaras_000751_t00150s292.jpg|1": {
+  "accion": "nose",
+  "lote": 2,
+  "frame": "desfile_camaras_000751_t00150s292.jpg",
+  "box": [
+   1267.444091796875,
+   422.68670654296875,
+   1395.7706298828125,
+   698.2142944335938
+  ],
+  "ts": 1792446429,
+  "recorrido": "ant1",
+  "rep": false,
+  "auto": true,
+  "origen": "lote anterior"
+ },
+ "desfile_camaras_000752_t00150s498.jpg|1": {
+  "accion": "nose",
+  "lote": 2,
+  "frame": "desfile_camaras_000752_t00150s498.jpg",
+  "box": [
+   1240.50927734375,
+   438.86090087890625,
+   1381.8531494140625,
+   747.7529296875
+  ],
+  "ts": 1792446429,
+  "recorrido": "ant1",
+  "rep": false,
+  "auto": true,
+  "origen": "lote anterior"
+ },
+ "desfile_camaras_000753_t00150s601.jpg|1": {
+  "accion": "nose",
+  "lote": 2,
+  "frame": "desfile_camaras_000753_t00150s601.jpg",
+  "box": [
+   1229.5050048828125,
+   446.5251159667969,
+   1376.850341796875,
+   761.3456420898438
+  ],
+  "ts": 1792446429,
+  "recorrido": "ant1",
+  "rep": false,
+  "auto": true,
+  "origen": "lote anterior"
+ },
+ "desfile_camaras_000754_t00150s807.jpg|1": {
+  "accion": "nose",
+  "lote": 2,
+  "frame": "desfile_camaras_000754_t00150s807.jpg",
+  "box": [
+   1197.5716552734375,
+   461.278564453125,
+   1373.635009765625,
+   766.4203491210938
+  ],
+  "ts": 1792446429,
+  "recorrido": "ant1",
+  "rep": false,
+  "auto": true,
+  "origen": "lote anterior"
+ },
+ "desfile_camaras_000755_t00151s012.jpg|1": {
+  "accion": "nose",
+  "lote": 2,
+  "frame": "desfile_camaras_000755_t00151s012.jpg",
+  "box": [
+   1165.2322998046875,
+   475.3402404785156,
+   1364.3258056640625,
+   770.3423461914062
+  ],
+  "ts": 1792446429,
+  "recorrido": "ant1",
+  "rep": false,
+  "auto": true,
+  "origen": "lote anterior"
+ },
+ "desfile_camaras_000756_t00151s218.jpg|1": {
+  "accion": "nose",
+  "lote": 2,
+  "frame": "desfile_camaras_000756_t00151s218.jpg",
+  "box": [
+   1133.6939697265625,
+   494.4584655761719,
+   1351.8677978515625,
+   788.33154296875
+  ],
+  "ts": 1792446429,
+  "recorrido": "ant1",
+  "rep": false,
+  "auto": true,
+  "origen": "lote anterior"
+ },
+ "desfile_camaras_000757_t00151s424.jpg|1": {
+  "accion": "nose",
+  "lote": 2,
+  "frame": "desfile_camaras_000757_t00151s424.jpg",
+  "box": [
+   1098.8936767578125,
+   522.2137451171875,
+   1340.9715576171875,
+   830.2908325195312
+  ],
+  "ts": 1792446429,
+  "recorrido": "ant1",
+  "rep": false,
+  "auto": true,
+  "origen": "lote anterior"
+ },
+ "desfile_camaras_000758_t00151s630.jpg|1": {
+  "accion": "nose",
+  "lote": 2,
+  "frame": "desfile_camaras_000758_t00151s630.jpg",
+  "box": [
+   1056.0262451171875,
+   545.8950805664062,
+   1326.4019775390625,
+   834.9116821289062
+  ],
+  "ts": 1792446429,
+  "recorrido": "ant1",
+  "rep": false,
+  "auto": true,
+  "origen": "lote anterior"
+ },
+ "desfile_camaras_000759_t00151s835.jpg|1": {
+  "accion": "nose",
+  "lote": 2,
+  "frame": "desfile_camaras_000759_t00151s835.jpg",
+  "box": [
+   1010.3572998046875,
+   577.55224609375,
+   1308.8660888671875,
+   853.9249877929688
+  ],
+  "ts": 1792446429,
+  "recorrido": "ant1",
+  "rep": false,
+  "auto": true,
+  "origen": "lote anterior"
+ },
+ "desfile_camaras_000760_t00152s041.jpg|1": {
+  "accion": "nose",
+  "lote": 2,
+  "frame": "desfile_camaras_000760_t00152s041.jpg",
+  "box": [
+   967.8711547851562,
+   594.15087890625,
+   1292.927978515625,
+   891.8780517578125
+  ],
+  "ts": 1792446429,
+  "recorrido": "ant1",
+  "rep": false,
+  "auto": true,
+  "origen": "lote anterior"
+ },
+ "desfile_camaras_000761_t00152s247.jpg|1": {
+  "accion": "nose",
+  "lote": 2,
+  "frame": "desfile_camaras_000761_t00152s247.jpg",
+  "box": [
+   923.9987182617188,
+   611.9199829101562,
+   1289.5302734375,
+   927.1224975585938
+  ],
+  "ts": 1792446429,
+  "recorrido": "ant1",
+  "rep": false,
+  "auto": true,
+  "origen": "lote anterior"
+ },
+ "desfile_camaras_000762_t00152s452.jpg|1": {
+  "accion": "nose",
+  "lote": 2,
+  "frame": "desfile_camaras_000762_t00152s452.jpg",
+  "box": [
+   877.1174926757812,
+   634.3941650390625,
+   1264.8336181640625,
+   931.5950317382812
+  ],
+  "ts": 1792446429,
+  "recorrido": "ant1",
+  "rep": true,
+  "auto": true,
+  "origen": "lote anterior"
+ },
+ "desfile_camaras_000763_t00152s658.jpg|1": {
+  "accion": "nose",
+  "lote": 2,
+  "frame": "desfile_camaras_000763_t00152s658.jpg",
+  "box": [
+   872.5906372070312,
+   654.4743041992188,
+   1248.6480712890625,
+   926.584228515625
+  ],
+  "ts": 1792446429,
+  "recorrido": "ant1",
+  "rep": false,
+  "auto": true,
+  "origen": "lote anterior"
+ },
+ "desfile_camaras_000762_t00152s452.jpg|2": {
+  "accion": "vaca",
+  "lote": 2,
+  "frame": "desfile_camaras_000762_t00152s452.jpg",
+  "box": [
+   877.1480712890625,
+   680.1913452148438,
+   1186.1273193359375,
+   932.9403076171875
+  ],
+  "ts": 1792455914,
+  "recorrido": "b2",
+  "rep": true,
+  "vaca": "3160",
+  "posicion": 5,
+  "recorte": "identificacion\\recortes\\3160\\desfile_camaras_000762_t00152s452_d2.jpg"
+ },
+ "desfile_camaras_000762_t00152s452.jpg|3": {
+  "accion": "vaca",
+  "lote": 2,
+  "frame": "desfile_camaras_000762_t00152s452.jpg",
+  "box": [
+   1057.121826171875,
+   632.8734741210938,
+   1264.1170654296875,
+   780.5000610351562
+  ],
+  "ts": 1792455928,
+  "recorrido": "b3",
+  "rep": false,
+  "vaca": "3160",
+  "recorte": "identificacion\\recortes\\3160\\desfile_camaras_000762_t00152s452_d3.jpg"
+ },
+ "desfile_camaras_000763_t00152s658.jpg|2": {
+  "accion": "vaca",
+  "lote": 2,
+  "frame": "desfile_camaras_000763_t00152s658.jpg",
+  "box": [
+   1027.7691650390625,
+   654.38525390625,
+   1249.1466064453125,
+   807.4784545898438
+  ],
+  "ts": 1792455928,
+  "recorrido": "b3",
+  "rep": true,
+  "vaca": "3160",
+  "posicion": 27,
+  "recorte": "identificacion\\recortes\\3160\\desfile_camaras_000763_t00152s658_d2.jpg"
+ },
+ "desfile_camaras_000759_t00151s835.jpg|2": {
+  "accion": "vaca",
+  "lote": 2,
+  "frame": "desfile_camaras_000759_t00151s835.jpg",
+  "box": [
+   1165.322021484375,
+   576.0803833007812,
+   1308.9697265625,
+   742.9627685546875
+  ],
+  "ts": 1792455956,
+  "recorrido": "b1",
+  "rep": true,
+  "vaca": "3160",
+  "posicion": 1,
+  "recorte": "identificacion\\recortes\\3160\\desfile_camaras_000759_t00151s835_d2.jpg"
+ },
+ "desfile_camaras_002181_t00436s269.jpg|0": {
+  "accion": "vaca",
+  "lote": 3,
+  "frame": "desfile_camaras_002181_t00436s269.jpg",
+  "box": [
+   1461.1864013671875,
+   62.64447784423828,
+   1573.84716796875,
+   191.6912841796875
+  ],
+  "ts": 1792456033,
+  "recorrido": "b1",
+  "rep": false,
+  "vaca": "4583"
+ },
+ "desfile_camaras_002183_t00436s681.jpg|0": {
+  "accion": "vaca",
+  "lote": 3,
+  "frame": "desfile_camaras_002183_t00436s681.jpg",
+  "box": [
+   1398.4588623046875,
+   81.99735260009766,
+   1535.9241943359375,
+   222.38815307617188
+  ],
+  "ts": 1792456033,
+  "recorrido": "b1",
+  "rep": false,
+  "vaca": "4583"
+ },
+ "desfile_camaras_002186_t00437s298.jpg|0": {
+  "accion": "vaca",
+  "lote": 3,
+  "frame": "desfile_camaras_002186_t00437s298.jpg",
+  "box": [
+   1329.8897705078125,
+   98.60874938964844,
+   1478.3212890625,
+   237.63592529296875
+  ],
+  "ts": 1792456033,
+  "recorrido": "b1",
+  "rep": false,
+  "vaca": "4583"
+ },
+ "desfile_camaras_002187_t00437s401.jpg|0": {
+  "accion": "vaca",
+  "lote": 3,
+  "frame": "desfile_camaras_002187_t00437s401.jpg",
+  "box": [
+   1316.1800537109375,
+   100.97286987304688,
+   1466.12353515625,
+   231.47787475585938
+  ],
+  "ts": 1792456033,
+  "recorrido": "b1",
+  "rep": false,
+  "vaca": "4583"
+ },
+ "desfile_camaras_002189_t00437s812.jpg|0": {
+  "accion": "vaca",
+  "lote": 3,
+  "frame": "desfile_camaras_002189_t00437s812.jpg",
+  "box": [
+   1248.0828857421875,
+   133.40420532226562,
+   1442.4844970703125,
+   274.7915954589844
+  ],
+  "ts": 1792456033,
+  "recorrido": "b1",
+  "rep": false,
+  "vaca": "4583"
+ },
+ "desfile_camaras_002190_t00438s018.jpg|0": {
+  "accion": "vaca",
+  "lote": 3,
+  "frame": "desfile_camaras_002190_t00438s018.jpg",
+  "box": [
+   1208.0439453125,
+   141.01075744628906,
+   1407.1561279296875,
+   282.6268615722656
+  ],
+  "ts": 1792456033,
+  "recorrido": "b1",
+  "rep": false,
+  "vaca": "4583"
+ },
+ "desfile_camaras_002191_t00438s224.jpg|0": {
+  "accion": "vaca",
+  "lote": 3,
+  "frame": "desfile_camaras_002191_t00438s224.jpg",
+  "box": [
+   1174.1788330078125,
+   142.0447540283203,
+   1361.67626953125,
+   293.3879089355469
+  ],
+  "ts": 1792456033,
+  "recorrido": "b1",
+  "rep": false,
+  "vaca": "4583"
+ },
+ "desfile_camaras_002192_t00438s430.jpg|0": {
+  "accion": "vaca",
+  "lote": 3,
+  "frame": "desfile_camaras_002192_t00438s430.jpg",
+  "box": [
+   1141.1119384765625,
+   146.23768615722656,
+   1333.817138671875,
+   285.7293395996094
+  ],
+  "ts": 1792456033,
+  "recorrido": "b1",
+  "rep": false,
+  "vaca": "4583"
+ },
+ "desfile_camaras_002193_t00438s635.jpg|0": {
+  "accion": "vaca",
+  "lote": 3,
+  "frame": "desfile_camaras_002193_t00438s635.jpg",
+  "box": [
+   1109.8648681640625,
+   146.17840576171875,
+   1307.01123046875,
+   286.33978271484375
+  ],
+  "ts": 1792456033,
+  "recorrido": "b1",
+  "rep": false,
+  "vaca": "4583"
+ },
+ "desfile_camaras_002194_t00438s841.jpg|0": {
+  "accion": "vaca",
+  "lote": 3,
+  "frame": "desfile_camaras_002194_t00438s841.jpg",
+  "box": [
+   1077.5947265625,
+   131.96511840820312,
+   1283.9044189453125,
+   308.8556213378906
+  ],
+  "ts": 1792456033,
+  "recorrido": "b1",
+  "rep": false,
+  "vaca": "4583"
+ },
+ "desfile_camaras_002195_t00439s047.jpg|0": {
+  "accion": "vaca",
+  "lote": 3,
+  "frame": "desfile_camaras_002195_t00439s047.jpg",
+  "box": [
+   1044.4058837890625,
+   142.09730529785156,
+   1259.1038818359375,
+   326.2398681640625
+  ],
+  "ts": 1792456033,
+  "recorrido": "b1",
+  "rep": true,
+  "vaca": "4583",
+  "posicion": 3,
+  "recorte": "identificacion\\recortes\\4583\\desfile_camaras_002195_t00439s047_d0.jpg"
+ },
+ "desfile_camaras_002196_t00439s252.jpg|0": {
+  "accion": "vaca",
+  "lote": 3,
+  "frame": "desfile_camaras_002196_t00439s252.jpg",
+  "box": [
+   1000.5853271484375,
+   167.9938201904297,
+   1238.8355712890625,
+   331.4700927734375
+  ],
+  "ts": 1792456033,
+  "recorrido": "b1",
+  "rep": false,
+  "vaca": "4583",
+  "recorte": "identificacion\\recortes\\4583\\desfile_camaras_002196_t00439s252_d0.jpg"
+ },
+ "desfile_camaras_002197_t00439s458.jpg|0": {
+  "accion": "vaca",
+  "lote": 3,
+  "frame": "desfile_camaras_002197_t00439s458.jpg",
+  "box": [
+   960.82568359375,
+   175.39772033691406,
+   1200.114990234375,
+   335.4993896484375
+  ],
+  "ts": 1792456033,
+  "recorrido": "b1",
+  "rep": false,
+  "vaca": "4583"
+ },
+ "desfile_camaras_002198_t00439s664.jpg|0": {
+  "accion": "vaca",
+  "lote": 3,
+  "frame": "desfile_camaras_002198_t00439s664.jpg",
+  "box": [
+   925.0947875976562,
+   178.28848266601562,
+   1167.871337890625,
+   337.56591796875
+  ],
+  "ts": 1792456033,
+  "recorrido": "b1",
+  "rep": false,
+  "vaca": "4583",
+  "recorte": "identificacion\\recortes\\4583\\desfile_camaras_002198_t00439s664_d0.jpg"
+ },
+ "desfile_camaras_002199_t00439s870.jpg|0": {
+  "accion": "vaca",
+  "lote": 3,
+  "frame": "desfile_camaras_002199_t00439s870.jpg",
+  "box": [
+   894.4793701171875,
+   186.36154174804688,
+   1139.6279296875,
+   337.89935302734375
+  ],
+  "ts": 1792456033,
+  "recorrido": "b1",
+  "rep": false,
+  "vaca": "4583",
+  "recorte": "identificacion\\recortes\\4583\\desfile_camaras_002199_t00439s870_d0.jpg"
+ },
+ "desfile_camaras_000764_t00152s864.jpg|1": {
+  "accion": "vaca",
+  "lote": 3,
+  "frame": "desfile_camaras_000764_t00152s864.jpg",
+  "box": [
+   872.8851928710938,
+   672.6432495117188,
+   1184.792724609375,
+   931.3639526367188
+  ],
+  "ts": 1792456040,
+  "recorrido": "ant1",
+  "rep": true,
+  "vaca": "3160",
+  "posicion": 1,
+  "recorte": "identificacion\\recortes\\3160\\desfile_camaras_000764_t00152s864_d1.jpg"
+ },
+ "desfile_camaras_000765_t00153s070.jpg|0": {
+  "accion": "vaca",
+  "lote": 3,
+  "frame": "desfile_camaras_000765_t00153s070.jpg",
+  "box": [
+   859.4698486328125,
+   695.036376953125,
+   1159.3560791015625,
+   922.9962768554688
+  ],
+  "ts": 1792456040,
+  "recorrido": "ant1",
+  "rep": false,
+  "vaca": "3160",
+  "recorte": "identificacion\\recortes\\3160\\desfile_camaras_000765_t00153s070_d0.jpg"
+ },
+ "desfile_camaras_000766_t00153s275.jpg|0": {
+  "accion": "vaca",
+  "lote": 3,
+  "frame": "desfile_camaras_000766_t00153s275.jpg",
+  "box": [
+   871.9934692382812,
+   715.9771728515625,
+   1131.031982421875,
+   938.8046264648438
+  ],
+  "ts": 1792456040,
+  "recorrido": "ant1",
+  "rep": false,
+  "vaca": "3160",
+  "recorte": "identificacion\\recortes\\3160\\desfile_camaras_000766_t00153s275_d0.jpg"
+ },
+ "desfile_camaras_000767_t00153s481.jpg|0": {
+  "accion": "vaca",
+  "lote": 3,
+  "frame": "desfile_camaras_000767_t00153s481.jpg",
+  "box": [
+   856.534423828125,
+   736.5093383789062,
+   1094.0614013671875,
+   940.7874755859375
+  ],
+  "ts": 1792456040,
+  "recorrido": "ant1",
+  "rep": false,
+  "vaca": "3160",
+  "recorte": "identificacion\\recortes\\3160\\desfile_camaras_000767_t00153s481_d0.jpg"
+ },
+ "desfile_camaras_000768_t00153s687.jpg|0": {
+  "accion": "vaca",
+  "lote": 3,
+  "frame": "desfile_camaras_000768_t00153s687.jpg",
+  "box": [
+   845.0820922851562,
+   749.93017578125,
+   1045.4122314453125,
+   940.9769897460938
+  ],
+  "ts": 1792456040,
+  "recorrido": "ant1",
+  "rep": false,
+  "vaca": "3160"
+ },
+ "desfile_camaras_000764_t00152s864.jpg|0": {
+  "accion": "descartar",
+  "lote": 3,
+  "frame": "desfile_camaras_000764_t00152s864.jpg",
+  "box": [
+   0.6681289672851562,
+   475.3162536621094,
+   200.84510803222656,
+   600.4833984375
+  ],
+  "ts": 1792456170,
+  "recorrido": "ant0",
+  "rep": true
+ },
+ "desfile_camaras_002200_t00440s075.jpg|0": {
+  "accion": "vaca",
+  "lote": 4,
+  "frame": "desfile_camaras_002200_t00440s075.jpg",
+  "box": [
+   863.608154296875,
+   193.85508728027344,
+   1113.551513671875,
+   345.5955810546875
+  ],
+  "ts": 1792456251,
+  "recorrido": "ant0",
+  "rep": false,
+  "vaca": "4583"
+ },
+ "desfile_camaras_002201_t00440s281.jpg|0": {
+  "accion": "vaca",
+  "lote": 4,
+  "frame": "desfile_camaras_002201_t00440s281.jpg",
+  "box": [
+   826.2786254882812,
+   209.4502716064453,
+   1088.1072998046875,
+   370.1563415527344
+  ],
+  "ts": 1792456251,
+  "recorrido": "ant0",
+  "rep": false,
+  "vaca": "4583"
+ },
+ "desfile_camaras_002202_t00440s487.jpg|0": {
+  "accion": "vaca",
+  "lote": 4,
+  "frame": "desfile_camaras_002202_t00440s487.jpg",
+  "box": [
+   788.9020385742188,
+   218.7286834716797,
+   1061.37646484375,
+   372.5407409667969
+  ],
+  "ts": 1792456251,
+  "recorrido": "ant0",
+  "rep": false,
+  "vaca": "4583"
+ },
+ "desfile_camaras_002203_t00440s693.jpg|0": {
+  "accion": "vaca",
+  "lote": 4,
+  "frame": "desfile_camaras_002203_t00440s693.jpg",
+  "box": [
+   745.792236328125,
+   227.69224548339844,
+   1014.639404296875,
+   383.9335632324219
+  ],
+  "ts": 1792456251,
+  "recorrido": "ant0",
+  "rep": false,
+  "vaca": "4583"
+ },
+ "desfile_camaras_002204_t00440s898.jpg|0": {
+  "accion": "vaca",
+  "lote": 4,
+  "frame": "desfile_camaras_002204_t00440s898.jpg",
+  "box": [
+   704.631103515625,
+   228.89456176757812,
+   975.21923828125,
+   404.5666809082031
+  ],
+  "ts": 1792456251,
+  "recorrido": "ant0",
+  "rep": false,
+  "vaca": "4583"
+ },
+ "desfile_camaras_002205_t00441s001.jpg|0": {
+  "accion": "vaca",
+  "lote": 4,
+  "frame": "desfile_camaras_002205_t00441s001.jpg",
+  "box": [
+   683.7816162109375,
+   228.98931884765625,
+   952.9043579101562,
+   404.1358337402344
+  ],
+  "ts": 1792456251,
+  "recorrido": "ant0",
+  "rep": false,
+  "vaca": "4583"
+ },
+ "desfile_camaras_002206_t00441s207.jpg|0": {
+  "accion": "vaca",
+  "lote": 4,
+  "frame": "desfile_camaras_002206_t00441s207.jpg",
+  "box": [
+   647.8170776367188,
+   232.76467895507812,
+   915.2913208007812,
+   405.75640869140625
+  ],
+  "ts": 1792456251,
+  "recorrido": "ant0",
+  "rep": false,
+  "vaca": "4583"
+ },
+ "desfile_camaras_002207_t00441s413.jpg|0": {
+  "accion": "vaca",
+  "lote": 4,
+  "frame": "desfile_camaras_002207_t00441s413.jpg",
+  "box": [
+   613.8218994140625,
+   242.84262084960938,
+   874.74267578125,
+   407.6699523925781
+  ],
+  "ts": 1792456251,
+  "recorrido": "ant0",
+  "rep": false,
+  "vaca": "4583"
+ },
+ "desfile_camaras_002208_t00441s618.jpg|0": {
+  "accion": "vaca",
+  "lote": 4,
+  "frame": "desfile_camaras_002208_t00441s618.jpg",
+  "box": [
+   573.688720703125,
+   255.06546020507812,
+   848.1765747070312,
+   408.8580322265625
+  ],
+  "ts": 1792456251,
+  "recorrido": "ant0",
+  "rep": false,
+  "vaca": "4583"
+ },
+ "desfile_camaras_002209_t00441s824.jpg|0": {
+  "accion": "vaca",
+  "lote": 4,
+  "frame": "desfile_camaras_002209_t00441s824.jpg",
+  "box": [
+   536.8641357421875,
+   271.9090881347656,
+   807.479736328125,
+   443.47808837890625
+  ],
+  "ts": 1792456251,
+  "recorrido": "ant0",
+  "rep": false,
+  "vaca": "4583"
+ },
+ "desfile_camaras_002210_t00442s030.jpg|0": {
+  "accion": "vaca",
+  "lote": 4,
+  "frame": "desfile_camaras_002210_t00442s030.jpg",
+  "box": [
+   495.85491943359375,
+   283.479248046875,
+   780.6340942382812,
+   454.83282470703125
+  ],
+  "ts": 1792456251,
+  "recorrido": "ant0",
+  "rep": false,
+  "vaca": "4583"
+ },
+ "desfile_camaras_002211_t00442s236.jpg|0": {
+  "accion": "vaca",
+  "lote": 4,
+  "frame": "desfile_camaras_002211_t00442s236.jpg",
+  "box": [
+   450.6298828125,
+   284.6693115234375,
+   752.5457153320312,
+   486.8873291015625
+  ],
+  "ts": 1792456251,
+  "recorrido": "ant0",
+  "rep": false,
+  "vaca": "4583",
+  "recorte": "identificacion\\recortes\\4583\\desfile_camaras_002211_t00442s236_d0.jpg"
+ },
+ "desfile_camaras_002212_t00442s441.jpg|0": {
+  "accion": "vaca",
+  "lote": 4,
+  "frame": "desfile_camaras_002212_t00442s441.jpg",
+  "box": [
+   406.39080810546875,
+   291.2331848144531,
+   724.916748046875,
+   490.6202087402344
+  ],
+  "ts": 1792456251,
+  "recorrido": "ant0",
+  "rep": false,
+  "vaca": "4583"
+ },
+ "desfile_camaras_002213_t00442s647.jpg|0": {
+  "accion": "vaca",
+  "lote": 4,
+  "frame": "desfile_camaras_002213_t00442s647.jpg",
+  "box": [
+   363.3397521972656,
+   300.8599548339844,
+   663.324462890625,
+   492.6193542480469
+  ],
+  "ts": 1792456251,
+  "recorrido": "ant0",
+  "rep": false,
+  "vaca": "4583"
+ },
+ "desfile_camaras_002214_t00442s853.jpg|0": {
+  "accion": "vaca",
+  "lote": 4,
+  "frame": "desfile_camaras_002214_t00442s853.jpg",
+  "box": [
+   329.1138000488281,
+   314.7388000488281,
+   625.3922729492188,
+   496.10943603515625
+  ],
+  "ts": 1792456251,
+  "recorrido": "ant0",
+  "rep": false,
+  "vaca": "4583"
+ },
+ "desfile_camaras_002215_t00443s059.jpg|0": {
+  "accion": "vaca",
+  "lote": 4,
+  "frame": "desfile_camaras_002215_t00443s059.jpg",
+  "box": [
+   282.9421691894531,
+   331.8386535644531,
+   581.7693481445312,
+   524.373779296875
+  ],
+  "ts": 1792456251,
+  "recorrido": "ant0",
+  "rep": false,
+  "vaca": "4583",
+  "recorte": "identificacion\\recortes\\4583\\desfile_camaras_002215_t00443s059_d0.jpg"
+ },
+ "desfile_camaras_002216_t00443s264.jpg|0": {
+  "accion": "vaca",
+  "lote": 4,
+  "frame": "desfile_camaras_002216_t00443s264.jpg",
+  "box": [
+   238.7119598388672,
+   350.7344970703125,
+   561.3323974609375,
+   545.3466796875
+  ],
+  "ts": 1792456251,
+  "recorrido": "ant0",
+  "rep": false,
+  "vaca": "4583"
+ },
+ "desfile_camaras_002217_t00443s470.jpg|0": {
+  "accion": "vaca",
+  "lote": 4,
+  "frame": "desfile_camaras_002217_t00443s470.jpg",
+  "box": [
+   197.4027557373047,
+   363.4128112792969,
+   526.8151245117188,
+   581.3988647460938
+  ],
+  "ts": 1792456251,
+  "recorrido": "ant0",
+  "rep": false,
+  "vaca": "4583"
+ },
+ "desfile_camaras_002218_t00443s676.jpg|0": {
+  "accion": "vaca",
+  "lote": 4,
+  "frame": "desfile_camaras_002218_t00443s676.jpg",
+  "box": [
+   149.04368591308594,
+   367.69964599609375,
+   497.6515808105469,
+   590.8563232421875
+  ],
+  "ts": 1792456251,
+  "recorrido": "ant0",
+  "rep": false,
+  "vaca": "4583",
+  "recorte": "identificacion\\recortes\\4583\\desfile_camaras_002218_t00443s676_d0.jpg"
+ },
+ "desfile_camaras_002219_t00443s882.jpg|0": {
+  "accion": "vaca",
+  "lote": 4,
+  "frame": "desfile_camaras_002219_t00443s882.jpg",
+  "box": [
+   106.71826934814453,
+   375.91363525390625,
+   478.9911804199219,
+   588.01171875
+  ],
+  "ts": 1792456251,
+  "recorrido": "ant0",
+  "rep": true,
+  "vaca": "4583",
+  "posicion": 1,
+  "recorte": "identificacion\\recortes\\4583\\desfile_camaras_002219_t00443s882_d0.jpg"
+ },
+ "desfile_camaras_002213_t00442s647.jpg|1": {
+  "accion": "vaca",
+  "lote": 4,
+  "frame": "desfile_camaras_002213_t00442s647.jpg",
+  "box": [
+   1167.153564453125,
+   25.712482452392578,
+   1306.3126220703125,
+   137.9058074951172
+  ],
+  "ts": 1792456260,
+  "recorrido": "b3",
+  "rep": false,
+  "vaca": "4475"
+ },
+ "desfile_camaras_002214_t00442s853.jpg|1": {
+  "accion": "vaca",
+  "lote": 4,
+  "frame": "desfile_camaras_002214_t00442s853.jpg",
+  "box": [
+   1150.150146484375,
+   38.286678314208984,
+   1282.2080078125,
+   151.80796813964844
+  ],
+  "ts": 1792456260,
+  "recorrido": "b3",
+  "rep": false,
+  "vaca": "4475"
+ },
+ "desfile_camaras_002215_t00443s059.jpg|1": {
+  "accion": "vaca",
+  "lote": 4,
+  "frame": "desfile_camaras_002215_t00443s059.jpg",
+  "box": [
+   1127.9644775390625,
+   47.541046142578125,
+   1262.6773681640625,
+   164.85049438476562
+  ],
+  "ts": 1792456260,
+  "recorrido": "b3",
+  "rep": false,
+  "vaca": "4475"
+ },
+ "desfile_camaras_002216_t00443s264.jpg|1": {
+  "accion": "vaca",
+  "lote": 4,
+  "frame": "desfile_camaras_002216_t00443s264.jpg",
+  "box": [
+   1101.7532958984375,
+   50.881038665771484,
+   1240.62451171875,
+   179.88473510742188
+  ],
+  "ts": 1792456260,
+  "recorrido": "b3",
+  "rep": false,
+  "vaca": "4475",
+  "recorte": "identificacion\\recortes\\4475\\desfile_camaras_002216_t00443s264_d1.jpg"
+ },
+ "desfile_camaras_002217_t00443s470.jpg|1": {
+  "accion": "vaca",
+  "lote": 4,
+  "frame": "desfile_camaras_002217_t00443s470.jpg",
+  "box": [
+   1076.6168212890625,
+   51.289031982421875,
+   1225.845703125,
+   199.06471252441406
+  ],
+  "ts": 1792456260,
+  "recorrido": "b3",
+  "rep": true,
+  "vaca": "4475",
+  "posicion": 1,
+  "recorte": "identificacion\\recortes\\4475\\desfile_camaras_002217_t00443s470_d1.jpg"
+ },
+ "desfile_camaras_002218_t00443s676.jpg|1": {
+  "accion": "vaca",
+  "lote": 4,
+  "frame": "desfile_camaras_002218_t00443s676.jpg",
+  "box": [
+   1052.4569091796875,
+   58.79997253417969,
+   1197.8074951171875,
+   201.19772338867188
+  ],
+  "ts": 1792456260,
+  "recorrido": "b3",
+  "rep": false,
+  "vaca": "4475",
+  "recorte": "identificacion\\recortes\\4475\\desfile_camaras_002218_t00443s676_d1.jpg"
+ },
+ "desfile_camaras_002219_t00443s882.jpg|1": {
+  "accion": "vaca",
+  "lote": 4,
+  "frame": "desfile_camaras_002219_t00443s882.jpg",
+  "box": [
+   1030.9637451171875,
+   67.8840560913086,
+   1172.9569091796875,
+   200.93719482421875
+  ],
+  "ts": 1792456260,
+  "recorrido": "b3",
+  "rep": false,
+  "vaca": "4475",
+  "recorte": "identificacion\\recortes\\4475\\desfile_camaras_002219_t00443s882_d1.jpg"
+ },
+ "desfile_camaras_002202_t00440s487.jpg|1": {
+  "accion": "vaca",
+  "lote": 4,
+  "frame": "desfile_camaras_002202_t00440s487.jpg",
+  "box": [
+   1362.9786376953125,
+   0.0,
+   1481.3101806640625,
+   71.09477996826172
+  ],
+  "ts": 1792456265,
+  "recorrido": "b1",
+  "rep": false,
+  "vaca": "4475"
+ },
+ "desfile_camaras_002203_t00440s693.jpg|1": {
+  "accion": "vaca",
+  "lote": 4,
+  "frame": "desfile_camaras_002203_t00440s693.jpg",
+  "box": [
+   1346.843017578125,
+   0.022653579711914062,
+   1468.9757080078125,
+   75.48188781738281
+  ],
+  "ts": 1792456265,
+  "recorrido": "b1",
+  "rep": false,
+  "vaca": "4475"
+ },
+ "desfile_camaras_002204_t00440s898.jpg|1": {
+  "accion": "vaca",
+  "lote": 4,
+  "frame": "desfile_camaras_002204_t00440s898.jpg",
+  "box": [
+   1323.6673583984375,
+   0.0,
+   1446.1597900390625,
+   82.45153045654297
+  ],
+  "ts": 1792456265,
+  "recorrido": "b1",
+  "rep": false,
+  "vaca": "4475"
+ },
+ "desfile_camaras_002205_t00441s001.jpg|1": {
+  "accion": "vaca",
+  "lote": 4,
+  "frame": "desfile_camaras_002205_t00441s001.jpg",
+  "box": [
+   1315.842041015625,
+   0.0,
+   1436.668212890625,
+   85.6358871459961
+  ],
+  "ts": 1792456265,
+  "recorrido": "b1",
+  "rep": false,
+  "vaca": "4475"
+ },
+ "desfile_camaras_002206_t00441s207.jpg|1": {
+  "accion": "vaca",
+  "lote": 4,
+  "frame": "desfile_camaras_002206_t00441s207.jpg",
+  "box": [
+   1303.190185546875,
+   0.0,
+   1419.8082275390625,
+   86.95024108886719
+  ],
+  "ts": 1792456265,
+  "recorrido": "b1",
+  "rep": false,
+  "vaca": "4475"
+ },
+ "desfile_camaras_002207_t00441s413.jpg|1": {
+  "accion": "vaca",
+  "lote": 4,
+  "frame": "desfile_camaras_002207_t00441s413.jpg",
+  "box": [
+   1289.3157958984375,
+   0.0,
+   1402.5435791015625,
+   92.47013854980469
+  ],
+  "ts": 1792456265,
+  "recorrido": "b1",
+  "rep": false,
+  "vaca": "4475"
+ },
+ "desfile_camaras_002208_t00441s618.jpg|1": {
+  "accion": "vaca",
+  "lote": 4,
+  "frame": "desfile_camaras_002208_t00441s618.jpg",
+  "box": [
+   1270.7640380859375,
+   0.9610977172851562,
+   1383.837890625,
+   105.22515106201172
+  ],
+  "ts": 1792456265,
+  "recorrido": "b1",
+  "rep": false,
+  "vaca": "4475"
+ },
+ "desfile_camaras_002209_t00441s824.jpg|1": {
+  "accion": "vaca",
+  "lote": 4,
+  "frame": "desfile_camaras_002209_t00441s824.jpg",
+  "box": [
+   1250.896728515625,
+   10.55438232421875,
+   1366.65380859375,
+   118.51188659667969
+  ],
+  "ts": 1792456265,
+  "recorrido": "b1",
+  "rep": false,
+  "vaca": "4475",
+  "recorte": "identificacion\\recortes\\4475\\desfile_camaras_002209_t00441s824_d1.jpg"
+ },
+ "desfile_camaras_002210_t00442s030.jpg|1": {
+  "accion": "vaca",
+  "lote": 4,
+  "frame": "desfile_camaras_002210_t00442s030.jpg",
+  "box": [
+   1228.852294921875,
+   10.096698760986328,
+   1348.4222412109375,
+   124.46095275878906
+  ],
+  "ts": 1792456265,
+  "recorrido": "b1",
+  "rep": false,
+  "vaca": "4475",
+  "recorte": "identificacion\\recortes\\4475\\desfile_camaras_002210_t00442s030_d1.jpg"
+ },
+ "desfile_camaras_002211_t00442s236.jpg|1": {
+  "accion": "vaca",
+  "lote": 4,
+  "frame": "desfile_camaras_002211_t00442s236.jpg",
+  "box": [
+   1203.3543701171875,
+   12.688373565673828,
+   1329.6107177734375,
+   137.57559204101562
+  ],
+  "ts": 1792456265,
+  "recorrido": "b1",
+  "rep": false,
+  "vaca": "4475",
+  "recorte": "identificacion\\recortes\\4475\\desfile_camaras_002211_t00442s236_d1.jpg"
+ },
+ "desfile_camaras_002212_t00442s441.jpg|1": {
+  "accion": "vaca",
+  "lote": 4,
+  "frame": "desfile_camaras_002212_t00442s441.jpg",
+  "box": [
+   1183.4078369140625,
+   18.34288787841797,
+   1321.1851806640625,
+   138.267333984375
+  ],
+  "ts": 1792456265,
+  "recorrido": "b1",
+  "rep": true,
+  "vaca": "4475",
+  "posicion": 1,
+  "recorte": "identificacion\\recortes\\4475\\desfile_camaras_002212_t00442s441_d1.jpg"
+ }
+}

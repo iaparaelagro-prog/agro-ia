@@ -24,4 +24,11 @@ recorridas_campo/
 equipo/
 dataset_dinov2/
 MONTAS/
+# En Windows (ignorecase) la regla de arriba también tapaba la carpeta de código montas/
+!montas/
 detecciones_monta_*/
+
+# Excepción: los pesos entrenados SÍ van, con Git LFS (ver .gitattributes en la raíz)
+!identificacion/modelos/
+!identificacion/modelos/*.pt
+!identificacion/modelos/*.pth

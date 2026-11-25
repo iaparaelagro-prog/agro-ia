@@ -1,0 +1,4 @@
+# Pesos de modelos: se guardan con Git LFS
+*.pt filter=lfs diff=lfs merge=lfs -text
+*.pth filter=lfs diff=lfs merge=lfs -text
+*.onnx filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,3761 @@
+{
+ "r00002": {
+  "accion": "vaca",
+  "ts": 1792027037,
+  "vaca": "4930",
+  "posicion": 3
+ },
+ "r00003": {
+  "accion": "vaca",
+  "ts": 1792027077,
+  "vaca": "3160",
+  "posicion": 14
+ },
+ "r00006": {
+  "accion": "vaca",
+  "ts": 1792027101,
+  "vaca": "4583",
+  "posicion": 3
+ },
+ "r00007": {
+  "accion": "vaca",
+  "ts": 1792027108,
+  "vaca": "4345",
+  "posicion": 1
+ },
+ "r00008": {
+  "accion": "vaca",
+  "ts": 1792027637,
+  "vaca": "5178",
+  "posicion": 7
+ },
+ "r00009": {
+  "accion": "vaca",
+  "ts": 1792027804,
+  "vaca": "4226",
+  "posicion": 37
+ },
+ "r00010": {
+  "accion": "descartar",
+  "ts": 1792027809
+ },
+ "r00012": {
+  "accion": "vaca",
+  "ts": 1792027840,
+  "vaca": "3324",
+  "posicion": 7
+ },
+ "r00014": {
+  "accion": "vaca",
+  "ts": 1792027861,
+  "vaca": "4493",
+  "posicion": 7
+ },
+ "r00019": {
+  "accion": "nose",
+  "ts": 1792028240
+ },
+ "r00021": {
+  "accion": "descartar",
+  "ts": 1792028283
+ },
+ "r00022": {
+  "accion": "vaca",
+  "ts": 1792028345,
+  "vaca": "4762",
+  "posicion": 10
+ },
+ "r00023": {
+  "accion": "descartar",
+  "ts": 1792028354
+ },
+ "r00028": {
+  "accion": "vaca",
+  "ts": 1792028429,
+  "vaca": "SN1",
+  "posicion": 9
+ },
+ "r00030": {
+  "accion": "vaca",
+  "ts": 1792028454,
+  "vaca": "4932",
+  "posicion": 11
+ },
+ "r00033": {
+  "accion": "descartar",
+  "ts": 1792028473
+ },
+ "r00034": {
+  "accion": "descartar",
+  "ts": 1792028478
+ },
+ "r00035": {
+  "accion": "descartar",
+  "ts": 1792028500
+ },
+ "r00122": {
+  "accion": "descartar",
+  "ts": 1792028516
+ },
+ "r00036": {
+  "accion": "descartar",
+  "ts": 1792028555
+ },
+ "r00123": {
+  "accion": "vaca",
+  "ts": 1792028595,
+  "vaca": "3126",
+  "posicion": 25
+ },
+ "r00037": {
+  "accion": "vaca",
+  "ts": 1792028680,
+  "vaca": "3267",
+  "posicion": 6
+ },
+ "r00039": {
+  "accion": "descartar",
+  "ts": 1792028684
+ },
+ "r00040": {
+  "accion": "descartar",
+  "ts": 1792028686
+ },
+ "r00044": {
+  "accion": "descartar",
+  "ts": 1792028690
+ },
+ "r00053": {
+  "accion": "vaca",
+  "ts": 1792029383,
+  "vaca": "4895",
+  "posicion": 12
+ },
+ "r00031": {
+  "accion": "vaca",
+  "ts": 1792456398,
+  "vaca": "4895",
+  "posicion": 1
+ },
+ "r00124": {
+  "accion": "vaca",
+  "ts": 1792456579,
+  "vaca": "3605",
+  "posicion": 20
+ },
+ "r00054": {
+  "accion": "vaca",
+  "ts": 1792456619,
+  "vaca": "5096",
+  "posicion": 3
+ },
+ "r00057": {
+  "accion": "vaca",
+  "ts": 1792456711,
+  "vaca": "5155",
+  "posicion": 8
+ },
+ "r00058": {
+  "accion": "descartar",
+  "ts": 1792456775,
+  "motivo": "no_es_vaca"
+ },
+ "r00061": {
+  "accion": "descartar",
+  "ts": 1792456783,
+  "motivo": "chica"
+ },
+ "r00063": {
+  "accion": "vaca",
+  "ts": 1792456864,
+  "vaca": "4895",
+  "posicion": 1
+ },
+ "r00064": {
+  "accion": "vaca",
+  "ts": 1792456994,
+  "vaca": "4005",
+  "posicion": 21
+ },
+ "r00069": {
+  "accion": "vaca",
+  "ts": 1792457082,
+  "vaca": "3791",
+  "posicion": 19
+ },
+ "r00072": {
+  "accion": "descartar",
+  "ts": 1792457093,
+  "motivo": "no_se_ve"
+ },
+ "r00083": {
+  "accion": "vaca",
+  "ts": 1792457115,
+  "vaca": "5096",
+  "posicion": 2
+ },
+ "r00085": {
+  "accion": "vaca",
+  "ts": 1792457140,
+  "vaca": "4890",
+  "posicion": 11
+ },
+ "r00087": {
+  "accion": "vaca",
+  "ts": 1792457220,
+  "vaca": "3948",
+  "posicion": 23
+ },
+ "r00088": {
+  "accion": "descartar",
+  "ts": 1792457228,
+  "motivo": "no_se_ve"
+ },
+ "r00091": {
+  "accion": "vaca",
+  "ts": 1792457284,
+  "vaca": "4910",
+  "posicion": 24
+ },
+ "r00092": {
+  "accion": "vaca",
+  "ts": 1792457302,
+  "vaca": "4910",
+  "posicion": 10
+ },
+ "r00093": {
+  "accion": "vaca",
+  "ts": 1792457318,
+  "vaca": "4910",
+  "posicion": 3
+ },
+ "r00095": {
+  "accion": "descartar",
+  "ts": 1792457322,
+  "motivo": "chica"
+ },
+ "r00097": {
+  "accion": "descartar",
+  "ts": 1792457326,
+  "motivo": "chica"
+ },
+ "r00098": {
+  "accion": "descartar",
+  "ts": 1792457328,
+  "motivo": "chica"
+ },
+ "r00099": {
+  "accion": "vaca",
+  "ts": 1792457348,
+  "vaca": "4890",
+  "posicion": 1
+ },
+ "r00100": {
+  "accion": "vaca",
+  "ts": 1792457359,
+  "vaca": "4890",
+  "posicion": 1
+ },
+ "r00103": {
+  "accion": "descartar",
+  "ts": 1792457366,
+  "motivo": "chica"
+ },
+ "r00104": {
+  "accion": "vaca",
+  "ts": 1792457406,
+  "vaca": "5401",
+  "posicion": 3
+ },
+ "r00105": {
+  "accion": "vaca",
+  "ts": 1792457514,
+  "vaca": "3608",
+  "posicion": 13
+ },
+ "r00107": {
+  "accion": "vaca",
+  "ts": 1792457545,
+  "vaca": "SN2",
+  "posicion": 4
+ },
+ "r00109": {
+  "accion": "descartar",
+  "ts": 1792457549,
+  "motivo": "no_es_vaca"
+ },
+ "r00110": {
+  "accion": "vaca",
+  "ts": 1792457674,
+  "vaca": "4458",
+  "posicion": 16
+ },
+ "r00112": {
+  "accion": "descartar",
+  "ts": 1792457684,
+  "motivo": "no_se_ve"
+ },
+ "r00113": {
+  "accion": "vaca",
+  "ts": 1792458012,
+  "vaca": "3292",
+  "posicion": 7
+ },
+ "r00118": {
+  "accion": "vaca",
+  "ts": 1792458119,
+  "vaca": "5027",
+  "posicion": 19
+ },
+ "r00119": {
+  "accion": "vaca",
+  "ts": 1792458207,
+  "vaca": "X805",
+  "posicion": 15
+ },
+ "r00120": {
+  "accion": "vaca",
+  "ts": 1792458267,
+  "vaca": "5242",
+  "posicion": 1
+ },
+ "r00126": {
+  "accion": "vaca",
+  "ts": 1793046913,
+  "vaca": "3730",
+  "posicion": 5
+ },
+ "r00152": {
+  "accion": "descartar",
+  "ts": 1793046998,
+  "motivo": "chica"
+ },
+ "r00128": {
+  "accion": "vaca",
+  "ts": 1793047258,
+  "vaca": "5063",
+  "posicion": 8
+ },
+ "r00129": {
+  "accion": "vaca",
+  "ts": 1793047403,
+  "vaca": "4963",
+  "posicion": 6
+ },
+ "r00131": {
+  "accion": "vaca",
+  "ts": 1793049638,
+  "por": "sofi",
+  "vaca": "4277",
+  "posicion": 13
+ },
+ "r00136": {
+  "accion": "vaca",
+  "ts": 1793049683,
+  "por": "Luqui",
+  "vaca": "5008",
+  "posicion": 7
+ },
+ "r00138": {
+  "accion": "vaca",
+  "ts": 1793049989,
+  "por": "Luqui",
+  "vaca": "4345",
+  "posicion": 1
+ },
+ "r00132": {
+  "accion": "vaca",
+  "ts": 1793050016,
+  "por": "sofi",
+  "vaca": "4256",
+  "posicion": 34
+ },
+ "r00143": {
+  "accion": "vaca",
+  "ts": 1793050127,
+  "por": "Luqui",
+  "vaca": "3277",
+  "posicion": 1
+ },
+ "r00144": {
+  "accion": "descartar",
+  "ts": 1793050095,
+  "por": "sofi",
+  "motivo": "amontonadas"
+ },
+ "r00140": {
+  "accion": "vaca",
+  "ts": 1793050136,
+  "por": "Ramiro",
+  "vaca": "5080",
+  "posicion": 1
+ },
+ "r00151": {
+  "accion": "vaca",
+  "ts": 1793050136,
+  "por": "sofi",
+  "vaca": "5641",
+  "posicion": 2
+ },
+ "r01132": {
+  "accion": "vaca",
+  "ts": 1793050515,
+  "por": "sofi",
+  "vaca": "5641",
+  "posicion": 1
+ },
+ "r00878": {
+  "accion": "descartar",
+  "ts": 1793050564,
+  "por": "Luqui",
+  "motivo": "no_es_vaca"
+ },
+ "r00155": {
+  "accion": "vaca",
+  "ts": 1793050598,
+  "por": "Ramiro",
+  "vaca": "4496",
+  "posicion": 8
+ },
+ "r00154": {
+  "accion": "vaca",
+  "ts": 1793053629,
+  "por": "sofi",
+  "vaca": "5080",
+  "posicion": 11
+ },
+ "r00156": {
+  "accion": "vaca",
+  "ts": 1793053647,
+  "por": "sofi",
+  "vaca": "5080",
+  "posicion": 1
+ },
+ "r00157": {
+  "accion": "vaca",
+  "ts": 1793053695,
+  "por": "sofi",
+  "vaca": "4745",
+  "posicion": 29
+ },
+ "r00158": {
+  "accion": "vaca",
+  "ts": 1793053708,
+  "por": "sofi",
+  "vaca": "5080",
+  "posicion": 1
+ },
+ "r00160": {
+  "accion": "vaca",
+  "ts": 1793054057,
+  "por": "sofi",
+  "vaca": "3225",
+  "posicion": 17
+ },
+ "r00162": {
+  "accion": "vaca",
+  "ts": 1793054221,
+  "por": "sofi",
+  "vaca": "5242",
+  "posicion": 2
+ },
+ "r00166": {
+  "accion": "vaca",
+  "ts": 1793054525,
+  "por": "sofi",
+  "vaca": "5191",
+  "posicion": 1
+ },
+ "r00171": {
+  "accion": "descartar",
+  "ts": 1793054549,
+  "por": "sofi",
+  "motivo": "chica"
+ },
+ "r00172": {
+  "accion": "descartar",
+  "ts": 1793054553,
+  "por": "sofi",
+  "motivo": "chica"
+ },
+ "r00174": {
+  "accion": "vaca",
+  "ts": 1793054697,
+  "por": "sofi",
+  "vaca": "3614",
+  "posicion": 5
+ },
+ "r00176": {
+  "accion": "vaca",
+  "ts": 1793054825,
+  "por": "sofi",
+  "vaca": "4454",
+  "posicion": 5
+ },
+ "r00180": {
+  "accion": "descartar",
+  "ts": 1793054832,
+  "por": "sofi",
+  "motivo": "chica"
+ },
+ "r00181": {
+  "accion": "vaca",
+  "ts": 1793054942,
+  "por": "sofi",
+  "vaca": "5234",
+  "posicion": 27
+ },
+ "r00183": {
+  "accion": "descartar",
+  "ts": 1793054948,
+  "por": "sofi",
+  "motivo": "chica"
+ },
+ "r00184": {
+  "accion": "vaca",
+  "ts": 1793055067,
+  "por": "sofi",
+  "vaca": "5191",
+  "posicion": 1
+ },
+ "r00185": {
+  "accion": "vaca",
+  "ts": 1793055417,
+  "por": "sofi",
+  "vaca": "4256",
+  "posicion": 7
+ },
+ "r00186": {
+  "accion": "descartar",
+  "ts": 1793055424,
+  "por": "sofi",
+  "motivo": "no_es_vaca"
+ },
+ "r00187": {
+  "accion": "vaca",
+  "ts": 1793055439,
+  "por": "sofi",
+  "vaca": "4932",
+  "posicion": 1
+ },
+ "r00191": {
+  "accion": "vaca",
+  "ts": 1793055466,
+  "por": "sofi",
+  "vaca": "4595",
+  "posicion": 10
+ },
+ "r00194": {
+  "accion": "vaca",
+  "ts": 1793055780,
+  "por": "sofi",
+  "vaca": "5103",
+  "posicion": 32
+ },
+ "r00195": {
+  "accion": "vaca",
+  "ts": 1793055798,
+  "por": "sofi",
+  "vaca": "5234",
+  "posicion": 1
+ },
+ "r00196": {
+  "accion": "descartar",
+  "ts": 1793055823,
+  "por": "sofi",
+  "motivo": "chica"
+ },
+ "r00199": {
+  "accion": "descartar",
+  "ts": 1793055828,
+  "por": "sofi",
+  "motivo": "chica"
+ },
+ "r00206": {
+  "accion": "vaca",
+  "ts": 1793055852,
+  "por": "sofi",
+  "vaca": "4745",
+  "posicion": 10
+ },
+ "r00209": {
+  "accion": "vaca",
+  "ts": 1793055857,
+  "por": "sofi",
+  "vaca": "4930",
+  "posicion": 2
+ },
+ "r00210": {
+  "accion": "descartar",
+  "ts": 1793055863,
+  "por": "sofi",
+  "motivo": "chica"
+ },
+ "r00215": {
+  "accion": "vaca",
+  "ts": 1793056243,
+  "por": "sofi",
+  "vaca": "3225",
+  "posicion": 12
+ },
+ "r00216": {
+  "accion": "vaca",
+  "ts": 1793056290,
+  "por": "sofi",
+  "vaca": "4932",
+  "posicion": 1
+ },
+ "r00217": {
+  "accion": "vaca",
+  "ts": 1793056300,
+  "por": "sofi",
+  "vaca": "4932",
+  "posicion": 1
+ },
+ "r00222": {
+  "accion": "descartar",
+  "ts": 1793153058,
+  "por": "sofi",
+  "motivo": "chica"
+ },
+ "r00230": {
+  "accion": "descartar",
+  "ts": 1793153061,
+  "por": "sofi",
+  "motivo": "chica"
+ },
+ "r00233": {
+  "accion": "vaca",
+  "ts": 1793153097,
+  "por": "sofi",
+  "vaca": "4745",
+  "posicion": 8
+ },
+ "r00234": {
+  "accion": "vaca",
+  "ts": 1793153112,
+  "por": "sofi",
+  "vaca": "5191",
+  "posicion": 1
+ },
+ "r00235": {
+  "accion": "vaca",
+  "ts": 1793153119,
+  "por": "sofi",
+  "vaca": "4930",
+  "posicion": 1
+ },
+ "r00236": {
+  "accion": "vaca",
+  "ts": 1793153213,
+  "por": "sofi",
+  "vaca": "4595",
+  "posicion": 12
+ },
+ "r00237": {
+  "accion": "vaca",
+  "ts": 1793153232,
+  "por": "sofi",
+  "vaca": "4932",
+  "posicion": 1
+ },
+ "r00238": {
+  "accion": "vaca",
+  "ts": 1793153245,
+  "por": "sofi",
+  "vaca": "3614",
+  "posicion": 5
+ },
+ "r00241": {
+  "accion": "vaca",
+  "ts": 1793153253,
+  "por": "sofi",
+  "vaca": "5103",
+  "posicion": 1
+ },
+ "r00244": {
+  "accion": "vaca",
+  "ts": 1793153262,
+  "por": "sofi",
+  "vaca": "4930",
+  "posicion": 1
+ },
+ "r00245": {
+  "accion": "vaca",
+  "ts": 1793153303,
+  "por": "sofi",
+  "vaca": "5191",
+  "posicion": 1
+ },
+ "r00246": {
+  "accion": "vaca",
+  "ts": 1793153316,
+  "por": "sofi",
+  "vaca": "4932",
+  "posicion": 1
+ },
+ "r00247": {
+  "accion": "vaca",
+  "ts": 1793153327,
+  "por": "sofi",
+  "vaca": "5103",
+  "posicion": 1
+ },
+ "r00248": {
+  "accion": "vaca",
+  "ts": 1793153353,
+  "por": "sofi",
+  "vaca": "4595",
+  "posicion": 1
+ },
+ "r00249": {
+  "accion": "vaca",
+  "ts": 1793153370,
+  "por": "sofi",
+  "vaca": "3898",
+  "posicion": 27
+ },
+ "r00250": {
+  "accion": "vaca",
+  "ts": 1793153383,
+  "por": "sofi",
+  "vaca": "3614",
+  "posicion": 2
+ },
+ "r00251": {
+  "accion": "nose",
+  "ts": 1793153487,
+  "por": "sofi"
+ },
+ "r00252": {
+  "accion": "descartar",
+  "ts": 1793153492,
+  "por": "sofi",
+  "motivo": "chica"
+ },
+ "r00253": {
+  "accion": "descartar",
+  "ts": 1793153497,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00254": {
+  "accion": "vaca",
+  "ts": 1793153512,
+  "por": "sofi",
+  "vaca": "3614",
+  "posicion": 1
+ },
+ "r00255": {
+  "accion": "descartar",
+  "ts": 1793153517,
+  "por": "sofi",
+  "motivo": "chica"
+ },
+ "r00256": {
+  "accion": "descartar",
+  "ts": 1793153521,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00259": {
+  "accion": "vaca",
+  "ts": 1793153539,
+  "por": "sofi",
+  "vaca": "5063",
+  "posicion": 3
+ },
+ "r00261": {
+  "accion": "vaca",
+  "ts": 1793153569,
+  "por": "sofi",
+  "vaca": "5401",
+  "posicion": 3
+ },
+ "r00263": {
+  "accion": "vaca",
+  "ts": 1793153583,
+  "por": "sofi",
+  "vaca": "4252",
+  "posicion": 15
+ },
+ "r00264": {
+  "accion": "vaca",
+  "ts": 1793153588,
+  "por": "sofi",
+  "vaca": "4595",
+  "posicion": 1
+ },
+ "r00265": {
+  "accion": "vaca",
+  "ts": 1793153597,
+  "por": "sofi",
+  "vaca": "4595",
+  "posicion": 1
+ },
+ "r00268": {
+  "accion": "vaca",
+  "ts": 1793153749,
+  "por": "sofi",
+  "vaca": "SN3",
+  "posicion": 15
+ },
+ "r00272": {
+  "accion": "descartar",
+  "ts": 1793153752,
+  "por": "sofi",
+  "motivo": "chica"
+ },
+ "r00273": {
+  "accion": "vaca",
+  "ts": 1793153765,
+  "por": "sofi",
+  "vaca": "4864",
+  "posicion": 9
+ },
+ "r00275": {
+  "accion": "vaca",
+  "ts": 1793153828,
+  "por": "sofi",
+  "vaca": "3563",
+  "posicion": 38
+ },
+ "r00278": {
+  "accion": "descartar",
+  "ts": 1793153833,
+  "por": "sofi",
+  "motivo": "chica"
+ },
+ "r00280": {
+  "accion": "descartar",
+  "ts": 1793153840,
+  "por": "sofi",
+  "motivo": "chica"
+ },
+ "r00282": {
+  "accion": "descartar",
+  "ts": 1793153843,
+  "por": "sofi",
+  "motivo": "chica"
+ },
+ "r00283": {
+  "accion": "descartar",
+  "ts": 1793153849,
+  "por": "sofi",
+  "motivo": "chica"
+ },
+ "r00285": {
+  "accion": "descartar",
+  "ts": 1793153863,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00287": {
+  "accion": "vaca",
+  "ts": 1793153876,
+  "por": "sofi",
+  "vaca": "4930",
+  "posicion": 8
+ },
+ "r00289": {
+  "accion": "vaca",
+  "ts": 1793153884,
+  "por": "sofi",
+  "vaca": "4932",
+  "posicion": 1
+ },
+ "r00290": {
+  "accion": "vaca",
+  "ts": 1793154071,
+  "por": "sofi",
+  "vaca": "3669",
+  "posicion": 38
+ },
+ "r00291": {
+  "accion": "vaca",
+  "ts": 1793154098,
+  "por": "sofi",
+  "vaca": "5063",
+  "posicion": 2
+ },
+ "r00292": {
+  "accion": "vaca",
+  "ts": 1793154116,
+  "por": "sofi",
+  "vaca": "4864",
+  "posicion": 8
+ },
+ "r00293": {
+  "accion": "vaca",
+  "ts": 1793154137,
+  "por": "sofi",
+  "vaca": "4252",
+  "posicion": 1
+ },
+ "r00294": {
+  "accion": "vaca",
+  "ts": 1793154259,
+  "por": "sofi",
+  "vaca": "4226",
+  "posicion": 50
+ },
+ "r00296": {
+  "accion": "descartar",
+  "ts": 1793154263,
+  "por": "sofi",
+  "motivo": "chica"
+ },
+ "r00298": {
+  "accion": "vaca",
+  "ts": 1793154336,
+  "por": "sofi",
+  "vaca": "4595",
+  "posicion": 2
+ },
+ "r00299": {
+  "accion": "descartar",
+  "ts": 1793154342,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00300": {
+  "accion": "vaca",
+  "ts": 1793154352,
+  "por": "sofi",
+  "vaca": "4930",
+  "posicion": 2
+ },
+ "r00302": {
+  "accion": "vaca",
+  "ts": 1793154358,
+  "por": "sofi",
+  "vaca": "4930",
+  "posicion": 2
+ },
+ "r00304": {
+  "accion": "vaca",
+  "ts": 1793154364,
+  "por": "sofi",
+  "vaca": "4930",
+  "posicion": 1
+ },
+ "r00305": {
+  "accion": "descartar",
+  "ts": 1793154368,
+  "por": "sofi",
+  "motivo": "chica"
+ },
+ "r00306": {
+  "accion": "vaca",
+  "ts": 1793154373,
+  "por": "sofi",
+  "vaca": "SN3",
+  "posicion": 4
+ },
+ "r00307": {
+  "accion": "vaca",
+  "ts": 1793154431,
+  "por": "sofi",
+  "vaca": "4517",
+  "posicion": 9
+ },
+ "r00308": {
+  "accion": "descartar",
+  "ts": 1793154436,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00309": {
+  "accion": "vaca",
+  "ts": 1793154445,
+  "por": "sofi",
+  "vaca": "4930",
+  "posicion": 1
+ },
+ "r00311": {
+  "accion": "vaca",
+  "ts": 1793154451,
+  "por": "sofi",
+  "vaca": "4930",
+  "posicion": 1
+ },
+ "r00312": {
+  "accion": "descartar",
+  "ts": 1793154454,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00314": {
+  "accion": "vaca",
+  "ts": 1793154463,
+  "por": "sofi",
+  "vaca": "4517",
+  "posicion": 1
+ },
+ "r00315": {
+  "accion": "vaca",
+  "ts": 1793154487,
+  "por": "sofi",
+  "vaca": "5242",
+  "posicion": 19
+ },
+ "r00316": {
+  "accion": "vaca",
+  "ts": 1793154494,
+  "por": "sofi",
+  "vaca": "4930",
+  "posicion": 1
+ },
+ "r00318": {
+  "accion": "vaca",
+  "ts": 1793154497,
+  "por": "sofi",
+  "vaca": "4930",
+  "posicion": 1
+ },
+ "r00322": {
+  "accion": "vaca",
+  "ts": 1793154512,
+  "por": "sofi",
+  "vaca": "3563",
+  "posicion": 4
+ },
+ "r00323": {
+  "accion": "descartar",
+  "ts": 1793154517,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00325": {
+  "accion": "vaca",
+  "ts": 1793154661,
+  "por": "sofi",
+  "vaca": "3563",
+  "posicion": 1
+ },
+ "r00328": {
+  "accion": "vaca",
+  "ts": 1793154685,
+  "por": "sofi",
+  "vaca": "4885",
+  "posicion": 11
+ },
+ "r00329": {
+  "accion": "vaca",
+  "ts": 1793154747,
+  "por": "sofi",
+  "vaca": "SN2",
+  "posicion": 3
+ },
+ "r00330": {
+  "accion": "vaca",
+  "ts": 1793154773,
+  "por": "sofi",
+  "vaca": "5234",
+  "posicion": 17
+ },
+ "r00332": {
+  "accion": "descartar",
+  "ts": 1793154785,
+  "por": "sofi",
+  "motivo": "amontonadas"
+ },
+ "r00339": {
+  "accion": "nose",
+  "ts": 1793154848,
+  "por": "sofi"
+ },
+ "r00340": {
+  "accion": "vaca",
+  "ts": 1793154858,
+  "por": "sofi",
+  "vaca": "SN2",
+  "posicion": 1
+ },
+ "r00341": {
+  "accion": "vaca",
+  "ts": 1793154886,
+  "por": "sofi",
+  "vaca": "3669",
+  "posicion": 3
+ },
+ "r00360": {
+  "accion": "vaca",
+  "ts": 1793277218,
+  "por": "Luqui",
+  "vaca": "4226",
+  "posicion": 2
+ },
+ "r00466": {
+  "accion": "vaca",
+  "ts": 1793277276,
+  "por": "Luqui",
+  "vaca": "4762",
+  "posicion": 17
+ },
+ "r00685": {
+  "accion": "vaca",
+  "ts": 1793277434,
+  "por": "Luqui",
+  "vaca": "4458",
+  "posicion": 2
+ },
+ "r00681": {
+  "accion": "vaca",
+  "ts": 1793277441,
+  "por": "Luqui",
+  "vaca": "4680",
+  "posicion": 1
+ },
+ "r00682": {
+  "accion": "vaca",
+  "ts": 1793277447,
+  "por": "Luqui",
+  "vaca": "4252",
+  "posicion": 1
+ },
+ "r00684": {
+  "accion": "vaca",
+  "ts": 1793277471,
+  "por": "Luqui",
+  "vaca": "3225",
+  "posicion": 1
+ },
+ "r00687": {
+  "accion": "vaca",
+  "ts": 1793277493,
+  "por": "Luqui",
+  "vaca": "4864",
+  "posicion": 1
+ },
+ "r00733": {
+  "accion": "vaca",
+  "ts": 1793277506,
+  "por": "Luqui",
+  "vaca": "5242",
+  "posicion": 1
+ },
+ "r00800": {
+  "accion": "vaca",
+  "ts": 1793277586,
+  "por": "Luqui",
+  "vaca": "4764",
+  "posicion": 48
+ },
+ "r00805": {
+  "accion": "vaca",
+  "ts": 1793277607,
+  "por": "Luqui",
+  "vaca": "4404",
+  "posicion": 9
+ },
+ "r00821": {
+  "accion": "vaca",
+  "ts": 1793277661,
+  "por": "Luqui",
+  "vaca": "5242",
+  "posicion": 1
+ },
+ "r00833": {
+  "accion": "vaca",
+  "ts": 1793277671,
+  "por": "Luqui",
+  "vaca": "5242",
+  "posicion": 1
+ },
+ "r00840": {
+  "accion": "vaca",
+  "ts": 1793277677,
+  "por": "Luqui",
+  "vaca": "5242",
+  "posicion": 1
+ },
+ "r00897": {
+  "accion": "vaca",
+  "ts": 1793277695,
+  "por": "Luqui",
+  "vaca": "4932",
+  "posicion": 1
+ },
+ "r00915": {
+  "accion": "vaca",
+  "ts": 1793277705,
+  "por": "Luqui",
+  "vaca": "4932",
+  "posicion": 1
+ },
+ "r00946": {
+  "accion": "vaca",
+  "ts": 1793277851,
+  "por": "Luqui",
+  "vaca": "5242",
+  "posicion": 1
+ },
+ "r00412": {
+  "accion": "vaca",
+  "ts": 1793283308,
+  "por": "Luqui",
+  "vaca": "5242",
+  "posicion": 1
+ },
+ "r00356": {
+  "accion": "vaca",
+  "ts": 1793283322,
+  "por": "Luqui",
+  "vaca": "5103",
+  "posicion": 6
+ },
+ "r00450": {
+  "accion": "vaca",
+  "ts": 1793283373,
+  "por": "Luqui",
+  "vaca": "5063",
+  "posicion": 1
+ },
+ "r00458": {
+  "accion": "vaca",
+  "ts": 1793283470,
+  "por": "Luqui",
+  "vaca": "5401",
+  "posicion": 1
+ },
+ "r00459": {
+  "accion": "descartar",
+  "ts": 1793283490,
+  "por": "Luqui",
+  "motivo": "otro"
+ },
+ "r00487": {
+  "accion": "vaca",
+  "ts": 1793283505,
+  "por": "Luqui",
+  "vaca": "4762",
+  "posicion": 4
+ },
+ "r00518": {
+  "accion": "vaca",
+  "ts": 1793283516,
+  "por": "Luqui",
+  "vaca": "4762",
+  "posicion": 1
+ },
+ "r00552": {
+  "accion": "vaca",
+  "ts": 1793283542,
+  "por": "Luqui",
+  "vaca": "4864",
+  "posicion": 1
+ },
+ "r00575": {
+  "accion": "vaca",
+  "ts": 1793283554,
+  "por": "Luqui",
+  "vaca": "4226",
+  "posicion": 1
+ },
+ "r00587": {
+  "accion": "vaca",
+  "ts": 1793283731,
+  "por": "Luqui",
+  "vaca": "5401",
+  "posicion": 1
+ },
+ "r00595": {
+  "accion": "vaca",
+  "ts": 1793283743,
+  "por": "Luqui",
+  "vaca": "4583",
+  "posicion": 3
+ },
+ "r00596": {
+  "accion": "vaca",
+  "ts": 1793283816,
+  "por": "Luqui",
+  "vaca": "4226",
+  "posicion": 1
+ },
+ "r00597": {
+  "accion": "descartar",
+  "ts": 1793283826,
+  "por": "Luqui",
+  "motivo": "no_se_ve"
+ },
+ "r00600": {
+  "accion": "descartar",
+  "ts": 1793283836,
+  "por": "Luqui",
+  "motivo": "no_se_ve"
+ },
+ "r00601": {
+  "accion": "vaca",
+  "ts": 1793283845,
+  "por": "Luqui",
+  "vaca": "4517",
+  "posicion": 1
+ },
+ "r00604": {
+  "accion": "descartar",
+  "ts": 1793283857,
+  "por": "Luqui",
+  "motivo": "no_se_ve"
+ },
+ "r00710": {
+  "accion": "vaca",
+  "ts": 1793283872,
+  "por": "Luqui",
+  "vaca": "5242",
+  "posicion": 1
+ },
+ "r00722": {
+  "accion": "vaca",
+  "ts": 1793283884,
+  "por": "Luqui",
+  "vaca": "5242",
+  "posicion": 1
+ },
+ "r00730": {
+  "accion": "vaca",
+  "ts": 1793283910,
+  "por": "Luqui",
+  "vaca": "5242",
+  "posicion": 1
+ },
+ "r00765": {
+  "accion": "vaca",
+  "ts": 1793283964,
+  "por": "Luqui",
+  "vaca": "5242",
+  "posicion": 1
+ },
+ "r00797": {
+  "accion": "vaca",
+  "ts": 1793283974,
+  "por": "Luqui",
+  "vaca": "4864",
+  "posicion": 1
+ },
+ "r00798": {
+  "accion": "vaca",
+  "ts": 1793284001,
+  "por": "Luqui",
+  "vaca": "5242",
+  "posicion": 1
+ },
+ "r00804": {
+  "accion": "vaca",
+  "ts": 1793284084,
+  "por": "Luqui",
+  "vaca": "4496",
+  "posicion": 35
+ },
+ "r00813": {
+  "accion": "vaca",
+  "ts": 1793284116,
+  "por": "Luqui",
+  "vaca": "4764",
+  "posicion": 1
+ },
+ "r00823": {
+  "accion": "descartar",
+  "ts": 1793284129,
+  "por": "Luqui",
+  "motivo": "no_es_vaca"
+ },
+ "r00828": {
+  "accion": "vaca",
+  "ts": 1793284154,
+  "por": "Luqui",
+  "vaca": "4764",
+  "posicion": 1
+ },
+ "r01222": {
+  "accion": "vaca",
+  "ts": 1793284300,
+  "por": "Luqui",
+  "vaca": "5080",
+  "posicion": 10
+ },
+ "r01228": {
+  "accion": "vaca",
+  "ts": 1793284305,
+  "por": "Luqui",
+  "vaca": "4932",
+  "posicion": 1
+ },
+ "r01251": {
+  "accion": "vaca",
+  "ts": 1793284403,
+  "por": "Luqui",
+  "vaca": "5103",
+  "posicion": 16
+ },
+ "r01252": {
+  "accion": "vaca",
+  "ts": 1793284524,
+  "por": "Luqui",
+  "vaca": "5116",
+  "posicion": 32
+ },
+ "r01253": {
+  "accion": "descartar",
+  "ts": 1793284530,
+  "por": "Luqui",
+  "motivo": "no_se_ve"
+ },
+ "r01260": {
+  "accion": "descartar",
+  "ts": 1793284538,
+  "por": "Luqui",
+  "motivo": "otro"
+ },
+ "r01264": {
+  "accion": "vaca",
+  "ts": 1793284580,
+  "por": "Luqui",
+  "vaca": "4517",
+  "posicion": 1
+ },
+ "r01289": {
+  "accion": "vaca",
+  "ts": 1793284646,
+  "por": "Luqui",
+  "vaca": "3563",
+  "posicion": 7
+ },
+ "r01293": {
+  "accion": "descartar",
+  "ts": 1793284652,
+  "por": "Luqui",
+  "motivo": "no_se_ve"
+ },
+ "r01325": {
+  "accion": "vaca",
+  "ts": 1793284666,
+  "por": "Luqui",
+  "vaca": "4932",
+  "posicion": 1
+ },
+ "r01330": {
+  "accion": "vaca",
+  "ts": 1793284697,
+  "por": "Luqui",
+  "vaca": "4932",
+  "posicion": 1
+ },
+ "r01349": {
+  "accion": "vaca",
+  "ts": 1793284706,
+  "por": "Luqui",
+  "vaca": "4932",
+  "posicion": 1
+ },
+ "r01358": {
+  "accion": "vaca",
+  "ts": 1793284713,
+  "por": "Luqui",
+  "vaca": "4932",
+  "posicion": 1
+ },
+ "r01360": {
+  "accion": "vaca",
+  "ts": 1793284720,
+  "por": "Luqui",
+  "vaca": "4517",
+  "posicion": 2
+ },
+ "r01363": {
+  "accion": "descartar",
+  "ts": 1793284731,
+  "por": "Luqui",
+  "motivo": "no_se_ve"
+ },
+ "r01356": {
+  "accion": "descartar",
+  "ts": 1793284736,
+  "por": "Luqui",
+  "motivo": "no_se_ve"
+ },
+ "r01219": {
+  "accion": "vaca",
+  "ts": 1793284781,
+  "por": "Luqui",
+  "vaca": "4404",
+  "posicion": 33
+ },
+ "r01011": {
+  "accion": "vaca",
+  "ts": 1793284821,
+  "por": "Luqui",
+  "vaca": "4932",
+  "posicion": 1
+ },
+ "r01014": {
+  "accion": "vaca",
+  "ts": 1793284896,
+  "por": "Luqui",
+  "vaca": "4517",
+  "posicion": 1
+ },
+ "r01016": {
+  "accion": "vaca",
+  "ts": 1793284924,
+  "por": "Luqui",
+  "vaca": "4930",
+  "posicion": 2
+ },
+ "r01017": {
+  "accion": "nose",
+  "ts": 1793285118,
+  "por": "Luqui"
+ },
+ "r01018": {
+  "accion": "vaca",
+  "ts": 1793285148,
+  "por": "Luqui",
+  "vaca": "4890",
+  "posicion": 14
+ },
+ "r01027": {
+  "accion": "vaca",
+  "ts": 1793285173,
+  "por": "Luqui",
+  "vaca": "4932",
+  "posicion": 1
+ },
+ "r01029": {
+  "accion": "descartar",
+  "ts": 1793285184,
+  "por": "Luqui",
+  "motivo": "no_se_ve"
+ },
+ "r01031": {
+  "accion": "vaca",
+  "ts": 1793285192,
+  "por": "Luqui",
+  "vaca": "4517",
+  "posicion": 1
+ },
+ "r01033": {
+  "accion": "descartar",
+  "ts": 1793285207,
+  "por": "Luqui",
+  "motivo": "no_se_ve"
+ },
+ "r01034": {
+  "accion": "descartar",
+  "ts": 1793285212,
+  "por": "Luqui",
+  "motivo": "no_se_ve"
+ },
+ "r01037": {
+  "accion": "descartar",
+  "ts": 1793285217,
+  "por": "Luqui",
+  "motivo": "no_se_ve"
+ },
+ "r01039": {
+  "accion": "vaca",
+  "ts": 1793285266,
+  "por": "Luqui",
+  "vaca": "4277",
+  "posicion": 4
+ },
+ "r01043": {
+  "accion": "descartar",
+  "ts": 1793285281,
+  "por": "Luqui",
+  "motivo": "no_se_ve"
+ },
+ "r01044": {
+  "accion": "descartar",
+  "ts": 1793285287,
+  "por": "Luqui",
+  "motivo": "no_se_ve"
+ },
+ "r01046": {
+  "accion": "vaca",
+  "ts": 1793285294,
+  "por": "Luqui",
+  "vaca": "4517",
+  "posicion": 1
+ },
+ "r01050": {
+  "accion": "descartar",
+  "ts": 1793285300,
+  "por": "Luqui",
+  "motivo": "no_se_ve"
+ },
+ "r01051": {
+  "accion": "descartar",
+  "ts": 1793285304,
+  "por": "Luqui",
+  "motivo": "no_se_ve"
+ },
+ "r01053": {
+  "accion": "vaca",
+  "ts": 1793285308,
+  "por": "Luqui",
+  "vaca": "4277",
+  "posicion": 1
+ },
+ "r01055": {
+  "accion": "vaca",
+  "ts": 1793285313,
+  "por": "Luqui",
+  "vaca": "4890",
+  "posicion": 1
+ },
+ "r01056": {
+  "accion": "vaca",
+  "ts": 1793285320,
+  "por": "Luqui",
+  "vaca": "4517",
+  "posicion": 1
+ },
+ "r01057": {
+  "accion": "descartar",
+  "ts": 1793285325,
+  "por": "Luqui",
+  "motivo": "no_se_ve"
+ },
+ "r01060": {
+  "accion": "vaca",
+  "ts": 1793285333,
+  "por": "Luqui",
+  "vaca": "4277",
+  "posicion": 1
+ },
+ "r01061": {
+  "accion": "vaca",
+  "ts": 1793285338,
+  "por": "Luqui",
+  "vaca": "4517",
+  "posicion": 1
+ },
+ "r01064": {
+  "accion": "vaca",
+  "ts": 1793285340,
+  "por": "Luqui",
+  "vaca": "4277",
+  "posicion": 1
+ },
+ "r01074": {
+  "accion": "descartar",
+  "ts": 1793285346,
+  "por": "Luqui",
+  "motivo": "no_se_ve"
+ },
+ "r01077": {
+  "accion": "vaca",
+  "ts": 1793285348,
+  "por": "Luqui",
+  "vaca": "4277",
+  "posicion": 1
+ },
+ "r01078": {
+  "accion": "descartar",
+  "ts": 1793285354,
+  "por": "Luqui",
+  "motivo": "no_se_ve"
+ },
+ "r01084": {
+  "accion": "vaca",
+  "ts": 1793285356,
+  "por": "Luqui",
+  "vaca": "4277",
+  "posicion": 1
+ },
+ "r01088": {
+  "accion": "descartar",
+  "ts": 1793285376,
+  "por": "Luqui",
+  "motivo": "no_se_ve"
+ },
+ "r01089": {
+  "accion": "vaca",
+  "ts": 1793285379,
+  "por": "Luqui",
+  "vaca": "4277",
+  "posicion": 1
+ },
+ "r01091": {
+  "accion": "descartar",
+  "ts": 1793285391,
+  "por": "Luqui",
+  "motivo": "no_se_ve"
+ },
+ "r01095": {
+  "accion": "vaca",
+  "ts": 1793285438,
+  "por": "Luqui",
+  "vaca": "4661",
+  "posicion": 10
+ },
+ "r01099": {
+  "accion": "descartar",
+  "ts": 1793285447,
+  "por": "Luqui",
+  "motivo": "no_se_ve"
+ },
+ "r01100": {
+  "accion": "descartar",
+  "ts": 1793285454,
+  "por": "Luqui",
+  "motivo": "no_se_ve"
+ },
+ "r01110": {
+  "accion": "vaca",
+  "ts": 1793285463,
+  "por": "Luqui",
+  "vaca": "4277",
+  "posicion": 1
+ },
+ "r01118": {
+  "accion": "vaca",
+  "ts": 1793285494,
+  "por": "Luqui",
+  "vaca": "4890",
+  "posicion": 1
+ },
+ "r01139": {
+  "accion": "vaca",
+  "ts": 1793285578,
+  "por": "Luqui",
+  "vaca": "4454",
+  "posicion": 6
+ },
+ "r01141": {
+  "accion": "vaca",
+  "ts": 1793285590,
+  "por": "Luqui",
+  "vaca": "4277",
+  "posicion": 1
+ },
+ "r01164": {
+  "accion": "vaca",
+  "ts": 1793285610,
+  "por": "Luqui",
+  "vaca": "4277",
+  "posicion": 1
+ },
+ "r01187": {
+  "accion": "vaca",
+  "ts": 1793285618,
+  "por": "Luqui",
+  "vaca": "4932",
+  "posicion": 1
+ },
+ "r01190": {
+  "accion": "vaca",
+  "ts": 1793285623,
+  "por": "Luqui",
+  "vaca": "4932",
+  "posicion": 1
+ },
+ "r01207": {
+  "accion": "vaca",
+  "ts": 1793285639,
+  "por": "Luqui",
+  "vaca": "4932",
+  "posicion": 1
+ },
+ "r01315": {
+  "accion": "vaca",
+  "ts": 1793285678,
+  "por": "Luqui",
+  "vaca": "4890",
+  "posicion": 39
+ },
+ "r01339": {
+  "accion": "nose",
+  "ts": 1793285800,
+  "por": "Luqui"
+ },
+ "r01343": {
+  "accion": "vaca",
+  "ts": 1793285832,
+  "por": "Luqui",
+  "vaca": "4864",
+  "posicion": 18
+ },
+ "r00343": {
+  "accion": "vaca",
+  "ts": 1793291073,
+  "por": "Luqui",
+  "vaca": "4762",
+  "posicion": 2
+ },
+ "r00441": {
+  "accion": "vaca",
+  "ts": 1793291255,
+  "por": "Luqui",
+  "vaca": "5401",
+  "posicion": 1
+ },
+ "r00497": {
+  "accion": "vaca",
+  "ts": 1793291306,
+  "por": "Luqui",
+  "vaca": "3563",
+  "posicion": 2
+ },
+ "r00507": {
+  "accion": "vaca",
+  "ts": 1793300205,
+  "por": "Luqui",
+  "vaca": "3374",
+  "posicion": 7
+ },
+ "r00509": {
+  "accion": "vaca",
+  "ts": 1793300215,
+  "por": "Luqui",
+  "vaca": "4762",
+  "posicion": 1
+ },
+ "r00732": {
+  "accion": "vaca",
+  "ts": 1793300248,
+  "por": "Luqui",
+  "vaca": "4930",
+  "posicion": 1
+ },
+ "r00739": {
+  "accion": "vaca",
+  "ts": 1793300282,
+  "por": "Luqui",
+  "vaca": "3225",
+  "posicion": 1
+ },
+ "r00746": {
+  "accion": "descartar",
+  "ts": 1793300290,
+  "por": "Luqui",
+  "motivo": "no_se_ve"
+ },
+ "r00755": {
+  "accion": "vaca",
+  "ts": 1793300318,
+  "por": "Luqui",
+  "vaca": "5242",
+  "posicion": 1
+ },
+ "r00761": {
+  "accion": "descartar",
+  "ts": 1793300324,
+  "por": "Luqui",
+  "motivo": "no_se_ve"
+ },
+ "r00920": {
+  "accion": "vaca",
+  "ts": 1793300373,
+  "por": "Luqui",
+  "vaca": "4932",
+  "posicion": 1
+ },
+ "r00991": {
+  "accion": "vaca",
+  "ts": 1793300410,
+  "por": "Luqui",
+  "vaca": "4930",
+  "posicion": 3
+ },
+ "r00347": {
+  "accion": "vaca",
+  "ts": 1793455267,
+  "por": "sofi",
+  "vaca": "5401",
+  "posicion": 2
+ },
+ "r00362": {
+  "accion": "descartar",
+  "ts": 1793455525,
+  "por": "sofi",
+  "motivo": "chica"
+ },
+ "r00365": {
+  "accion": "vaca",
+  "ts": 1793455587,
+  "por": "sofi",
+  "vaca": "4745",
+  "posicion": 19
+ },
+ "r00366": {
+  "accion": "vaca",
+  "ts": 1793455712,
+  "por": "sofi",
+  "vaca": "4517",
+  "posicion": 1
+ },
+ "r00372": {
+  "accion": "vaca",
+  "ts": 1793455943,
+  "por": "sofi",
+  "vaca": "4885",
+  "posicion": 32
+ },
+ "r00375": {
+  "accion": "descartar",
+  "ts": 1793455952,
+  "por": "sofi",
+  "motivo": "chica"
+ },
+ "r00376": {
+  "accion": "descartar",
+  "ts": 1793455963,
+  "por": "sofi",
+  "motivo": "amontonadas"
+ },
+ "r00378": {
+  "accion": "vaca",
+  "ts": 1793456017,
+  "por": "sofi",
+  "vaca": "4226",
+  "posicion": 1
+ },
+ "r00379": {
+  "accion": "descartar",
+  "ts": 1793456025,
+  "por": "sofi",
+  "motivo": "amontonadas"
+ },
+ "r00380": {
+  "accion": "descartar",
+  "ts": 1793456031,
+  "por": "sofi",
+  "motivo": "chica"
+ },
+ "r00381": {
+  "accion": "vaca",
+  "ts": 1793456097,
+  "por": "sofi",
+  "vaca": "5242",
+  "posicion": 1
+ },
+ "r00386": {
+  "accion": "descartar",
+  "ts": 1793456105,
+  "por": "sofi",
+  "motivo": "chica"
+ },
+ "r00387": {
+  "accion": "descartar",
+  "ts": 1793456113,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00392": {
+  "accion": "vaca",
+  "ts": 1793456236,
+  "por": "sofi",
+  "vaca": "5242",
+  "posicion": 1
+ },
+ "r00395": {
+  "accion": "vaca",
+  "ts": 1793456255,
+  "por": "sofi",
+  "vaca": "4517",
+  "posicion": 1
+ },
+ "r00399": {
+  "accion": "descartar",
+  "ts": 1793456267,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00405": {
+  "accion": "descartar",
+  "ts": 1793456271,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00406": {
+  "accion": "vaca",
+  "ts": 1793456296,
+  "por": "sofi",
+  "vaca": "4969",
+  "posicion": 4
+ },
+ "r00407": {
+  "accion": "descartar",
+  "ts": 1793456304,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00409": {
+  "accion": "descartar",
+  "ts": 1793456310,
+  "por": "sofi",
+  "motivo": "chica"
+ },
+ "r00411": {
+  "accion": "descartar",
+  "ts": 1793456319,
+  "por": "sofi",
+  "motivo": "amontonadas"
+ },
+ "r00414": {
+  "accion": "descartar",
+  "ts": 1793456340,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00415": {
+  "accion": "descartar",
+  "ts": 1793456365,
+  "por": "sofi",
+  "motivo": "chica"
+ },
+ "r00417": {
+  "accion": "descartar",
+  "ts": 1793456372,
+  "por": "sofi",
+  "motivo": "chica"
+ },
+ "r00419": {
+  "accion": "descartar",
+  "ts": 1793456384,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00422": {
+  "accion": "descartar",
+  "ts": 1793456388,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00423": {
+  "accion": "vaca",
+  "ts": 1793456401,
+  "por": "sofi",
+  "vaca": "4517",
+  "posicion": 1
+ },
+ "r00424": {
+  "accion": "vaca",
+  "ts": 1793456530,
+  "por": "sofi",
+  "vaca": "4632",
+  "posicion": 41
+ },
+ "r00427": {
+  "accion": "vaca",
+  "ts": 1793456553,
+  "por": "sofi",
+  "vaca": "3563",
+  "posicion": 1
+ },
+ "r00435": {
+  "accion": "descartar",
+  "ts": 1793456558,
+  "por": "sofi",
+  "motivo": "chica"
+ },
+ "r00440": {
+  "accion": "vaca",
+  "ts": 1793456578,
+  "por": "sofi",
+  "vaca": "5401",
+  "posicion": 1
+ },
+ "r00446": {
+  "accion": "descartar",
+  "ts": 1793456584,
+  "por": "sofi",
+  "motivo": "chica"
+ },
+ "r00469": {
+  "accion": "descartar",
+  "ts": 1793456640,
+  "por": "sofi",
+  "motivo": "chica"
+ },
+ "r00471": {
+  "accion": "descartar",
+  "ts": 1793456645,
+  "por": "sofi",
+  "motivo": "chica"
+ },
+ "r00474": {
+  "accion": "vaca",
+  "ts": 1793456655,
+  "por": "sofi",
+  "vaca": "4885",
+  "posicion": 2
+ },
+ "r00475": {
+  "accion": "vaca",
+  "ts": 1793456663,
+  "por": "sofi",
+  "vaca": "4517",
+  "posicion": 1
+ },
+ "r00476": {
+  "accion": "vaca",
+  "ts": 1793456668,
+  "por": "sofi",
+  "vaca": "4885",
+  "posicion": 1
+ },
+ "r00488": {
+  "accion": "vaca",
+  "ts": 1793456674,
+  "por": "sofi",
+  "vaca": "4885",
+  "posicion": 1
+ },
+ "r00491": {
+  "accion": "descartar",
+  "ts": 1793456678,
+  "por": "sofi",
+  "motivo": "chica"
+ },
+ "r00494": {
+  "accion": "descartar",
+  "ts": 1793456685,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00512": {
+  "accion": "vaca",
+  "ts": 1793456701,
+  "por": "sofi",
+  "vaca": "4690",
+  "posicion": 2
+ },
+ "r00513": {
+  "accion": "descartar",
+  "ts": 1793456735,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00515": {
+  "accion": "vaca",
+  "ts": 1793456742,
+  "por": "sofi",
+  "vaca": "4885",
+  "posicion": 1
+ },
+ "r00519": {
+  "accion": "vaca",
+  "ts": 1793456750,
+  "por": "sofi",
+  "vaca": "4885",
+  "posicion": 1
+ },
+ "r00527": {
+  "accion": "descartar",
+  "ts": 1793456755,
+  "por": "sofi",
+  "motivo": "chica"
+ },
+ "r00528": {
+  "accion": "descartar",
+  "ts": 1793456765,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00532": {
+  "accion": "vaca",
+  "ts": 1793456773,
+  "por": "sofi",
+  "vaca": "4885",
+  "posicion": 2
+ },
+ "r00538": {
+  "accion": "descartar",
+  "ts": 1793456813,
+  "por": "sofi",
+  "motivo": "chica"
+ },
+ "r00539": {
+  "accion": "descartar",
+  "ts": 1793456823,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00542": {
+  "accion": "vaca",
+  "ts": 1793456887,
+  "por": "sofi",
+  "vaca": "5401",
+  "posicion": 1
+ },
+ "r00548": {
+  "accion": "vaca",
+  "ts": 1793456901,
+  "por": "sofi",
+  "vaca": "4885",
+  "posicion": 1
+ },
+ "r00550": {
+  "accion": "vaca",
+  "ts": 1793456987,
+  "por": "sofi",
+  "vaca": "4762",
+  "posicion": 1
+ },
+ "r00553": {
+  "accion": "vaca",
+  "ts": 1793456993,
+  "por": "sofi",
+  "vaca": "4885",
+  "posicion": 1
+ },
+ "r00555": {
+  "accion": "vaca",
+  "ts": 1793457239,
+  "por": "sofi",
+  "vaca": "3216",
+  "posicion": 89
+ },
+ "r00556": {
+  "accion": "descartar",
+  "ts": 1793457244,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00557": {
+  "accion": "vaca",
+  "ts": 1793457257,
+  "por": "sofi",
+  "vaca": "4458",
+  "posicion": 1
+ },
+ "r00561": {
+  "accion": "vaca",
+  "ts": 1793457296,
+  "por": "sofi",
+  "vaca": "4885",
+  "posicion": 2
+ },
+ "r00562": {
+  "accion": "descartar",
+  "ts": 1793457305,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00564": {
+  "accion": "vaca",
+  "ts": 1793457347,
+  "por": "sofi",
+  "vaca": "5401",
+  "posicion": 1
+ },
+ "r00568": {
+  "accion": "descartar",
+  "ts": 1793457352,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00578": {
+  "accion": "vaca",
+  "ts": 1793457409,
+  "por": "sofi",
+  "vaca": "4757",
+  "posicion": 80
+ },
+ "r00579": {
+  "accion": "descartar",
+  "ts": 1793457418,
+  "por": "sofi",
+  "motivo": "chica"
+ },
+ "r00582": {
+  "accion": "descartar",
+  "ts": 1793457424,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00583": {
+  "accion": "vaca",
+  "ts": 1793457438,
+  "por": "sofi",
+  "vaca": "5401",
+  "posicion": 1
+ },
+ "r00585": {
+  "accion": "vaca",
+  "ts": 1793457450,
+  "por": "sofi",
+  "vaca": "5401",
+  "posicion": 1
+ },
+ "r00586": {
+  "accion": "descartar",
+  "ts": 1793457460,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00614": {
+  "accion": "descartar",
+  "ts": 1793457467,
+  "por": "sofi",
+  "motivo": "chica"
+ },
+ "r00618": {
+  "accion": "descartar",
+  "ts": 1793457540,
+  "por": "sofi",
+  "motivo": "chica"
+ },
+ "r00619": {
+  "accion": "descartar",
+  "ts": 1793457546,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00620": {
+  "accion": "descartar",
+  "ts": 1793457555,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00623": {
+  "accion": "vaca",
+  "ts": 1793457581,
+  "por": "sofi",
+  "vaca": "4969",
+  "posicion": 7
+ },
+ "r00625": {
+  "accion": "vaca",
+  "ts": 1793457623,
+  "por": "sofi",
+  "vaca": "4496",
+  "posicion": 7
+ },
+ "r00626": {
+  "accion": "vaca",
+  "ts": 1793457646,
+  "por": "sofi",
+  "vaca": "3225",
+  "posicion": 1
+ },
+ "r00632": {
+  "accion": "vaca",
+  "ts": 1793457662,
+  "por": "sofi",
+  "vaca": "5401",
+  "posicion": 1
+ },
+ "r00636": {
+  "accion": "descartar",
+  "ts": 1793457673,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00637": {
+  "accion": "descartar",
+  "ts": 1793457678,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00639": {
+  "accion": "vaca",
+  "ts": 1793457694,
+  "por": "sofi",
+  "vaca": "4517",
+  "posicion": 1
+ },
+ "r00643": {
+  "accion": "vaca",
+  "ts": 1793457709,
+  "por": "sofi",
+  "vaca": "4226",
+  "posicion": 1
+ },
+ "r00645": {
+  "accion": "descartar",
+  "ts": 1793457714,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00648": {
+  "accion": "descartar",
+  "ts": 1793457719,
+  "por": "sofi",
+  "motivo": "chica"
+ },
+ "r00651": {
+  "accion": "descartar",
+  "ts": 1793457723,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00652": {
+  "accion": "vaca",
+  "ts": 1793457737,
+  "por": "sofi",
+  "vaca": "4969",
+  "posicion": 1
+ },
+ "r00654": {
+  "accion": "vaca",
+  "ts": 1793457744,
+  "por": "sofi",
+  "vaca": "4226",
+  "posicion": 1
+ },
+ "r00656": {
+  "accion": "descartar",
+  "ts": 1793457752,
+  "por": "sofi",
+  "motivo": "chica"
+ },
+ "r00659": {
+  "accion": "descartar",
+  "ts": 1793457757,
+  "por": "sofi",
+  "motivo": "chica"
+ },
+ "r00662": {
+  "accion": "descartar",
+  "ts": 1793457761,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00686": {
+  "accion": "vaca",
+  "ts": 1793457777,
+  "por": "sofi",
+  "vaca": "4969",
+  "posicion": 1
+ },
+ "r00689": {
+  "accion": "descartar",
+  "ts": 1793457783,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00690": {
+  "accion": "vaca",
+  "ts": 1793457810,
+  "por": "sofi",
+  "vaca": "4680",
+  "posicion": 2
+ },
+ "r00691": {
+  "accion": "vaca",
+  "ts": 1793457826,
+  "por": "sofi",
+  "vaca": "4690",
+  "posicion": 1
+ },
+ "r00693": {
+  "accion": "descartar",
+  "ts": 1793457835,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00694": {
+  "accion": "descartar",
+  "ts": 1793457852,
+  "por": "sofi",
+  "motivo": "chica"
+ },
+ "r00701": {
+  "accion": "descartar",
+  "ts": 1793580790,
+  "por": "sofi",
+  "motivo": "chica"
+ },
+ "r00703": {
+  "accion": "descartar",
+  "ts": 1793580796,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00714": {
+  "accion": "descartar",
+  "ts": 1793580812,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00764": {
+  "accion": "descartar",
+  "ts": 1793580828,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00766": {
+  "accion": "descartar",
+  "ts": 1793580832,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00795": {
+  "accion": "descartar",
+  "ts": 1793580847,
+  "por": "sofi",
+  "motivo": "amontonadas"
+ },
+ "r00809": {
+  "accion": "descartar",
+  "ts": 1793580856,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00843": {
+  "accion": "descartar",
+  "ts": 1793580894,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00851": {
+  "accion": "descartar",
+  "ts": 1793580905,
+  "por": "sofi",
+  "motivo": "no_es_vaca"
+ },
+ "r00858": {
+  "accion": "descartar",
+  "ts": 1793580916,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00859": {
+  "accion": "descartar",
+  "ts": 1793580920,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00888": {
+  "accion": "descartar",
+  "ts": 1793580937,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00883": {
+  "accion": "descartar",
+  "ts": 1793580943,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00893": {
+  "accion": "descartar",
+  "ts": 1793580950,
+  "por": "sofi",
+  "motivo": "amontonadas"
+ },
+ "r00898": {
+  "accion": "descartar",
+  "ts": 1793580955,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00905": {
+  "accion": "descartar",
+  "ts": 1793580964,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00910": {
+  "accion": "descartar",
+  "ts": 1793580974,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00695": {
+  "accion": "vaca",
+  "ts": 1793581046,
+  "por": "sofi",
+  "vaca": "4885",
+  "posicion": 1
+ },
+ "r00696": {
+  "accion": "vaca",
+  "ts": 1793581085,
+  "por": "sofi",
+  "vaca": "3277",
+  "posicion": 12
+ },
+ "r00698": {
+  "accion": "vaca",
+  "ts": 1793581129,
+  "por": "sofi",
+  "vaca": "5081",
+  "posicion": 23
+ },
+ "r00699": {
+  "accion": "vaca",
+  "ts": 1793581144,
+  "por": "sofi",
+  "vaca": "4517",
+  "posicion": 1
+ },
+ "r00702": {
+  "accion": "vaca",
+  "ts": 1793581171,
+  "por": "sofi",
+  "vaca": "4969",
+  "posicion": 1
+ },
+ "r00704": {
+  "accion": "vaca",
+  "ts": 1793581184,
+  "por": "sofi",
+  "vaca": "5401",
+  "posicion": 1
+ },
+ "r00705": {
+  "accion": "vaca",
+  "ts": 1793581199,
+  "por": "sofi",
+  "vaca": "5242",
+  "posicion": 1
+ },
+ "r00706": {
+  "accion": "descartar",
+  "ts": 1793581370,
+  "por": "sofi",
+  "motivo": "chica"
+ },
+ "r00708": {
+  "accion": "descartar",
+  "ts": 1793581381,
+  "por": "sofi",
+  "motivo": "chica"
+ },
+ "r00711": {
+  "accion": "descartar",
+  "ts": 1793581386,
+  "por": "sofi",
+  "motivo": "chica"
+ },
+ "r00716": {
+  "accion": "descartar",
+  "ts": 1793581397,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00723": {
+  "accion": "descartar",
+  "ts": 1793581406,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00728": {
+  "accion": "descartar",
+  "ts": 1793581411,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00736": {
+  "accion": "vaca",
+  "ts": 1793581539,
+  "por": "sofi",
+  "vaca": "3782",
+  "posicion": 77
+ },
+ "r00748": {
+  "accion": "descartar",
+  "ts": 1793581548,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00751": {
+  "accion": "vaca",
+  "ts": 1793581615,
+  "por": "sofi",
+  "vaca": "5008",
+  "posicion": 10
+ },
+ "r00753": {
+  "accion": "vaca",
+  "ts": 1793581632,
+  "por": "sofi",
+  "vaca": "3898",
+  "posicion": 2
+ },
+ "r00762": {
+  "accion": "vaca",
+  "ts": 1793581716,
+  "por": "sofi",
+  "vaca": "3225",
+  "posicion": 2
+ },
+ "r00763": {
+  "accion": "vaca",
+  "ts": 1793581736,
+  "por": "sofi",
+  "vaca": "5242",
+  "posicion": 1
+ },
+ "r00770": {
+  "accion": "vaca",
+  "ts": 1793581749,
+  "por": "sofi",
+  "vaca": "4496",
+  "posicion": 1
+ },
+ "r00774": {
+  "accion": "vaca",
+  "ts": 1793581800,
+  "por": "sofi",
+  "vaca": "4517",
+  "posicion": 1
+ },
+ "r00779": {
+  "accion": "descartar",
+  "ts": 1793581828,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00782": {
+  "accion": "descartar",
+  "ts": 1793581839,
+  "por": "sofi",
+  "motivo": "amontonadas"
+ },
+ "r00783": {
+  "accion": "vaca",
+  "ts": 1793581864,
+  "por": "sofi",
+  "vaca": "4226",
+  "posicion": 2
+ },
+ "r00786": {
+  "accion": "vaca",
+  "ts": 1793582190,
+  "por": "sofi",
+  "vaca": "3374",
+  "posicion": 5
+ },
+ "r00789": {
+  "accion": "descartar",
+  "ts": 1793582198,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00791": {
+  "accion": "descartar",
+  "ts": 1793582206,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00793": {
+  "accion": "vaca",
+  "ts": 1793582284,
+  "por": "sofi",
+  "vaca": "4226",
+  "posicion": 1
+ },
+ "r00807": {
+  "accion": "vaca",
+  "ts": 1793582303,
+  "por": "sofi",
+  "vaca": "4690",
+  "posicion": 1
+ },
+ "r00810": {
+  "accion": "vaca",
+  "ts": 1793582317,
+  "por": "sofi",
+  "vaca": "4226",
+  "posicion": 1
+ },
+ "r00812": {
+  "accion": "vaca",
+  "ts": 1793582359,
+  "por": "sofi",
+  "vaca": "4762",
+  "posicion": 26
+ },
+ "r00826": {
+  "accion": "descartar",
+  "ts": 1793582365,
+  "por": "sofi",
+  "motivo": "chica"
+ },
+ "r00827": {
+  "accion": "vaca",
+  "ts": 1793582370,
+  "por": "sofi",
+  "vaca": "4226",
+  "posicion": 1
+ },
+ "r00844": {
+  "accion": "vaca",
+  "ts": 1793582377,
+  "por": "sofi",
+  "vaca": "4690",
+  "posicion": 1
+ },
+ "r00849": {
+  "accion": "vaca",
+  "ts": 1793582388,
+  "por": "sofi",
+  "vaca": "4890",
+  "posicion": 1
+ },
+ "r00850": {
+  "accion": "descartar",
+  "ts": 1793582394,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00862": {
+  "accion": "vaca",
+  "ts": 1793582400,
+  "por": "sofi",
+  "vaca": "4890",
+  "posicion": 1
+ },
+ "r00882": {
+  "accion": "vaca",
+  "ts": 1793582422,
+  "por": "sofi",
+  "vaca": "SN2",
+  "posicion": 11
+ },
+ "r00894": {
+  "accion": "vaca",
+  "ts": 1793582440,
+  "por": "sofi",
+  "vaca": "4680",
+  "posicion": 1
+ },
+ "r00899": {
+  "accion": "vaca",
+  "ts": 1793582448,
+  "por": "sofi",
+  "vaca": "4517",
+  "posicion": 1
+ },
+ "r00901": {
+  "accion": "vaca",
+  "ts": 1793582462,
+  "por": "sofi",
+  "vaca": "4404",
+  "posicion": 6
+ },
+ "r00903": {
+  "accion": "vaca",
+  "ts": 1793582478,
+  "por": "sofi",
+  "vaca": "5008",
+  "posicion": 1
+ },
+ "r00904": {
+  "accion": "vaca",
+  "ts": 1793582500,
+  "por": "sofi",
+  "vaca": "SN2",
+  "posicion": 1
+ },
+ "r00908": {
+  "accion": "vaca",
+  "ts": 1793582521,
+  "por": "sofi",
+  "vaca": "4930",
+  "posicion": 1
+ },
+ "r00909": {
+  "accion": "vaca",
+  "ts": 1793582559,
+  "por": "sofi",
+  "vaca": "4864",
+  "posicion": 1
+ },
+ "r00911": {
+  "accion": "vaca",
+  "ts": 1793582567,
+  "por": "sofi",
+  "vaca": "SN2",
+  "posicion": 1
+ },
+ "r00912": {
+  "accion": "vaca",
+  "ts": 1793582752,
+  "por": "sofi",
+  "vaca": "4890",
+  "posicion": 1
+ },
+ "r00913": {
+  "accion": "vaca",
+  "ts": 1793582913,
+  "por": "sofi",
+  "vaca": "5008",
+  "posicion": 5
+ },
+ "r00923": {
+  "accion": "descartar",
+  "ts": 1793582944,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00914": {
+  "accion": "descartar",
+  "ts": 1793583054,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00916": {
+  "accion": "vaca",
+  "ts": 1793583073,
+  "por": "sofi",
+  "vaca": "4517",
+  "posicion": 1
+ },
+ "r00924": {
+  "accion": "vaca",
+  "ts": 1793583094,
+  "por": "sofi",
+  "vaca": "4277",
+  "posicion": 1
+ },
+ "r00925": {
+  "accion": "descartar",
+  "ts": 1793583111,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00926": {
+  "accion": "vaca",
+  "ts": 1793583125,
+  "por": "sofi",
+  "vaca": "4930",
+  "posicion": 1
+ },
+ "r00928": {
+  "accion": "vaca",
+  "ts": 1793583150,
+  "por": "sofi",
+  "vaca": "5081",
+  "posicion": 9
+ },
+ "r00929": {
+  "accion": "vaca",
+  "ts": 1793583168,
+  "por": "sofi",
+  "vaca": "4864",
+  "posicion": 1
+ },
+ "r00931": {
+  "accion": "vaca",
+  "ts": 1793583181,
+  "por": "sofi",
+  "vaca": "5081",
+  "posicion": 1
+ },
+ "r00934": {
+  "accion": "descartar",
+  "ts": 1793583191,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00938": {
+  "accion": "descartar",
+  "ts": 1793583212,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00940": {
+  "accion": "vaca",
+  "ts": 1793583230,
+  "por": "sofi",
+  "vaca": "SN2",
+  "posicion": 1
+ },
+ "r00941": {
+  "accion": "vaca",
+  "ts": 1793583247,
+  "por": "sofi",
+  "vaca": "4496",
+  "posicion": 11
+ },
+ "r00947": {
+  "accion": "vaca",
+  "ts": 1793583254,
+  "por": "sofi",
+  "vaca": "SN2",
+  "posicion": 1
+ },
+ "r00948": {
+  "accion": "vaca",
+  "ts": 1793583262,
+  "por": "sofi",
+  "vaca": "4496",
+  "posicion": 1
+ },
+ "r00951": {
+  "accion": "vaca",
+  "ts": 1793583281,
+  "por": "sofi",
+  "vaca": "4277",
+  "posicion": 4
+ },
+ "r00954": {
+  "accion": "vaca",
+  "ts": 1793583297,
+  "por": "sofi",
+  "vaca": "4496",
+  "posicion": 2
+ },
+ "r00958": {
+  "accion": "descartar",
+  "ts": 1793583318,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00960": {
+  "accion": "vaca",
+  "ts": 1793583331,
+  "por": "sofi",
+  "vaca": "4517",
+  "posicion": 1
+ },
+ "r00962": {
+  "accion": "vaca",
+  "ts": 1793583338,
+  "por": "sofi",
+  "vaca": "4890",
+  "posicion": 1
+ },
+ "r00963": {
+  "accion": "vaca",
+  "ts": 1793583354,
+  "por": "sofi",
+  "vaca": "4885",
+  "posicion": 1
+ },
+ "r00965": {
+  "accion": "vaca",
+  "ts": 1793583361,
+  "por": "sofi",
+  "vaca": "4932",
+  "posicion": 1
+ },
+ "r00966": {
+  "accion": "vaca",
+  "ts": 1793583370,
+  "por": "sofi",
+  "vaca": "4864",
+  "posicion": 1
+ },
+ "r00967": {
+  "accion": "vaca",
+  "ts": 1793583377,
+  "por": "sofi",
+  "vaca": "4496",
+  "posicion": 1
+ },
+ "r00969": {
+  "accion": "descartar",
+  "ts": 1793583382,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00970": {
+  "accion": "vaca",
+  "ts": 1793583388,
+  "por": "sofi",
+  "vaca": "SN2",
+  "posicion": 1
+ },
+ "r00973": {
+  "accion": "vaca",
+  "ts": 1793583398,
+  "por": "sofi",
+  "vaca": "4890",
+  "posicion": 1
+ },
+ "r00976": {
+  "accion": "vaca",
+  "ts": 1793583403,
+  "por": "sofi",
+  "vaca": "4496",
+  "posicion": 1
+ },
+ "r00979": {
+  "accion": "vaca",
+  "ts": 1793583412,
+  "por": "sofi",
+  "vaca": "4930",
+  "posicion": 1
+ },
+ "r00980": {
+  "accion": "vaca",
+  "ts": 1793583426,
+  "por": "sofi",
+  "vaca": "4890",
+  "posicion": 1
+ },
+ "r00981": {
+  "accion": "vaca",
+  "ts": 1793583451,
+  "por": "sofi",
+  "vaca": "4864",
+  "posicion": 1
+ },
+ "r00982": {
+  "accion": "vaca",
+  "ts": 1793583532,
+  "por": "sofi",
+  "vaca": "5242",
+  "posicion": 1
+ },
+ "r00984": {
+  "accion": "vaca",
+  "ts": 1793583551,
+  "por": "sofi",
+  "vaca": "4496",
+  "posicion": 2
+ },
+ "r00986": {
+  "accion": "vaca",
+  "ts": 1793583567,
+  "por": "sofi",
+  "vaca": "SN2",
+  "posicion": 1
+ },
+ "r00987": {
+  "accion": "vaca",
+  "ts": 1793583574,
+  "por": "sofi",
+  "vaca": "4885",
+  "posicion": 1
+ },
+ "r00990": {
+  "accion": "vaca",
+  "ts": 1793583588,
+  "por": "sofi",
+  "vaca": "4454",
+  "posicion": 3
+ },
+ "r00992": {
+  "accion": "vaca",
+  "ts": 1793583676,
+  "por": "sofi",
+  "vaca": "4885",
+  "posicion": 21
+ },
+ "r00993": {
+  "accion": "vaca",
+  "ts": 1793583722,
+  "por": "sofi",
+  "vaca": "4864",
+  "posicion": 1
+ },
+ "r00994": {
+  "accion": "descartar",
+  "ts": 1793583807,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r00996": {
+  "accion": "vaca",
+  "ts": 1793583868,
+  "por": "sofi",
+  "vaca": "5401",
+  "posicion": 2
+ },
+ "r01000": {
+  "accion": "vaca",
+  "ts": 1793583874,
+  "por": "sofi",
+  "vaca": "4930",
+  "posicion": 1
+ },
+ "r01001": {
+  "accion": "vaca",
+  "ts": 1793583879,
+  "por": "sofi",
+  "vaca": "4226",
+  "posicion": 1
+ },
+ "r01003": {
+  "accion": "vaca",
+  "ts": 1793583892,
+  "por": "sofi",
+  "vaca": "SN2",
+  "posicion": 1
+ },
+ "r01005": {
+  "accion": "vaca",
+  "ts": 1793583896,
+  "por": "sofi",
+  "vaca": "SN2",
+  "posicion": 1
+ },
+ "r01007": {
+  "accion": "vaca",
+  "ts": 1793583898,
+  "por": "sofi",
+  "vaca": "4930",
+  "posicion": 1
+ },
+ "r01008": {
+  "accion": "vaca",
+  "ts": 1793583900,
+  "por": "sofi",
+  "vaca": "4226",
+  "posicion": 1
+ },
+ "r01010": {
+  "accion": "vaca",
+  "ts": 1793583902,
+  "por": "sofi",
+  "vaca": "4226",
+  "posicion": 1
+ },
+ "r01019": {
+  "accion": "descartar",
+  "ts": 1793583909,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r01020": {
+  "accion": "vaca",
+  "ts": 1793583914,
+  "por": "sofi",
+  "vaca": "4517",
+  "posicion": 1
+ },
+ "r01022": {
+  "accion": "descartar",
+  "ts": 1793583921,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r01023": {
+  "accion": "vaca",
+  "ts": 1793583926,
+  "por": "sofi",
+  "vaca": "4277",
+  "posicion": 1
+ },
+ "r01024": {
+  "accion": "vaca",
+  "ts": 1793583931,
+  "por": "sofi",
+  "vaca": "5008",
+  "posicion": 2
+ },
+ "r01040": {
+  "accion": "vaca",
+  "ts": 1793583933,
+  "por": "sofi",
+  "vaca": "4517",
+  "posicion": 1
+ },
+ "r01085": {
+  "accion": "vaca",
+  "ts": 1793583937,
+  "por": "sofi",
+  "vaca": "3277",
+  "posicion": 2
+ },
+ "r01101": {
+  "accion": "descartar",
+  "ts": 1793583947,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r01108": {
+  "accion": "vaca",
+  "ts": 1793583952,
+  "por": "sofi",
+  "vaca": "4226",
+  "posicion": 1
+ },
+ "r01114": {
+  "accion": "descartar",
+  "ts": 1793583963,
+  "por": "sofi",
+  "motivo": "chica"
+ },
+ "r01121": {
+  "accion": "vaca",
+  "ts": 1793583984,
+  "por": "sofi",
+  "vaca": "4454",
+  "posicion": 2
+ },
+ "r01126": {
+  "accion": "descartar",
+  "ts": 1793584013,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r01130": {
+  "accion": "descartar",
+  "ts": 1793584017,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r01131": {
+  "accion": "vaca",
+  "ts": 1793584023,
+  "por": "sofi",
+  "vaca": "4517",
+  "posicion": 1
+ },
+ "r01133": {
+  "accion": "vaca",
+  "ts": 1793584081,
+  "por": "sofi",
+  "vaca": "5080",
+  "posicion": 16
+ },
+ "r01135": {
+  "accion": "descartar",
+  "ts": 1793584149,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r01136": {
+  "accion": "vaca",
+  "ts": 1793584167,
+  "por": "sofi",
+  "vaca": "4454",
+  "posicion": 1
+ },
+ "r01137": {
+  "accion": "descartar",
+  "ts": 1793584174,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r01142": {
+  "accion": "vaca",
+  "ts": 1793584192,
+  "por": "sofi",
+  "vaca": "SN2",
+  "posicion": 1
+ },
+ "r01143": {
+  "accion": "descartar",
+  "ts": 1793584202,
+  "por": "sofi",
+  "motivo": "chica"
+ },
+ "r01149": {
+  "accion": "descartar",
+  "ts": 1793584208,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r01152": {
+  "accion": "vaca",
+  "ts": 1793584231,
+  "por": "sofi",
+  "vaca": "4345",
+  "posicion": 2
+ },
+ "r01153": {
+  "accion": "vaca",
+  "ts": 1793584237,
+  "por": "sofi",
+  "vaca": "SN2",
+  "posicion": 1
+ },
+ "r01155": {
+  "accion": "vaca",
+  "ts": 1793584240,
+  "por": "sofi",
+  "vaca": "3563",
+  "posicion": 2
+ },
+ "r01156": {
+  "accion": "vaca",
+  "ts": 1793584243,
+  "por": "sofi",
+  "vaca": "4277",
+  "posicion": 1
+ },
+ "r01158": {
+  "accion": "descartar",
+  "ts": 1793584251,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r01159": {
+  "accion": "vaca",
+  "ts": 1793584273,
+  "por": "sofi",
+  "vaca": "4517",
+  "posicion": 1
+ },
+ "r01162": {
+  "accion": "vaca",
+  "ts": 1793584279,
+  "por": "sofi",
+  "vaca": "4762",
+  "posicion": 1
+ },
+ "r01167": {
+  "accion": "vaca",
+  "ts": 1793584281,
+  "por": "sofi",
+  "vaca": "3563",
+  "posicion": 2
+ },
+ "r01171": {
+  "accion": "descartar",
+  "ts": 1793584286,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r01177": {
+  "accion": "descartar",
+  "ts": 1793584290,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r01191": {
+  "accion": "descartar",
+  "ts": 1793584295,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r01196": {
+  "accion": "descartar",
+  "ts": 1793584301,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r01197": {
+  "accion": "descartar",
+  "ts": 1793584305,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r01206": {
+  "accion": "descartar",
+  "ts": 1793584308,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r01209": {
+  "accion": "descartar",
+  "ts": 1793584348,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r01232": {
+  "accion": "descartar",
+  "ts": 1793584356,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r01238": {
+  "accion": "descartar",
+  "ts": 1793584374,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r01240": {
+  "accion": "descartar",
+  "ts": 1793584378,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r01248": {
+  "accion": "vaca",
+  "ts": 1793584383,
+  "por": "sofi",
+  "vaca": "4517",
+  "posicion": 1
+ },
+ "r01249": {
+  "accion": "descartar",
+  "ts": 1793584389,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r01250": {
+  "accion": "vaca",
+  "ts": 1793584399,
+  "por": "sofi",
+  "vaca": "5401",
+  "posicion": 1
+ },
+ "r01265": {
+  "accion": "vaca",
+  "ts": 1793584486,
+  "por": "sofi",
+  "vaca": "5096",
+  "posicion": 31
+ },
+ "r01273": {
+  "accion": "descartar",
+  "ts": 1793584492,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r01275": {
+  "accion": "descartar",
+  "ts": 1793584495,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r01276": {
+  "accion": "vaca",
+  "ts": 1793584499,
+  "por": "sofi",
+  "vaca": "5096",
+  "posicion": 1
+ },
+ "r01280": {
+  "accion": "descartar",
+  "ts": 1793584504,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r01287": {
+  "accion": "vaca",
+  "ts": 1793584511,
+  "por": "sofi",
+  "vaca": "4517",
+  "posicion": 1
+ },
+ "r01296": {
+  "accion": "vaca",
+  "ts": 1793584515,
+  "por": "sofi",
+  "vaca": "4517",
+  "posicion": 1
+ },
+ "r01297": {
+  "accion": "descartar",
+  "ts": 1793584519,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r01298": {
+  "accion": "vaca",
+  "ts": 1793584570,
+  "por": "sofi",
+  "vaca": "3765",
+  "posicion": 106
+ },
+ "r01300": {
+  "accion": "vaca",
+  "ts": 1793584731,
+  "por": "sofi",
+  "vaca": "4983",
+  "posicion": 18
+ },
+ "r01304": {
+  "accion": "vaca",
+  "ts": 1793584737,
+  "por": "sofi",
+  "vaca": "3765",
+  "posicion": 1
+ },
+ "r01306": {
+  "accion": "vaca",
+  "ts": 1793584740,
+  "por": "sofi",
+  "vaca": "3765",
+  "posicion": 1
+ },
+ "r01308": {
+  "accion": "vaca",
+  "ts": 1793584743,
+  "por": "sofi",
+  "vaca": "4517",
+  "posicion": 1
+ },
+ "r01309": {
+  "accion": "descartar",
+  "ts": 1793584749,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r01311": {
+  "accion": "vaca",
+  "ts": 1793584753,
+  "por": "sofi",
+  "vaca": "4517",
+  "posicion": 1
+ },
+ "r01313": {
+  "accion": "vaca",
+  "ts": 1793584755,
+  "por": "sofi",
+  "vaca": "4517",
+  "posicion": 1
+ },
+ "r01314": {
+  "accion": "descartar",
+  "ts": 1793584760,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r01316": {
+  "accion": "vaca",
+  "ts": 1793584764,
+  "por": "sofi",
+  "vaca": "5096",
+  "posicion": 1
+ },
+ "r01317": {
+  "accion": "descartar",
+  "ts": 1793584769,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r01318": {
+  "accion": "vaca",
+  "ts": 1793584780,
+  "por": "sofi",
+  "vaca": "5103",
+  "posicion": 1
+ },
+ "r01320": {
+  "accion": "vaca",
+  "ts": 1793584792,
+  "por": "sofi",
+  "vaca": "4890",
+  "posicion": 1
+ },
+ "r01321": {
+  "accion": "vaca",
+  "ts": 1793584796,
+  "por": "sofi",
+  "vaca": "5234",
+  "posicion": 3
+ },
+ "r01322": {
+  "accion": "vaca",
+  "ts": 1793584801,
+  "por": "sofi",
+  "vaca": "4890",
+  "posicion": 1
+ },
+ "r01327": {
+  "accion": "vaca",
+  "ts": 1793584806,
+  "por": "sofi",
+  "vaca": "4277",
+  "posicion": 2
+ },
+ "r01329": {
+  "accion": "vaca",
+  "ts": 1793584810,
+  "por": "sofi",
+  "vaca": "5234",
+  "posicion": 1
+ },
+ "r01331": {
+  "accion": "vaca",
+  "ts": 1793584826,
+  "por": "sofi",
+  "vaca": "3225",
+  "posicion": 7
+ },
+ "r01333": {
+  "accion": "descartar",
+  "ts": 1793584836,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r01334": {
+  "accion": "descartar",
+  "ts": 1793584841,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r01335": {
+  "accion": "descartar",
+  "ts": 1793584844,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r01336": {
+  "accion": "descartar",
+  "ts": 1793584852,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r01337": {
+  "accion": "vaca",
+  "ts": 1793584856,
+  "por": "sofi",
+  "vaca": "4277",
+  "posicion": 1
+ },
+ "r01338": {
+  "accion": "vaca",
+  "ts": 1793584859,
+  "por": "sofi",
+  "vaca": "4517",
+  "posicion": 1
+ },
+ "r01340": {
+  "accion": "descartar",
+  "ts": 1793584866,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r01342": {
+  "accion": "descartar",
+  "ts": 1793584868,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r01344": {
+  "accion": "vaca",
+  "ts": 1793645239,
+  "por": "sofi",
+  "vaca": "4226",
+  "posicion": 6
+ },
+ "r01345": {
+  "accion": "vaca",
+  "ts": 1793645249,
+  "por": "sofi",
+  "vaca": "4864",
+  "posicion": 1
+ },
+ "r01346": {
+  "accion": "vaca",
+  "ts": 1793645254,
+  "por": "sofi",
+  "vaca": "3765",
+  "posicion": 1
+ },
+ "r01347": {
+  "accion": "vaca",
+  "ts": 1793645260,
+  "por": "sofi",
+  "vaca": "4277",
+  "posicion": 1
+ },
+ "r01350": {
+  "accion": "vaca",
+  "ts": 1793645264,
+  "por": "sofi",
+  "vaca": "4517",
+  "posicion": 1
+ },
+ "r01352": {
+  "accion": "vaca",
+  "ts": 1793645270,
+  "por": "sofi",
+  "vaca": "4983",
+  "posicion": 1
+ },
+ "r01353": {
+  "accion": "descartar",
+  "ts": 1793645276,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r01362": {
+  "accion": "descartar",
+  "ts": 1793645286,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ },
+ "r01372": {
+  "accion": "descartar",
+  "ts": 1793645290,
+  "por": "sofi",
+  "motivo": "no_se_ve"
+ }
+}

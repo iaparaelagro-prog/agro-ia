@@ -4,10 +4,42 @@ Herramientas armadas a partir del desfile de Tres Lomas (video `desfile_camaras.
 de costado lado A / lado B) para construir la galería de vacas, identificar vacas vistas desde arriba en el
 campo y entrenar los modelos de identificación que usa FORMATEADOR.
 
-**Acá va solo el código.** Los datos (video, frames, fotos de referencia, recortes, etiquetas), los
-datasets y los modelos entrenados (`*.pt`, `*.pth`) NO van a git: están en la compu de Diego
+**Qué hay en git:** el código, las etiquetas que hizo el equipo (`etiquetas/`) y los pesos entrenados
+(`identificacion/modelos/`, con Git LFS). **Qué NO hay:** las imágenes y el video (frames, fotos de
+referencia lado A / B, recortes) ni los datasets armados: están en la compu
 (`Escritorio/Vaquitas/desfile_tres_lomas`), en el servidor de DigitalOcean y en Google Drive
 (`Mi unidad/vacas/`). Los scripts esperan encontrar los datos en la carpeta desde donde se ejecutan.
+
+## Pesos entrenados
+
+Van en `identificacion/modelos/` y se guardan con **Git LFS** (configurado en `.gitattributes` de la raíz).
+Para bajarlos: `git lfs install` una vez y después `git pull` (o `git lfs pull` si el repo ya estaba clonado).
+
+| Archivo | Qué es |
+|---|---|
+| `resnet50_triplet_vacas.pth` | ResNet50 Triplet entrenado (el modelo de identificación que usamos). Se carga con `EmbeddingExtractor` de `servicioSeguimientoIdentificacion`. |
+| `dinov2_vacas.pt` | DINOv2 entrenado; `campo.py` lo usa si está en la carpeta de datos. |
+
+Los **checkpoints** para seguir entrenando desde donde quedó (incluyen el estado del optimizador) son más
+grandes y están en Google Drive: `resultado_resnet50/checkpoint_como_dinov2.pt` (284 MB) y
+`resultado_dinov2/checkpoint.pt` (144 MB). Los notebooks los retoman si los encuentran en la carpeta de salida.
+Las métricas del DINOv2 están en `notebooks/metricas_dinov2.json`.
+
+## Etiquetas del equipo (`etiquetas/`)
+
+Es el trabajo manual de identificación; con esto + los frames se puede rearmar el dataset de entrenamiento.
+
+| Archivo | Qué es |
+|---|---|
+| `campo_equipo/etiquetas.json` | Lo que marcó el equipo en la página "Vacas en el campo": por recorrido (`r00002`, ...) qué vaca es, o si se descartó / no se sabe. 578 recorridos. |
+| `campo_equipo/recorridos.json` | Qué frames y recuadros forman cada recorrido. |
+| `campo_equipo/resultado_por_frame.csv` | Etiqueta por frame y recuadro; es lo que lee `preparar_dinov2.py`. |
+| `campo_equipo/problemas.json`, `postergados.json`, `estado.json` | Frames marcados con problema (p. ej. dos vacas), recorridos postergados y estado de la página. |
+| `grupos.json` | Orden verificado de paso de las vacas por tanda en el desfile. |
+| `biblioteca_lados/` | Etiquetas de la etapa anterior (recortes de costado confirmados para ampliar la galería). |
+
+Para usarlas con los scripts, copiá `campo_equipo/` como `campo_servidor/` dentro de la carpeta de datos
+(es el nombre que esperan `preparar_dinov2.py` y `campo.py`).
 
 ## Estructura
 
@@ -51,6 +83,14 @@ Prueba: 88 recorridos de 45 vacas que ningún modelo vio al entrenar; 124 vacas 
 | ResNet50 entrenado | 72% (90%) | 74% (88%) |
 
 Con 88 recorridos el margen es de ±5 puntos: los dos modelos entrenados rinden igual.
+
+## Supabase
+
+- `identificacion/inventario_supabase.py`: cuenta qué hay en Supabase (tablas, montas, imágenes del bucket
+  `imagenesvacas` por cámara y día) para decidir qué usar para entrenar. No cambia nada.
+- `identificacion/limpiar_supabase.py`: libera espacio del bucket borrando las imágenes más viejas.
+  Por defecto solo simula; nunca borra frames con monta ni lo de los últimos 14 días. Necesita la clave
+  `service_role` en un `supabase.env` (que no va a git).
 
 ## Servidor (DigitalOcean)
 
